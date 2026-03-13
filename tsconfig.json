@@ -1,0 +1,18 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"strictNullChecks": true,
+		"baseUrl": ".",
+		"verbatimModuleSyntax": true,
+		"paths": {
+			"@/components/*": ["src/components/*"],
+			"@/layouts/*": ["src/layouts/*"],
+			"@/lib/*": ["src/lib/*"],
+			"@/utils": ["src/utils/index.ts"],
+			"@/data/*": ["src/data/*"],
+			"@/site-config": ["src/data/site.config.ts"],
+			"@/styles": ["src/styles/"]
+		}
+	},
+	"exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
+}

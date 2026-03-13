@@ -1,0 +1,82 @@
+---
+import { getProjetos, getPortfolioCategories } from '@/utils'
+import PortfolioCard from '@/components/PortfolioCard'
+import { sluglify } from '@/utils'
+
+const projetos = await getProjetos()
+const categorias = getPortfolioCategories(projetos)
+---
+
+<section class='space-y-8'>
+	<h2 class='text-lg font-medium tracking-wide text-end text-stone-700 dark:text-stone-300'>
+		Projetos Online
+	</h2>
+
+	<!-- Filtro de categorias -->
+	<div class='flex flex-wrap gap-2 border-b border-stone-200 pb-4 dark:border-stone-700'>
+		<button
+			type='button'
+			data-portfolio-filter='all'
+			class='portfolio-filter active rounded-md border border-stone-400 bg-stone-200 px-3 py-1.5 text-sm font-medium text-stone-900 transition-colors dark:border-stone-500 dark:bg-stone-700 dark:text-white'
+		>
+			Todos
+		</button>
+		{categorias.map((cat) => (
+			<button
+				type='button'
+				data-portfolio-filter={sluglify(cat)}
+				class='portfolio-filter rounded-md border border-stone-200 px-3 py-1.5 text-sm font-medium text-stone-600 transition-colors hover:border-stone-300 hover:bg-stone-50 hover:text-stone-800 dark:border-stone-700 dark:text-stone-400 dark:hover:border-stone-600 dark:hover:bg-stone-800 dark:hover:text-stone-200'
+			>
+				{cat}
+			</button>
+		))}
+	</div>
+
+	<!-- Grid de cards -->
+	<div class='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+		{projetos.map((projeto) => (
+			<div
+				class='portfolio-card'
+				data-tags={projeto.tags.map((t) => sluglify(t.toLowerCase())).join(' ')}
+			>
+				<PortfolioCard projeto={projeto} />
+			</div>
+		))}
+	</div>
+</section>
+
+<script>
+	const activeClasses = [
+		'border-stone-400',
+		'bg-stone-200',
+		'text-stone-900',
+		'dark:border-stone-500',
+		'dark:bg-stone-700',
+		'dark:text-white'
+	]
+	const inactiveClasses = [
+		'border-stone-200',
+		'text-stone-600',
+		'dark:border-stone-700',
+		'dark:text-stone-400'
+	]
+
+	document.querySelectorAll('.portfolio-filter').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const filter = btn.getAttribute('data-portfolio-filter')
+
+			document.querySelectorAll('.portfolio-filter').forEach((b) => {
+				b.classList.remove(...activeClasses)
+				b.classList.add(...inactiveClasses)
+			})
+			btn.classList.remove(...inactiveClasses)
+			btn.classList.add(...activeClasses)
+
+			document.querySelectorAll('.portfolio-card').forEach((card) => {
+				const tags = card.getAttribute('data-tags')?.split(' ') ?? []
+				const show = filter === 'all' || tags.includes(filter ?? '')
+				;(card as HTMLElement).style.display = show ? '' : 'none'
+			})
+		})
+	})
+</script>

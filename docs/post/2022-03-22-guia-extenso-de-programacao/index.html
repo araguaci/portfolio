@@ -1,0 +1,1140 @@
+<!DOCTYPE html><html lang="pt-BR" class="scroll-smooth" data-astro-cid-37fxchfa> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.0.8"><!-- Canonical URL --><link rel="canonical" href="https://artesdosul.github.io/post/2022-03-22-guia-extenso-de-programacao/"><!-- Primary Meta Tags --><title>Guia Extenso de Programação • Portfolio Artes do Sul</title><!-- ViewTransitions  --><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><!-- SEO --><meta name="title" content="Guia Extenso de Programação • Portfolio Artes do Sul"><meta name="description" content="Cursos, estudos, bibliotecas, ferramentas, dicas, templates, modelos..."><meta name="author" content="Artes do Sul"><!-- Open Graph / Facebook --><meta property="og:type" content="article"><meta property="og:url" content="https://artesdosul.github.io/post/2022-03-22-guia-extenso-de-programacao/"><meta property="og:title" content="Guia Extenso de Programação"><meta property="og:description" content="Cursos, estudos, bibliotecas, ferramentas, dicas, templates, modelos..."><meta property="og:image" content="https://artesdosul.github.io/assets/img/artebkg.webp"><meta property="article:author" content="Artes do Sul"><meta property="article:published_time" content="2022-03-22T00:00:00.000Z"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://artesdosul.github.io/post/2022-03-22-guia-extenso-de-programacao/"><meta property="twitter:title" content="Guia Extenso de Programação"><meta property="twitter:description" content="Cursos, estudos, bibliotecas, ferramentas, dicas, templates, modelos..."><meta property="twitter:image" content="https://artesdosul.github.io/assets/img/artebkg.webp"><!-- RSS auto-discovery --><link rel="alternate" type="application/rss+xml" title="Portfolio Artes do Sul" href="/rss.xml"><link as="font" crossorigin rel="preload" href="/fonts\Manrope-Bold.woff2" type="font/woff2"><style>@font-face {font-weight: 200;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-ExtraLight.woff2)}</style><style>@font-face {font-weight: 300;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-Light.woff2)}</style><style>@font-face {font-weight: 400;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-Regular.woff2)}</style><style>@font-face {font-weight: 500;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-Medium.woff2)}</style><style>@font-face {font-weight: 600;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-SemiBold.woff2)}</style><style>@font-face {font-weight: 700;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-Bold.woff2)}</style><style>@font-face {font-weight: 800;font-style: normal;font-family: Manrope;font-display: swap;src: url(/fonts\Manrope-ExtraBold.woff2)}</style><style>@font-face { font-family: _font_fallback_1773372718315; size-adjust: 103.76%; src: local('Arial'); ascent-override: 102.74%; descent-override: 28.91%; line-gap-override: 0.00%; }</style><script>
+	function getTheme() {
+		const storedTheme = typeof localStorage !== 'undefined' && localStorage.getItem('theme')
+
+		return (
+			storedTheme || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+		)
+	}
+
+	function setTheme(newTheme) {
+		const html = document.documentElement
+		const isDark = newTheme === 'dark'
+
+		html.classList.toggle('dark', isDark)
+		html.classList.toggle('light', !isDark)
+
+		localStorage.setItem('theme', newTheme)
+	}
+
+	// set initial theme
+	setTheme(getTheme())
+	document.addEventListener('astro:after-swap', () => setTheme(getTheme()))
+
+	document.addEventListener('theme-change', (e) => {
+		setTheme(e.detail.theme)
+	})
+</script><script>
+	if (!('animations' in localStorage)) {
+		localStorage.setItem('animations', 'true')
+	} else {
+		localStorage.setItem('animations', 'false')
+	}
+</script><link rel="stylesheet" href="/_astro/_single_.lqh7FKuk.css" />
+<link rel="stylesheet" href="/_astro/_slug_.B8srmZPo.css" /><script type="module" src="/_astro/hoisted.Bxg0fbSU.js"></script></head> <body class="bg-white text-stone-950 dark:bg-[#0a0910] dark:text-white" data-astro-cid-37fxchfa> <main class="px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-6xl grid gap-12 mt-4 overflow-hidden md:overflow-visible" data-astro-cid-37fxchfa> <header class="relative flex items-center h-12 font-semibold gap-4 flex-nowrap"> <a class="text-lg shrink-0" href="/">Início</a> <div id="astro-header-drawer" class="shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50 md:w-auto md:h-auto md:flex-1 md:min-w-0 md:overflow-visible"> <nav class="flex h-full flex-col justify-between gap-12 text-left md:flex-row md:w-full md:gap-5 md:items-center"> <div class="flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white shrink-0"> <a href="/tags" class="text-opacity-60 flex items-center gap-1 text-2xl md:text-base" rel="noopener noreferrer ">  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 md:w-6" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z"></path> <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116"></path> <path d="M6 9h-.01"></path> </svg> Etiquetas
+ </a> </div> <div class="flex justify-center items-center md:justify-end gap-3 md:p-0 shrink-0"> <a href="https://artesdosul.com/" class="text-opacity-60" rel="noopener noreferrer " target="_blank" aria-label="Website">  <span><svg xmlns="http://www.w3.org/2000/svg" class="w-8 md:w-6" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <circle cx="12" cy="12" r="10"></circle> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0 -20"></path> <path d="M2 12h20"></path> </svg> </span>  </a><a href="https://github.com/artesdosul" class="text-opacity-60" rel="noopener noreferrer " target="_blank" aria-label="GitHub">  <span><svg xmlns="http://www.w3.org/2000/svg" class="w-8 md:w-6" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path> </svg> </span>  </a><a href="https://github.com/araguaci" class="text-opacity-60" rel="noopener noreferrer " target="_blank" aria-label="GitHub">  <span><svg xmlns="http://www.w3.org/2000/svg" class="w-8 md:w-6" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path> </svg> </span>  </a><a href="https://www.linkedin.com/in/araguaci" class="text-opacity-60" rel="noopener noreferrer " target="_blank" aria-label="LinkedIn">  <span><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--><svg xmlns="http://www.w3.org/2000/svg" class="w-8 md:w-6" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <g transform="translate(-4,-3.5)"> <path d="M 20.499,11 C 17.708,11 17.228,12.018 17,13 v -2 h -4 v 14 h 4 v -8 c 0,-1.297 0.703,-2 2,-2 1.266,0 2,0.688 2,2 v 8 h 4 v -7 c 0,-4 -0.521,-7 -4.501,-7 z"></path> <rect height="14" width="4" x="7" y="11"></rect> <circle cx="9" cy="8" r="2"></circle> </g> </svg> </span>  </a><a href="https://www.instagram.com/araguaci" class="text-opacity-60" rel="noopener noreferrer " target="_blank" aria-label="Instagram">  <span><svg xmlns="http://www.w3.org/2000/svg" class="wiggle w-8 md:w-6" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path> <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path> <path d="M16.5 7.5l0 .01"></path> </svg> </span>  </a> </div> </nav> </div> <div class="flex items-center gap-3 shrink-0 md:pl-6 md:border-l md:border-stone-200 dark:md:border-stone-700" data-astro-transition-persist="navbar"> <div> <site-search id="search" class="ms-auto"> <button data-open-modal disabled class="flex items-center justify-center rounded-md gap-1"> <svg aria-label="search" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"> <path stroke="none" d="M0 0h24v24H0z"></path> <path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6"></path> </svg> <!-- <span class='md:hidden text-2xl'> Search</span> --> </button> <dialog aria-label="search" class="h-full max-h-full w-full max-w-full border border-zinc-400 bg-white dark:bg-[#0a0910ec] shadow backdrop:backdrop-blur sm:mx-auto sm:mb-auto sm:mt-16 sm:h-max sm:max-h-[calc(100%-8rem)] sm:min-h-[15rem] sm:w-5/6 sm:max-w-[48rem] sm:rounded-md opacity-0"> <div class="dialog-frame flex flex-col gap-4 p-6 pt-12 sm:pt-6"> <button data-close-modal class="ms-auto cursor-pointer rounded-full bg-black text-white px-4 py-2 dark:bg-white dark:text-black">Close</button> <div class="search-container dark:text-white"> <div id="pagefind__search"></div> </div> </div> </dialog> </site-search>   </div>  <theme-toggle class="relative h-6 w-6"> <button id="toggle-theme" class="group" aria-label="Toggle Theme"> <span class="absolute left-0 right-0 top-0 opacity-0 group-aria-pressed:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-high" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path> <path d="M6.343 17.657l-1.414 1.414"></path> <path d="M6.343 6.343l-1.414 -1.414"></path> <path d="M17.657 6.343l1.414 -1.414"></path> <path d="M17.657 17.657l1.414 1.414"></path> <path d="M4 12h-2"></path> <path d="M12 4v-2"></path> <path d="M20 12h2"></path> <path d="M12 20v2"></path> </svg> </span> <span class="absolute left-0 right-0 top-0 opacity-0 group-aria-[pressed=false]:opacity-100"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path> </svg> </span> </button> </theme-toggle> <script>
+	const button = document.getElementById('toggle-theme')
+
+	function setButtonPresssed() {
+		const bodyThemeIsDark = document.documentElement.classList.contains('dark')
+		button.setAttribute('aria-pressed', String(bodyThemeIsDark))
+	}
+	setButtonPresssed()
+</script> <button id="astro-header-drawer-button" type="button" class="md:ml-6 md:hidden"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M4 6l16 0"></path> <path d="M4 12l16 0"></path> <path d="M4 18l16 0"></path> </svg> <span class="sr-only">Mostrar menu</span> </button> </div> </header>   <article class="min-w-full md:py-4 sm:max-w-none md:max-w-none"> <header class="mb-3 flex flex-col justify-center items-center gap-6"> <div class="flex flex-col gap-2"> <div class="flex items-center justify-center gap-x-1"> <p class="text-center text-sm text-opacity-50">
+Published <time class="text-sm font-bold text-opacity-60" datetime="2022-03-22T00:00:00.000Z"> Mar 21, 2022 </time> </p> <p class="text-center text-sm text-opacity-50 font-bold">
+- 49 min read </p> </div> <h1 class="text-center text-4xl md:text-6xl md:pb-2.5 font-semibold"> Guia Extenso de Programação </h1> </div> <div class="flex flex-wrap justify-center items-center gap-2 gap-y-4 md:gap-5"> <a href="/tags/hacking" aria-label="hacking"> <span class="bg-indigo-600 font-semibold text-white dark:bg-indigo-900 dark:text-white shadow text-sm w-fit px-2 py-1 md:px-5 md:py-2 rounded-full"> hacking </span> </a><a href="/tags/desenvolvimento" aria-label="desenvolvimento"> <span class="bg-indigo-600 font-semibold text-white dark:bg-indigo-900 dark:text-white shadow text-sm w-fit px-2 py-1 md:px-5 md:py-2 rounded-full"> desenvolvimento </span> </a><a href="/tags/resources" aria-label="resources"> <span class="bg-indigo-600 font-semibold text-white dark:bg-indigo-900 dark:text-white shadow text-sm w-fit px-2 py-1 md:px-5 md:py-2 rounded-full"> resources </span> </a><a href="/tags/design" aria-label="design"> <span class="bg-indigo-600 font-semibold text-white dark:bg-indigo-900 dark:text-white shadow text-sm w-fit px-2 py-1 md:px-5 md:py-2 rounded-full"> design </span> </a> </div>  </header> <img src="/assets/img/artebkg.webp" width="1000" height="500" loading="eager" class="rounded-md w-full max-h-[300px] md:max-h-[500px] my-8 object-cover" alt="img of Guia Extenso de Programação"> <hr> <div>  <div class="grid grid-cols-1 md:grid-cols-[20%_auto] gap-10 mt-8"> <!-- aside  --> <aside class="md:flex flex-col gap-8 hidden"> <div class="flex flex-col gap-2"> <span class="mb-1 font-bold text-2xl">Compartilhar</span> <ul class="flex gap-3 text-black dark:text-white"> <li> <a href="https://twitter.com/intent/tweet?text=Compartilhe este post https://artesdosul.github.io/post/2022-03-22-guia-extenso-de-programacao/" aria-label="Compartilhar no Twitter"><!--?xml version="1.0" ?--><svg height="32px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;"></path><path d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312" id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;"></path></g></svg></a> </li> <li> <a href="https://www.linkedin.com/shareArticle?mini=true&#38;url=https://artesdosul.github.io/post/2022-03-22-guia-extenso-de-programacao/" aria-label="Compartilhar no LinkedIn"> <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"></path><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"></rect><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"></path><circle cx="9" cy="8" fill="#FFFFFF" r="2"></circle></g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a> </li> </ul> </div> <div class="sticky top-24 self-start hidden md:block transition-all duration-200"> <nav class="max-w-xs dark:text-black"> <p class="font-bold mb-3 text-2xl dark:text-white">Index</p> <ul class="[text-wrap:balance] flex flex-col gap-1"> <li class="flex flex-col"> <a href="#-guia-extenso-de-programação" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Guia Extenso de Programação </a>  </li><li class="flex flex-col"> <a href="#-sites-para-estudar-programação" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para estudar programação </a>  </li><li class="flex flex-col"> <a href="#-sites-para-desenvolvedor-front-end" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para desenvolvedor front-end </a>  </li><li class="flex flex-col"> <a href="#-sites-para-aprender-a-programar-jogando" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para aprender a programar jogando </a>  </li><li class="flex flex-col"> <a href="#-templates-html-gratuitos" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Templates HTML gratuitos </a>  </li><li class="flex flex-col"> <a href="#-sites-para-aprender-ou-treinar-css" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para aprender ou treinar CSS </a>  </li><li class="flex flex-col"> <a href="#-geradores-de-css" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Geradores de CSS </a>  </li><li class="flex flex-col"> <a href="#-sites-para-buscar-vagas-remotas" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para buscar vagas remotas </a>  </li><li class="flex flex-col"> <a href="#-ferramentas-de-desenvolvimento" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Ferramentas de desenvolvimento: </a>  </li><li class="flex flex-col"> <a href="#-gerenciamento-de-projetos" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Gerenciamento de projetos </a>  </li><li class="flex flex-col"> <a href="#-ides-e-editores-de-código" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 IDEs e editores de código </a>  </li><li class="flex flex-col"> <a href="#-design-front-end" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Design Front-end </a>  </li><li class="flex flex-col"> <a href="#-linguagens-de-programação" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Linguagens de programação </a>  </li><li class="flex flex-col"> <a href="#-guia-de-estilo" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Guia de Estilo </a>  </li><li class="flex flex-col"> <a href="#-desafios" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Desafios </a>  </li><li class="flex flex-col"> <a href="#-ferramentas-para-desenvolvedores-web" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Ferramentas para desenvolvedores WEB </a>  </li><li class="flex flex-col"> <a href="#-ferramentas-para-buscar-projetos-open-source" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Ferramentas para buscar projetos open source </a>  </li><li class="flex flex-col"> <a href="#-melhores-distros-linux-para-programadores" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Melhores distros linux para programadores </a>  </li><li class="flex flex-col"> <a href="#-bibliotecas-javascript" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Bibliotecas JavaScript </a>  </li><li class="flex flex-col"> <a href="#-7-ferramentas-que-todo-dev-precisa-conhecer" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 7 Ferramentas que todo DEV precisa conhecer </a>  </li><li class="flex flex-col"> <a href="#-sites-para-praticar-uiux" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para praticar UI/UX </a>  </li><li class="flex flex-col"> <a href="#-ferramentas-para-hospedar-seu-site" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Ferramentas para hospedar seu site </a>  </li><li class="flex flex-col"> <a href="#-sites-para-inspirar-o-seu-desenvolvimento" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para inspirar o seu desenvolvimento </a>  </li><li class="flex flex-col"> <a href="#-banco-de-imagens-gratuitas" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Banco de imagens gratuitas </a>  </li><li class="flex flex-col"> <a href="#-aumentando-o-network" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Aumentando o network </a>  </li><li class="flex flex-col"> <a href="#-sites-para-baixar-e-encontrar-fontes" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para baixar e encontrar fontes </a>  </li><li class="flex flex-col"> <a href="#-sites-de-paletas-de-cores" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites de paletas de cores </a>  </li><li class="flex flex-col"> <a href="#-lista-de-ilustrações" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Lista de ilustrações </a>  </li><li class="flex flex-col"> <a href="#-sites-de-icones" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites de icones </a>  </li><li class="flex flex-col"> <a href="#-canais-do-youtube-com-conteúdo-grautito" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Canais do youtube com conteúdo grautito </a>  </li><li class="flex flex-col"> <a href="#-pentest" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Pentest </a>  </li><li class="flex flex-col"> <a href="#-blogs-e-podcasts" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Blogs e Podcasts </a>  </li><li class="flex flex-col"> <a href="#-business" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Business </a>  </li><li class="flex flex-col"> <a href="#-web-developer-roadmap" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Web Developer Roadmap </a>  </li><li class="flex flex-col"> <a href="#-extensões-para-o-seu-navegador" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Extensões para o seu navegador </a>  </li><li class="flex flex-col"> <a href="#-recomendação-de-livros" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Recomendação de livros </a>  </li><li class="flex flex-col"> <a href="#-apps-para-praticar-programação" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Apps para praticar programação </a>  </li><li class="flex flex-col"> <a href="#-sites-para-treinar-projetos-front-end" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para treinar projetos front-end </a>  </li><li class="flex flex-col"> <a href="#-sites-para-treinar-projetos-back-end" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para treinar projetos back-end </a>  </li><li class="flex flex-col"> <a href="#-sites-para-treinar-projetos-mobile" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Sites para treinar projetos mobile </a>  </li><li class="flex flex-col"> <a href="#-ideias-para-projeto" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Ideias para projeto </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-java" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Java </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-javascript" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de JavaScript </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-html-e-css" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de HTML e CSS </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-python" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Python </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-php" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de PHP </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-c" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de C# </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-c-1" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de C </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-c-2" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de C++ </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-kotlin" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Kotlin </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-swift" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Swift </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-go" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Go </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-ruby" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Ruby </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-react" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de React </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-react-native" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de React Native </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-angular" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Angular </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-vue" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Vue </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-svelte" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Svelte </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-flutter" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Flutter </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-jquery" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de jQuery </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-less" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Less </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-sass" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Sass </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-bootstrap" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Bootstrap </a>  </li><li class="flex flex-col"> <a href="#-cursos-de-git-e-github" class="bg-slate-200 dark:bg-slate-800 dark:hover:bg-indigo-400 hover:bg-indigo-300 hover:text-white py-1 px-4 dark:text-white rounded-full mb-2 first-letter:uppercase w-fit line-clamp-2"> 📚 Cursos de Git e Github </a>  </li> </ul> </nav> </div> </aside> <!-- post --> <article class="max-w-full w-full"> <div class="prose prose-lg md:prose-xl dark:prose-invert mb-12 min-w-full"> <h2 id="-guia-extenso-de-programação">📚 Guia Extenso de Programação</h2>
+<p><a href="#-sites-para-estudar-programa%C3%A7%C3%A3o">📚 Sites para estudar programação</a> <br>
+<a href="#-sites-para-desenvolvedor-front-end">📚 Sites para desenvolvedor front-end</a> <br>
+<a href="#-sites-para-aprender-a-programar-jogando">📚 Sites para aprender a programar jogando</a> <br>
+<a href="#-templates-html-gratuitos">📚 Templates HTML gratuitos</a> <br>
+<a href="#-sites-para-aprender-ou-treinar-css">📚 Sites para aprender ou treinar CSS</a> <br>
+<a href="#-geradores-de-css">📚 Geradores de CSS</a> <br>
+<a href="#-sites-para-buscar-vagas-remotas">📚 Sites para buscar vagas remotas</a> <br>
+<a href="#-ferramentas-de-desenvolvimento">📚 Ferramentas de desenvolvimento</a> <br>
+<a href="#-gerenciamento-de-projetos">📚 Gerenciamento de projetos</a> <br>
+<a href="#-ides-e-editores-de-c%C3%B3digo">📚 IDEs e editores de código</a> <br>
+<a href="#-design-front-end">📚 Design Front-end</a> <br>
+<a href="#-linguagens-de-programa%C3%A7%C3%A3o">📚 Linguagens de programação</a> <br>
+<a href="#-guia-de-estilo">📚 Guia de Estilo</a> <br>
+<a href="#-desafios">📚 Desafios</a> <br>
+<a href="#-ferramentas-para-desenvolvedores-web">📚 Ferramentas para desenvolvedores WEB</a> <br>
+<a href="#-ferramentas-para-buscar-projetos-open-source">📚 Ferramentas para buscar projetos open source</a> <br>
+<a href="#-melhores-distros-linux-para-programadores">📚 Melhores distros linux para programadores</a> <br>
+<a href="#-bibliotecas-javascript">📚 Bibliotecas JavaScript</a> <br>
+<a href="#-7-ferramentas-que-todo-dev-precisa-conhecer">📚 7 Ferramentas que todo DEV precisa conhecer</a> <br>
+<a href="#-sites-para-praticar-uiux">📚 Sites para praticar UI/UX</a> <br>
+<a href="#-ferramentas-para-hospedar-seu-site">📚 Ferramentas para hospedar seu site</a> <br>
+<a href="#-sites-para-inspirar-o-seu-desenvolvimento">📚 Sites para inspirar o seu desenvolvimento</a> <br>
+<a href="#-banco-de-imagens-gratuitas">📚 Banco de imagens gratuitas</a> <br>
+<a href="#-aumentando-o-network">📚 Aumentando o network</a> <br>
+<a href="#-sites-para-baixar-e-encontrar-fontes">📚 Sites para baixar e encontrar fontes</a> <br>
+<a href="#-sites-de-paletas-de-cores">📚 Sites de paletas de cores</a> <br>
+<a href="#-lista-de-ilustra%C3%A7%C3%B5es">📚 Lista de ilustrações</a> <br>
+<a href="#-sites-de-icones">📚 Sites de icones</a> <br>
+<a href="#-canais-do-youtube-com-conte%C3%BAdo-grautito">📚 Canais do youtube com conteúdo grautito</a> <br>
+<a href="#-pentest">📚 Pentest</a> <br>
+<a href="#-blogs-e-podcasts">📚 Blogs e Podcasts</a> <br>
+<a href="#-business">📚 Business</a> <br>
+<a href="#-web-developer-roadmap">📚 Web Developer Roadmap</a> <br>
+<a href="#-extens%C3%B5es-para-o-seu-navegador">📚 Extensões para o seu navegador</a> <br>
+<a href="#-recomenda%C3%A7%C3%A3o-de-livros">📚 Recomendação de livros</a> <br>
+<a href="#-apps-para-praticar-programa%C3%A7%C3%A3o">📚 Apps para praticar programação</a> <br>
+<a href="#-sites-para-treinar-projetos-front-end">📚 Sites para treinar projetos front-end</a> <br>
+<a href="#-sites-para-treinar-projetos-back-end">📚 Sites para treinar projetos back-end</a> <br>
+<a href="#-sites-para-treinar-projetos-mobile">📚 Sites para treinar projetos mobile</a> <br>
+<a href="#-ideias-para-projeto">📚 Ideias para projeto</a> <br>
+<a href="#-cursos-de-java">📚 Cursos de Java</a> <br>
+<a href="#-cursos-de-javascript">📚 Cursos de JavaScript</a> <br>
+<a href="#-cursos-de-html-e-css">📚 Cursos de HTML e CSS</a> <br>
+<a href="#-cursos-de-python">📚 Cursos de Python</a> <br>
+<a href="#-cursos-de-php">📚 Cursos de PHP</a> <br>
+<a href="#-cursos-de-c">📚 Cursos de C#</a> <br>
+<a href="#-cursos-de-c-1">📚 Cursos de C</a> <br>
+<a href="#-cursos-de-c-2">📚 Cursos de C++</a> <br>
+<a href="#-cursos-de-kotlin">📚 Cursos de Kotlin</a> <br>
+<a href="#-cursos-de-swift">📚 Cursos de Swift</a> <br>
+<a href="#-cursos-de-go">📚 Cursos de Go</a> <br>
+<a href="#-cursos-de-ruby">📚 Cursos de Ruby</a> <br>
+<a href="#-cursos-de-react">📚 Cursos de React</a> <br>
+<a href="#-cursos-de-react-native">📚 Cursos de React Native</a> <br>
+<a href="#-cursos-de-angular">📚 Cursos de Angular</a> <br>
+<a href="#-cursos-de-vue">📚 Cursos de Vue</a> <br>
+<a href="#-cursos-de-svelte">📚 Cursos de Svelte</a> <br>
+<a href="#-cursos-de-flutter">📚 Cursos de Flutter</a> <br>
+<a href="#-cursos-de-jquery">📚 Cursos de jQuery</a> <br>
+<a href="#-cursos-de-less">📚 Cursos de Less</a> <br>
+<a href="#-cursos-de-sass">📚 Cursos de Sass</a> <br>
+<a href="#-cursos-de-bootstrap">📚 Cursos de Bootstrap</a> <br>
+<a href="#-cursos-de-git-e-github">📚 Cursos de Git e Github</a> <br></p>
+<h2 id="-sites-para-estudar-programação">📚 Sites para estudar programação</h2>
+<p>🔖 <a href="https://rocketseat.com.br/">Rocketseat</a> - Cursos gratuitos sobre as tecnologias mais quentes do mercado <br>
+🔖 <a href="http://digitalinnovation.one/">Digital Innovation One</a> - Plataforma de ensino gratuita que desenvolve e conecta talentos <br>
+🔖 <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a> - Cursos básicos gratuitos para iniciantes <br>
+🔖 <a href="https://www.origamid.com/">Origamid</a> - Cursos gratuitos e pagos paras desenvolver suas habilidades na área de UX &#x26; UI Design e desenvolvimento front-end <br>
+🔖 <a href="https://www.udemy.com/courses/development/?price=price-free&#x26;sort=popularity">Udemy Development</a> - +1.400 cursos de desenvolvimento gratuitos <br>
+🔖 <a href="https://www.udemy.com/courses/it-and-software/?price=price-free&#x26;lang=pt&#x26;sort=popularity">Udemy IT</a> - +100 cursos de TI e softwares <br>
+🔖 <a href="https://www.hackerrank.com/">HackerRank</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://www.hackerearth.com/">Hackereath</a> - Site para desenvolver suas hábilidades de código. <br>
+🔖 <a href="https://coderbyte.com/">CoderByte</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://www.codechef.com/">Coderchef</a> - Site para Estuda sobre programação, código e afins. <br>
+🔖 <a href="https://w3resource.com">W3Resources</a> - Exercícios online para praticar de inúmeras linguagens <br>
+🔖 <a href="https://www.coursera.org/">Coursera</a> - Cursos gratuitos com conteúdos conceituados <br>
+🔖 <a href="https://codepen.io/">CodePen</a> - Rede social de desenvolvedores front-end <br>
+🔖 <a href="https://www.codementor.io/">Codementor</a> - Site para praticar e aprender a desenvolver suas skills como desenvolvedor <br>
+🔖 <a href="https://www.freecodecamp.org/">FreeCodeCamp</a> - Aprenda como codificar gratuitamente e ganhe portfólio ajudando organizações sem fins lucrativos <br>
+🔖 <a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a> - Plataforma para desenvolver suas habilidade em diversas áreas da programação <br>
+🔖 <a href="https://www.w3schools.com">W3Schools</a> - Inúmeras documentações explicadas de forma intuitiva <br>
+🔖 <a href="https://pt.khanacademy.org/">Khan Academy</a> - Plataforma de estudos conceituada sobre aprendizado gamificado <br>
+🔖 <a href="https://www.udacity.com/">Udacity</a> - Aprendizado tecnológico com conteúdos mais quentes do mercado (IA, data science, cloud computing, etc) <br>
+🔖 <a href="https://www.sololearn.com/">SoloLearn</a> - Aprenda a programar gratuitamente pelo celular ou web <br>
+🔖 <a href="https://www.edx.org/">edX</a> - Aprenda com os melhores, cursos de ciência da computação e ciência de dados ministradas por docentes das maiores e melhores universidades de todo o mundo <br>
+🔖 <a href="https://teamtreehouse.com/">Treehouse</a> - Cursos para desenvolvedores e aprimomaromento de portfólio <br>
+🔖 <a href="https://www.tutorialspoint.com/codingground.htm">Coding Ground</a> - Várias plat - ormas de codificação online <br>
+🔖 <a href="https://www.theodinproject.com/">TheOdinProject</a> - Site para aprender programação e desenvolvimento por meio de cursos <br>
+🔖 <a href="https://frontendmasters.com/">FrontEndMaster</a> - Site para aprender programação e desenvolvimento por meio de cursos <br>
+🔖 <a href="https://balta.io">Balta.io</a> - Site para aprender programação e desenvolvimento por meio de cursos <br>
+🔖 <a href="https://frontendmasters.com/">FrontEndMaster</a> - Site para aprender programação e desenvolvimento por meio de cursos <br>
+🔖 <a href="https://www.datascienceacademy.com.br/">DataScienceAcademy</a> - Site com diversos cursos gratuitos para inciar no mundo de Python &#x26; DataScience <br>
+🔖 <a href="https://www.fiap.com.br/fiapx">FIAPx</a> - Site com diversos cursos gratuitos na área da tecnologia <br>
+🔖 <a href="https://educacao-executiva.fgv.br/busca?keys=&#x26;curso_tipo%5B%5D=517&#x26;modalidade%5B%5D=45&#x26;area-conhec%5B%5D=571&#x26;tipo_invest%5B1%5D=1&#x26;estados=26&#x26;cidades=251&#x26;unidade=All&#x26;sort_by=field_oferta_data_inicio_turma_value&#x26;items_per_page=10&#x26;mail_address_me=">FGV</a> - Site com diversos cursos gratuitos na área da tecnologia <br>
+🔖 <a href="https://www.codecademy.com/">CodeAcademy</a> - Site com diversos cursos gratuitos de programação (EN) <br>
+🔖 <a href="https://www.kaggle.com/learn">Kaggle</a> - Site com diversos cursos gratuitos de Python &#x26; DataScience (EN) <br></p>
+<h2 id="-sites-para-desenvolvedor-front-end">📚 Sites para desenvolvedor front-end</h2>
+<p>🔖 <a href="https://textpop3d.web.app/">Text Pop 3D</a> - Cria efeitos de texto 3D <br>
+🔖 <a href="https://shapedividers.com">Shape Dividers</a> - Gera divisores de formas verticais, responsivos, e animados facilmente com este gerador de divisores de formas SVG <br>
+🔖 <a href="https://couleur.io">Couleur</a> - Uma ferramenta de cores simples para ajudá-lo a encontrar uma boa paleta de cores para seu projeto da web) <br>
+🔖 <a href="https://baseline.is/tools/css-photo-filters/">Baseline CSS Filters</a> - 36 Belos filtros de fotos, com edição simples e CSS para copiar) <br>
+🔖 <a href="https://uideck.com">UI Deck</a> - Modelo de página de destino HTML gratuitos e premium, temas de bootstrap, modelos de React, modelos de Tailwind, modelos de site HTML, e kits de interface de usúario) <br>
+🔖 <a href="https://naevner.com">Naevner</a> - Descrição de cores em linguagem natural, gerador de códigos em cores hexadecimais) <br></p>
+<h2 id="-sites-para-aprender-a-programar-jogando">📚 Sites para aprender a programar jogando</h2>
+<p>🔖 <a href="https://br.codecombat.com">Code Combat</a> - Site  para aprender conceitos e linguagens de programação enquanto joga <br>
+🔖 <a href="https://checkio.org">CheckiO</a> - CheckiO é um site que tem como objetivo ensinar programação, mas todos os desafios de codificação devem ser concluídos em Python. <br>
+🔖 <a href="https://www.codewars.com/">CodeWars</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://schemaverse.com">Schemaverse</a> - O Schemaverse é um jogo de estratégia baseado no espaço implementado inteiramente em um banco de dados PostgreSQL. <br>
+🔖 <a href="https://codemonkey.com">Code Monkey</a> - CodeMonkey é um ambiente de codificação de computador educacional que permite que iniciantes aprendam conceitos e linguagens de programação de computador. <br>
+🔖 <a href="https://www.codingame.com/">Coding Games</a> - Desafios Programação Back-end com foco em temática de jogos. IDE integrada <br>
+🔖 <a href="https://edabit.com/">Edabit</a> - Desafios de Programação Back-end. IDE integrada</p>
+<h2 id="-templates-html-gratuitos">📚 Templates HTML gratuitos</h2>
+<p>🔖 <a href="https://bootstrapmade.com/">Bootstrap Made</a> - Temas HTML5 + CSS3 gratuitos <br>
+🔖 <a href="https://w3layouts.com">W3 Layouts</a> - Temas HTML5 + CSS3 gratuitos <br>
+🔖 <a href="https://onepagelove.com">One Page Love</a> - Temas HTML5 + CSS3 gratuitos <br>
+🔖 <a href="https://themewagon.com/theme_tag/free/">ThemeWagon Freebies</a> - Temas HTML5 + CSS3 gratuitos <br></p>
+<h2 id="-sites-para-aprender-ou-treinar-css">📚 Sites para aprender ou treinar CSS</h2>
+<p>🔖 <a href="http://cssgridgarden.com/">CSS Grid Garden</a> - Ferramenta online para estudos de Grid (CSS) <br>
+🔖 <a href="http://flukeout.github.io/">Flukeout</a> - Aplicação online para aprender CSS de forma prática <br>
+🔖 <a href="https://flexboxfroggy.com/">Flex Box Froggy</a> - Desafio de Programação Front-end focados na propriedade flex box. IDE integrada. <br>
+🔖 <a href="http://www.flexboxdefense.com/">Flexbox Defense</a> - Aprenda flexbox com um game <br>
+🔖 <a href="https://100dayscss.com">100 Dias de CSS</a> - 100 Desafios de CSS <br>
+🔖 <a href="https://cssbattle.dev/">CSS Battle</a> - Batalhas temporárias de CSS. IDE integrada <br>
+🔖 <a href="https://css-tricks.com/guides/">CSS Tricks</a> - Site para treinar <br>
+🔖 <a href="https://csshell.dev/">CSS Hell</a> - Coleção de erros comuns de CSS e como corrigi-los <br></p>
+<h2 id="-geradores-de-css">📚 Geradores de CSS</h2>
+<p>🔖 <a href="https://neumorphism.io/">Neumorphism</a> - Tendência aplicação border-radius <br>
+🔖 <a href="https://9elements.github.io/fancy-border-radius/">Fancy Border-Radius</a> - Gerador de formas com border-radius no CSS <br>
+🔖 <a href="https://waitanimate.wstone.io">WAIT! Animate</a> - Gerador de animações de CSS <br>
+🔖 <a href="https://www.bestcssbuttongenerator.com">Best CSS Button Generator</a> - Gerador de butões do CSS <br>
+🔖 <a href="https://html-css-js.com/css/generator/">HTML CSS JS Generator</a> - Gerador de HTML/CSS/JS  <br>
+🔖 <a href="https://bennettfeely.com/clippy/">BennettFeely</a> - Criador de clip-path <br></p>
+<h2 id="-sites-para-buscar-vagas-remotas">📚 Sites para buscar vagas remotas</h2>
+<p>🔖 <a href="https://remoteok.io">Remote OK</a> <br>
+🔖 <a href="https://hired.com">Hired</a> <br>
+🔖 <a href="https://bergamot.io">Bergamot</a> <br>
+🔖 <a href="https://justremote.co">JustRemote</a> <br>
+🔖 <a href="https://workingnomads.co">Working Nomads</a> <br>
+🔖 <a href="https://coodesh.com/">Coodesh</a> <br>
+🔖 <a href="https://havagas.pt/">Há Vagas</a> <br></p>
+<h2 id="-ferramentas-de-desenvolvimento">📚 Ferramentas de desenvolvimento:</h2>
+<p>🔖 <a href="https://internxt.com/">Internxt</a> - Internxt Drive é um armazenamento de arquivos de conhecimento zero serviço baseado na melhor privacidade e segurança da classe <br>
+🔖 <a href="https://motion.dev/">Motion</a> - Uma nova biblioteca de animação, construída na API Web Animations para o menor tamanho de arquivo e o desempenho mais rápido. <br>
+🔖 <a href="https://hokusai.app/">Hokusai</a> - Conteúdo sobre NFT’s <br>
+🔖 <a href="https://hiddentools.dev">Hidden Tools</a> - Ampla coleção de ferramentas feitas pela comunidade disponiveís para uso <br>
+🔖 <a href="https://devhints.io">Dev Hints</a> - Coleção de cheatsheets <br>
+🔖 <a href="https://bundlephobia.com">Bundlephobia</a> - Descubra o custo de adicionar um pacote npm ao seu pacote <br>
+🔖 <a href="https://refactoring.guru/pt-br/design-patterns">Refactoring Guru</a> - Padrões de projetos “Design patterns” <br>
+🔖 <a href="https://devdocs.io/">DevDocs</a> - DevDocs combina várias documentações de API em uma interface rápida, organizada e pesquisável.  <br>
+🔖 <a href="https://www.freeformatter.com/html-validator.html">HTML Validator</a> - Validação de arquivo HTML <br>
+🔖 <a href="https://html5test.com/index.html">HTML 5 Test</a> - Testa arquivos HTML5 <br>
+🔖 <a href="https://imageslidermaker.com/v2">Image Slide Maker</a> - Ferramenta de geração gratuita do Image Slider Maker <br>
+🔖 <a href="https://dotnetfiddle.net/">.NET Fiddle</a> - Codifique e compartilhe projetos C# online <br>
+🔖 <a href="http://www.1pagerank.com/">1PageRank</a> - Rankeie seu site nos mecanismos de buscas e aprenda com a concorrência <br>
+🔖 <a href="https://any-api.com/">Any API</a> - Diretório gratuito com APIs públicas <br>
+🔖 <a href="http://autoprefixer.github.io/">Autoprefixer CSS</a> - Transpile código CSS atual para código CSS com maior cobertura de navegadores antigos <br>
+🔖 <a href="https://browserdiet.com/pt/">Browser diet</a> - Guia de performance para desenvolvimento web <br>
+🔖 <a href="https://www.caniemail.com/">Can I email…</a> - Descubra o que do HTML e CSS pode ser usado em estruturas de e-mail <br>
+🔖 <a href="https://caniuse.com/">Can I use…</a> - Descubra se você pode usar determinadas tecnologias web <br>
+🔖 <a href="https://www.cloudflare.com/pt-br/">CloudFlare</a> - CDN grátis <br>
+🔖 <a href="https://cmder.net/">CMDER</a> - Linha de comando simples, consegue rodar comands bash e Shell, alternativa ao Hyper <br>
+🔖 <a href="https://codepen.io/">CodePen</a> - Rede social de desenvolvedores front-end <br>
+🔖 <a href="https://codesandbox.io/">CodeSandbox</a> - Caixa de área para desenvolvedores web <br>
+🔖 <a href="https://www.connectionstrings.com/">Connection Strings</a> - Site com strings de conexão para diversas plataformas <br>
+🔖 <a href="https://www.cleancss.com/css-beautify/">CSS Formatter</a> - Retire a minificação e formate o código CSS <br>
+🔖 <a href="https://cssminifier.com/">CSS Minifier</a> - Conversor de código CSS para CSS minificado <br>
+🔖 <a href="https://jigsaw.w3.org/css-validator/">CSS W3.org</a> - Validar CSS <br>
+🔖 <a href="https://www.debuggex.com">Debuggex: Online visual regex tester. JavaScript, Python, and PCRE</a> - Construa e teste expressões regulares <br>
+🔖 <a href="https://docsify.js.org/#/">docsify</a> - Crie docs incríveis de projetos <br>
+🔖 <a href="https://easyforms.vercel.app/">EasyForms</a> - API open source que permite criação formulários de contato com HTML puro <br>
+🔖 <a href="https://pandao.github.io/editor.md/en.html">Editor.md</a> - Editor Markdown online e open source <br>
+🔖 <a href="https://es6console.com/">ES6console</a> - Compilador de JS para Ecmascript <br>
+🔖 <a href="https://firebase.google.com/?hl=pt-BR">Firebase</a> - Desenvolva aplicativos mobile e web incríveis este serviço da Google <br>
+🔖 <a href="https://www.mozilla.org/pt-BR/firefox/developer/">Firefox Developer Edition</a> - Navegador web para desenvolvedores web <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=pt-BR">Full Page Screen Capture</a> - Capture páginas inteiras com uma extensão para Chrome <br>
+🔖 <a href="http://www.generatedata.com/">generatedata</a> - Gerador de dados para testes <br>
+🔖 <a href="https://gitexplorer.com/">Git Command Explorer</a> - Encontre os comandos certos que você precisa sem vasculhar a web <br>
+🔖 <a href="https://gist.github.com/">GitHub Gist</a> - Faça pequenas anotações e pequenos códigos no GitHub Gist <br>
+🔖 <a href="https://transparencyreport.google.com/safe-browsing/search">Google Transparency Report</a> - Verificar segurança de um site <br>
+🔖 <a href="https://website.grader.com/">Grader</a> - Avaliação de site <br>
+🔖 <a href="http://howtocenterincss.com/">How to Center in CSS</a> - Gerador de código para divs ou textos que necessitam de centralização <br>
+🔖 <a href="https://hyper.is/">Hyper</a> - Linha de comando simples, útil e gratuito <br>
+🔖 <a href="https://www.joomla.org/">Joomla</a> - CMS gratuita <br>
+🔖 <a href="https://jsbin.com/">JS Bin</a> - Codifique e compartilhe projetos HTML, CSS e JS <br>
+🔖 <a href="https://jscompress.com/">JSCompress</a> - Conversor de código JS para JS minificado <br>
+🔖 <a href="https://jsoneditoronline.org/">JSON Editor Online</a> - Ferramenta para visualizar e editar arquivos JSON <br>
+🔖 <a href="https://jsfiddle.net/">JSFiddle</a> - Codifique projetos JS online <br>
+🔖 <a href="https://jsonlint.com/">JSONLint</a> - Ferramenta para validar seu JSON <br>
+🔖 <a href="https://app.json-generator.com/">JSON Generator</a> - Ferramenta para gerar JSON com base em template <br>
+🔖 <a href="https://tools.keycdn.com/">KeyCDN Tools</a> - Faça uma análise das suas aplicações web <br>
+🔖 <a href="https://liveweave.com/">Liveweave</a> - Codifique projetos HTML, CSS e JS <br>
+🔖 <a href="https://br.lipsum.com/">Lorem Ipsum</a> - Gerador de texto fictício <br>
+🔖 <a href="https://www.mapbox.com/">Mapbox</a> - Mapas e localização para desenvolvedores <br>
+🔖 <a href="https://memcached.org/">Memcached</a> - Melhore o desempenho de seu website com cache <br>
+🔖 <a href="https://www.mockaroo.com/">Mockaroo</a> - Gerador de dados para testes <br>
+🔖 <a href="https://mussumipsum.com/">Mussum Ipsum</a> - Gerador de texto fictício <br>
+🔖 <a href="https://www.npmjs.com/package/http-server">NPM HTTP-Server</a> - Rode um servidor local com um pacote npm <br>
+🔖 <a href="https://danieldeev.github.io/password-generator/">Password Generator</a> - Um gerador de senhas simples com foco na segurança <br>
+🔖 <a href="https://www.onlinegdb.com/online_c_compiler">Online C Compiler</a> - Ferramenta para compilar C online <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Dev Tools</a> - Ferramenta para debug do ReactJS <br>
+🔖 <a href="https://react-hook-form.com/">React Hook Form</a> - Valide seus formulários de projetos que utilizam React ou React Native <br>
+🔖 <a href="http://dbis-uibk.github.io/relax/index.htm">RelaX</a> - Crie expressões algébricas relacionais de consultas <br>
+🔖 <a href="http://www.codeorama.com/responsive/">Responsive</a> - Teste a responsividade do seu site <br>
+🔖 <a href="https://shields.io/">Shields.io</a> - Gerador de badges para markdown <br>
+🔖 <a href="https://www.ssllabs.com/ssltest/">SSL Server Test</a> - Testar SSL de sites <br>
+🔖 <a href="https://streamyard.com/">StreamYard</a> - O StreamYard é um estúdio de transmissões ao vivo no seu navegador <br>
+🔖 <a href="https://swagger.io/">Swagger</a> - Ferramenta para projetar, construir, documentar e usar serviços da Web RESTful <br>
+🔖 <a href="https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm">Tabela ASCII</a> - Tabela completa com caracteres ASCII <br>
+🔖 <a href="https://telegram.org/">Telegram</a> - Mensageiro criptografado <br>
+🔖 <a href="https://tinyjpg.com/">TinyJPG</a> - Comprima imagem do formato JPG <br>
+🔖 <a href="https://tinypng.com/">TinyPNG</a> - Comprima imagem do formato PNG <br>
+🔖 <a href="https://creately.com/">Creately</a> - Crie e altere lindos diagramas em tempo real com a sua equipe <br>
+🔖 <a href="https://carbon.now.sh/">Carbon</a> - Crie Snippets de codigo clean e bonitos <br>
+🔖 <a href="https://dbdiagram.io/home">DbDiagram</a> - Crie elegrantes diagramas de banco de dados e gere script ddl <br>
+🔖 <a href="https://ondras.zarovi.cz/sql/demo/">SqlDesigner</a> - Crie Diagramas de banco de dados de maneira rapida e gere script ddl <br>
+🔖 <a href="https://validator.w3.org/">W3.org</a> - Validar HTML <br>
+🔖 <a href="https://wakatime.com/">WakaTime</a> - Gerencie seu tempo de desenvolvimento <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=pt-BR">Web Developer</a> - Extensão para Chrome com multi-funções <br>
+🔖 <a href="https://web.dev/">Web.dev</a> - Testar website (criado pela Google) <br>
+🔖 <a href="https://www.webpagetest.org/">WebPageTest</a> - Testar perfomance de site <br>
+🔖 <a href="https://wedsites.com/">Wedsites</a> - Liste suas atividades e acompanhe seu progresso <br>
+🔖 <a href="https://wordpress.org/">WordPress</a> - Criação de blogs <br>
+🔖 <a href="https://www.xml-sitemaps.com/">XML Sitemaps</a> - Criador de sitemaps.xml <br></p>
+<h2 id="-gerenciamento-de-projetos">📚 Gerenciamento de projetos</h2>
+<p>🔖 <a href="https://asana.com/pt">Asana</a> - Gerenciamento de trabalho <br>
+🔖 <a href="https://azure.microsoft.com/services/devops/">Azure DevOps</a> - Gerenciamento de projetos focados em planejamento, colaboração e entregas <br>
+🔖 <a href="http://dontpad.com/">Dontpad</a> - Abas de anotações sem necessidade de cadastro <br>
+🔖 <a href="https://www.draw.io/">Draw.io</a> - Desenvolva mapas mentais incríveis <br>
+🔖 <a href="https://evernote.com/intl/pt-br">Evernote</a> - Notas autoadesivas na nuvem <br>
+🔖 <a href="https://keep.google.com/">Google Keep</a> - Notas autoadesivas na nuvem <br>
+🔖 <a href="https://www.atlassian.com/software/jira">Jira</a> - Gerenciador de projetos e monitoramento de tarefas <br>
+🔖 <a href="https://lucidchart.com">lucidchart</a> - Documentação e gerenciamento de tarefas em equipe <br>
+🔖 <a href="https://miro.com/">Miro</a> - Quadro branco colaborativo em tempo real <br>
+🔖 <a href="https://www.notion.so/">Notion</a> - Notas autoadesivas na nuvem e gerenciamento de projetos online <br>
+🔖 <a href="https://www.pipefy.com/">Pipefy</a> - Gerenciador de projetos (PMS) <br>
+🔖 <a href="https://www.protectedtext.com/">Protectedtext</a> - Abas de anotações criptografadas sem necessidade de cadastro <br>
+🔖 <a href="https://slack.com/">Slack</a> - Gerenciamento de projetos com equipes <br>
+🔖 <a href="https://taiga.io/">Taiga</a> - Controle de projetos com equipes através de quadros <br>
+🔖 <a href="https://culturedcode.com/things/">Things</a> - Gerenciador de tarefas pessoais <br>
+🔖 <a href="https://todoist.com/app?lang=pt_BR">Todoist</a> - Gerenciamento de projetos pessoais e em equipe <br>
+🔖 <a href="https://www.trello.com/">Trello</a> - Gerencie seus projetos com quadros <br>
+🔖 <a href="https://www.jetbrains.com/youtrack/">YouTrack</a> - Gerenciador de projetos online <br></p>
+<h2 id="-ides-e-editores-de-código">📚 IDEs e editores de código</h2>
+<p>🔖 <a href="https://atom.io/">Atom</a> - Editor de código do GitHub <br>
+🔖 <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> - Editor de código para Mac OS <br>
+🔖 <a href="https://www.beekeeperstudio.io/">Beekeeper Studio</a> - Editor de código SQL e gerenciador de banco de dados <br>
+🔖 <a href="http://brackets.io/">Brackets</a> - Editor de código da Adobe <br>
+🔖 <a href="http://www.codeblocks.org/">CodeBlocks</a> - IDE para C e C++ <br>
+🔖 <a href="https://sourceforge.net/projects/orwelldevcpp/">Dev C++</a> - IDE Dev C++ para liguagem C/C++ <br>
+🔖 <a href="https://www.eclipse.org/downloads/">Eclipse</a> - IDE software livre da IBM <br>
+🔖 <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> - IDE da Jetbrains <br>
+🔖 <a href="https://neovim.io/">NeoVim</a> - Editor de código via terminal <br>
+🔖 <a href="https://netbeans.org/">NetBeans</a> - IDE gratuita da Apache <br>
+🔖 <a href="https://notepad-plus-plus.org/">Notepad++</a> - Editor de código raíz <br>
+🔖 <a href="https://www.jetbrains.com/phpstorm/">PHPStorm</a> - IDE específica para PHP <br>
+🔖 <a href="https://www.jetbrains.com/pycharm/">PyCharm</a> - IDE específica para Python <br>
+🔖 <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio</a> - IDE específica para a Linguagem R e suas variantes <br>
+🔖 <a href="https://stackedit.io/">StackEdit</a> - Editor de markdown online <br>
+🔖 <a href="https://www.sublimetext.com/">Sublime Text</a> - Sua licença expirou <br>
+🔖 <a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio</a> - IDE da Microsoft <br>
+🔖 <a href="https://code.visualstudio.com/">Visual Studio Code</a> - Editor de código da Microsoft <br></p>
+<h2 id="-design-front-end">📚 Design Front-end</h2>
+<p>🔖 <a href="https://www.adobe.com/br/products/xd.html">Adobe XD</a> - Software de design para projetos <br>
+🔖 <a href="https://www.awwwards.com">Awwwards</a> - Inspiração para interfaces e templates com o que há de mais novo em questão de design de interfaces <br>
+🔖 <a href="https://www.getbootstrap.com/">Bootstrap</a> - Framework CSS <br>
+🔖 <a href="https://buildbootstrap.com/">BuildBootstrap</a> - Crie layout responsivo para o framework Bootstrap na versão 3 e 4 <br>
+🔖 <a href="https://bulma.io/">Bulma CSS</a> - Estrutura CSS gratuita baseada no Flexbox <br>
+🔖 <a href="https://www.canva.com/">Canva</a> - Ferramenta de design online <br>
+🔖 <a href="https://www.chartjs.org/">Chart.js</a> - Biblioteca JavaScript de criação de gráficos <br>
+🔖 <a href="https://www.colorsandfonts.com/">Colors and Fonts</a> - Apresenta paletas de cores e tipografia <br>
+🔖 <a href="https://coolors.co/">Coolors</a> - Palhetas de cores e monte a sua própria <br>
+🔖 <a href="https://colors.lol">Colors lol</a> - Repositório de paletas de cores <br>
+🔖 <a href="https://cruip.com/">Cruip</a> - Recursos de templates <br>
+🔖 <a href="https://emilkowalski.github.io/css-effects-snippets/">CSS Effects Snippets</a> - Animações CSS prontas para usar <br>
+🔖 <a href="https://csslayout.io/">CSS Layout</a> - Layouts e padrões populares feitos com CSS <br>
+🔖 <a href="https://cssreference.io/">CSS Reference</a> - Guia visual para CSS com referencias de uso <br>
+🔖 <a href="https://css-tricks.com/">CSS Tricks</a> - Blog com vários tutoriais frontend <br>
+🔖 <a href="https://www.devsamples.com/">DevSamples</a> - Exemplos de códigos fáceis de usar para HTML, CSS e JavaScript <br>
+🔖 <a href="https://excalidraw.com">Excalidraw</a> - Desenhe diagramas como se tivessem sido feitos a mão <br>
+🔖 <a href="https://9elements.github.io/fancy-border-radius/">Fancy Border-Radius</a> - Gerador de formas com border-radius no CSS <br>
+🔖 <a href="https://www.figma.com/">Figma</a> - Desenhe projetos online de apps, softwares e websites <br>
+🔖 <a href="http://www.flatuicolorpicker.com/">Flatui Color Picker</a> - Paleta de cores interativa de forma harmonizar o front <br>
+🔖 <a href="https://fontflipper.com/">Font Flipper</a> - Ferramenta para testar fontes <br>
+🔖 <a href="https://fontpair.co/">FontPair</a> - Ferramenta para combinações de fontes <br>
+🔖 <a href="https://fontspark.app/">FontSpark</a> - Gera fontes aleatórias de uma lista de fontes famosas usadas na web <br>
+🔖 <a href="https://foundation.zurb.com/">Foundation</a> - Framework responsivo <br>
+🔖 <a href="https://www.framer.com/">Framer</a> - Ferramenta de criação de interfaces interativas <br>
+🔖 <a href="https://freefrontend.com/">FreeFrontEnd</a> - Exemplos de códigos, tutoriais e artigos de HTML, CSS, Javascript (Angular, JQuery, React, Vue) <br>
+🔖 <a href="https://www.designer.io">Gravit Designer</a> - Ferramenta de design online com suporte a ilustração vetorial <br>
+🔖 <a href="https://grid.layoutit.com/">Grid Layoutit</a> - Gerador de grid para código CSS <br>
+🔖 <a href="https://htmldom.dev/">HTML DOM</a> - Gerenciar o DOM HTML com JavaScript vanilla <br>
+🔖 <a href="https://interfacer.xyz/">Interfacer</a> - Recursos para criação de interfaces <br>
+🔖 <a href="https://interfaces.pro/">Interfaces.pro</a> - Inspiração para interfaces <br>
+🔖 <a href="https://www.invisionapp.com/">Invision</a> - Software de design para projetos <br>
+🔖 <a href="https://lottiefiles.com/">Lottie</a> - Animações em after effects via json <br>
+🔖 <a href="https://github.com/OfficialMarinho/luna">Luna</a> - Framework CSS brasileiro <br>
+🔖 <a href="https://material-ui.com/">Material-UI</a> - Um framework de interface de usuário para React <br>
+🔖 <a href="https://mockup.io/about/">Mockup</a> - Visualize e colabore no design de aplicativos para dispositivos móveis <br>
+🔖 <a href="https://nostalgic-css.github.io/NES.css/">Nes.css</a> - Framework CSS estilo NES <br>
+🔖 <a href="https://neumorphism.io/">Neumorphism</a> - Tendência aplicação border-radius <br>
+🔖 <a href="https://necolas.github.io/normalize.css/">Normalize CSS</a> - Normaliza estruturas entre navegadores <br>
+🔖 <a href="https://www.pixilart.com/draw">Pixilart</a> - Desenhe pixel arts online <br>
+🔖 <a href="https://pixlr.com/br/">Pixlr</a> - Conjunto de ferramentas e utilitários de edição de imagem baseado em nuvem <br>
+🔖 <a href="http://psd-to-css-shadows.com/">PSD-To-CSS-Shadow</a> - Gera o script para uma sombra (box-shadow &#x26; text-shadow) no CSS baseado nas configurações de sombra no Photoshop <br>
+🔖 <a href="https://purecss.io/">Pure.css</a> - Framework CSS responsivo <br>
+🔖 <a href="https://www.remove.bg/">Remove.bg</a> - Remove fundos de imagens automaticamente <br>
+🔖 <a href="https://www.sketch.com/">Sketch</a> - Desenvolvimento de layouts em alta qualidade <br>
+🔖 <a href="https://squoosh.app/">Squoosh.app</a> - Compressor de imagens e comparador, via navegador <br>
+🔖 <a href="https://sweetalert2.github.io/">SweetAlert2</a> - Biblioteca JavaScript de alertas responsivos e customizáveis <br>
+🔖 <a href="https://tailwindcss.com/">Tailwind CSS</a> - Framework de estilo CSS <br>
+🔖 <a href="https://uigradients.com/">UI Gradients</a> - UI gradientes para utilizar <br>
+🔖 <a href="https://www.vectorizer.io/">Vectorizer</a> - Converta imagens como PNGs, BMPs e JPEGs em gráficos vetoriais ​​(SVG, EPS, DXF) <br>
+🔖 <a href="https://whimsical.com/">Whimsical</a> - Flowchart, Wireframe, Sticky Notes e Mind Map <br>
+🔖 <a href="http://www.xiconeditor.com/">X-Icon Editor</a> - Gerador de favicon com alta resolução a partir de imagens <br></p>
+<h2 id="-linguagens-de-programação">📚 Linguagens de programação</h2>
+<p>🔖 <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/">C#</a> - Linguagem de programação baseada no C++ <br>
+🔖 <a href="https://clojure.org/">Clojure</a> - Linguagem de programação funcional (muito utilizada para IAs) <br>
+🔖 <a href="https://dart.dev/">Dart</a> - Linguagem de script voltada à web desenvolvida pela Google, utilizada no Flutter <br>
+🔖 <a href="https://elixir-lang.org/">Elixir</a> - Linguagem de programação funcional executada na máquina virutal Erlang <br>
+🔖 <a href="https://docs.microsoft.com/pt-br/dotnet/fsharp/">F#</a> - Linguagem de programação orientada a objetos e funcional <br>
+🔖 <a href="https://www.fortran90.org/">Fortran</a> - Linguagem de programação desenvolvida pela IBM, usado na ciência da computação e análises numéricas <br>
+🔖 <a href="https://golang.org/">Go</a> - A linguagem de programação Go é um projeto de código aberto para tornar os programadores mais produtivos <br>
+🔖 <a href="https://www.haskell.org/">Haskell</a> - Linguagem de programação puramente funcional e estaticamente tipada <br>
+🔖 <a href="https://www.java.com/pt_BR/">Java</a> - Linguagem de programação tipada, orientada a objetos e de alta performance <br>
+🔖 <a href="http://brasil.js.org">JavaScript</a> - Constante evolução e crescimento no mercado <br>
+🔖 <a href="https://julialang.org/">Julia</a> - Linguagem de programação de código aberto e alto desempenho para computação técnica <br>
+🔖 <a href="https://kotlinlang.org/">Kotlin</a> - Linguagem de programação multiplataforma, orientada a objetos compila para a MVJ <br>
+🔖 <a href="https://www.lua.org/portugues.html">Lua</a> - Linguagem de programação desenvolvida no Brasil, permite programação procedural e POO <br>
+🔖 <a href="https://www.mathworks.com/help/matlab/">MatLab</a> -Linguagem de programação de alto nível com foco em cálculos  e construção de gráficos <br>
+🔖 <a href="https://docs.freepascal.org/">Pascal</a> - Linguagem de programação imperativa, estruturada e orientada à objetos <br>
+🔖 <a href="https://www.perl.org/">Perl</a> - Linguagem de programação multiplataforma e dinâmica <br>
+🔖 <a href="https://www.php.net/">PHP</a> - A linguagem de programação dominante na web <br>
+🔖 <a href="https://www.python.org/">Python</a> - Muito indicada para projetos de dados, inteligência artificial e chatbot <br>
+🔖 <a href="https://cran.r-project.org/">R</a> - Linguagem de programação com foco em matemática, estatística, ciência de dados e aprendizagem de máquina <br>
+🔖 <a href="https://www.ruby-lang.org/pt/">Ruby</a> - Linguagem de programação de multiparadigma e tipagem dinâmica <br>
+🔖 <a href="https://www.rust-lang.org/pt-BR/">Rust</a> - Linguagem para sistemas rápidos, concorrentes e seguros <br>
+🔖 <a href="https://www.apple.com/br/swift/">Swift</a> - Criada pela Apple para principalmente desenvolvimento de apps para iPhone <br>
+🔖 <a href="https://www.scala-lang.org/">Scala</a> - Linguagem de programação moderna, multi-paradigma, concisa, elegante e com tipagem segura <br>
+🔖 <a href="https://docs.microsoft.com/pt-br/dotnet/visual-basic/">Visual Basic</a> - Linguagem de programação da Microsoft (com IDE gráfica) <br>
+🔖 <a href="https://julia-pt-br.readthedocs.io/pt_BR/latest/manual/introduction.html">Julia</a> - Linguagem de programação dinâmica para experimentos de alta performance <br></p>
+<h2 id="-guia-de-estilo">📚 Guia de Estilo</h2>
+<p>🔖 <a href="https://github.com/airbnb/javascript">Airbnb - Javascript</a> - Guia de estilo de código em JavaScript do Airbnb <br>
+🔖 <a href="https://github.com/airbnb/ruby">Airbnb - Ruby</a> - Guia de estilo de código em Ruby do Airbnb <br>
+🔖 <a href="https://github.com/google/eng-practices">Google - Boas práticas em Engenharia</a> - Boas práticas de Engenharia utilizadas pelos internos da Google <br>
+🔖 <a href="https://google.github.io/styleguide/cppguide.html">Google - C++</a> - Guia de estilo de código em C++ do Google <br>
+🔖 <a href="https://google.github.io/styleguide/pyguide.html">Google - Python</a> - Guia de estilo de código em Python do Google <br>
+🔖 <a href="https://google.github.io/styleguide/javaguide.html">Google - Java</a> - Guia de estilo de código em Java do Google <br></p>
+<h2 id="-desafios">📚 Desafios</h2>
+<p>🔖 <a href="https://www.acefrontend.com/">Ace Front End</a> - Desafios de programação Front-end. Resultados via texto. IDE integrada <br>
+🔖 <a href="https://adventofcode.com/">AdventoOfCode</a> - Desafios de programação por temporada. Sem IDE integrada. Validação manual feita pelo usuário <br>
+🔖 <a href="https://github.com/florinpop17/app-ideas">App Ideas</a> - Compilado de desafios para você testar seus conhecimentos e aumentar seu portfólio <br>
+🔖 <a href="https://capturetheflag.com.br/">Capture The Flag - CTF</a> - Desafios reais de hacking, desenvolvido por especialistas brasileiros <br>
+🔖 <a href="https://challengerocket.com/">ChallengeRocket</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://codegolf.stackexchange.com/">Code Golf - StackExchange</a> - Desafios de programação da comunidade para a comunidade, IDE integrada somente pelo Snippet <br>
+🔖 <a href="https://codeforces.com/">CodeForces</a> - Desafios de Programação Back-end com a compilação e testes feito pela plataforma porém sem IDE integrada <br>
+🔖 <a href="https://codepen.io/challenges">CodePen Challenges</a> - Desafios de Programação Front-end. IDE integrada <br>
+🔖 <a href="https://coderbyte.com/">CoderByte</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://app.codesignal.com/">CodeSignal</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://www.codewars.com/">CodeWars</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://codier.io/challenge">Codier</a> - Desafios de Programação Front-end, análise dos resultados feita pela comunidade. IDE integrada <br>
+🔖 <a href="https://app.codility.com/">Codility</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://www.codingame.com/">Coding Games</a> - Desafios Programação Back-end com foco em temática de jogos. IDE integrada <br>
+🔖 <a href="https://cssbattle.dev/">CSS Battle</a> - Batalhas temporárias de CSS. IDE integrada <br>
+🔖 <a href="https://www.dailycodingproblem.com/">DailyCodingProblem</a> - Desafios de Programação Back-end enviados por e-mail. Solução do problema Premium <br>
+🔖 <a href="https://github.com/codigofalado/desafio333">Desafio333</a> - O Desafio333 é um desafio bimestral SIMPLES com o objetivo de convidar a comunidade a conhecer novas ferramentas <br>
+🔖 <a href="https://www.devchallenge.com.br/">DevChallenge</a> - Site com desafios de front-end, back-end e mobile <br>
+🔖 <a href="https://devchallenges.io/">DevChallenges.io</a> - Site com projectos webs responsivos, front-end e full-stack <br>
+🔖 <a href="https://edabit.com/">Edabit</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://exercism.io/">Exercism.io</a> - Desafios de Programação Back-end. Sem IDE integrada. Requer download de CLI. <br>
+🔖 <a href="http://www.flexboxdefense.com/">Flex Box Defense</a> - Desafio de Programação Front-end focados na propriedade flex box. IDE integrada. <br>
+🔖 <a href="https://flexboxfroggy.com/">Flex Box Froggy</a> - Desafio de Programação Front-end focados na propriedade flex box. IDE integrada. <br>
+🔖 <a href="https://piccalil.li/category/front-end-challenges-club">Front End Challanged Club</a> - Bogs com desafios de programação front-end <br>
+🔖 <a href="https://github.com/felipefialho/frontend-challenges">Frontend Challengens</a> - Repositório no GitHub com vários desafios solicitados reais solicitados por empresas <br>
+🔖 <a href="https://www.frontendmentor.io/">Frontend Mentor</a> - Desafios de Programação Front-end, análise dos resultados feita pela comunidade, sem IDE integrada <br>
+🔖 <a href="https://www.hackerrank.com/">HackerRank</a> - Desafios de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://www.hackthebox.eu/">HackTheBox</a> - Site com laboratórios para praticar pentest de forma gratuita e legal <br>
+🔖 <a href="https://projecteuler.net/">ProjectEuler</a> - Desafios de Programação Back-end focado em problemas matemáticos. IDE integrada <br>
+🔖 <a href="https://www.spoj.com/">Sphere Onlune Judge (SPOJ)</a> - Desafios de Programação Back-end com a compilação e testes feito pela plataforma porém sem IDE integrada <br>
+🔖 <a href="https://arena.topcoder.com/">TopCoder</a> - Desafios e Arena de Programação Back-end. IDE integrada <br>
+🔖 <a href="https://www.urionlinejudge.com.br/">URI</a> - Desafios Programação Back-end, matemáticos e SQL. IDE integrada <br></p>
+<h2 id="-ferramentas-para-desenvolvedores-web">📚 Ferramentas para desenvolvedores WEB</h2>
+<p>🔖 <a href="https://www.minimamente.com/project/magic/">Minimamente</a> <br>
+🔖 <a href="https://jonsuh.com/hamburgers/">Hamburgers</a> <br>
+🔖 <a href="https://ianlunn.github.io/Hover/">Hover Effects</a> <br></p>
+<h2 id="-ferramentas-para-buscar-projetos-open-source">📚 Ferramentas para buscar projetos open source</h2>
+<p>🔖 <a href="http://up-for-grabs.net/">Up for Grabs</a> <br>
+🔖 <a href="http://issuehub.pro/">Isse Hub</a> <br>
+🔖 <a href="https://www.codetriage.com/">Code Triage</a> <br>
+🔖 <a href="http://www.firsttimersonly.com/">First Timers Only</a> <br>
+🔖 <a href="https://twitter.com/yourfirstpr">Your First Pr</a> <br>
+🔖 <a href="https://github.com/explore/">Github Explore</a> <br></p>
+<h2 id="-melhores-distros-linux-para-programadores">📚 Melhores distros linux para programadores</h2>
+<p>🔖 <a href="https://pop.system76.com/">Pop!_Os</a>   - Distribuição Linux Pop!_Os <br>
+🔖 <a href="https://archlinux.org/">Arch Linux</a>   - Distribuição Linux Arch Linux <br>
+🔖 <a href="https://www.debian.org/">Debian</a>   - Distribuição Linux Debian <br>
+🔖 <a href="https://ubuntu.com/">Ubuntu</a>   - Distribuição Linux Ubuntu <br>
+🔖 <a href="https://getfedora.org/pt_BR/">Fedora</a>   - Distribuição Linux Fedora <br>
+🔖 <a href="https://linuxmint.com/">Linux Mint</a>   - Distribuição Linux Mint <br>
+🔖 <a href="https://www.opensuse.org">OpenSUSE</a>   - Distribuição Linux OpenSUSE<br>
+🔖 <a href="https://www.kali.org">Kali Linux</a>   - Distribuição Linux Kali Linux<br>
+🔖 <a href="https://www.neon.kde.org">KDE Neon</a>   - Distribuição Linux KDE Neon <br>
+🔖 <a href="https://www.getsol.us">Solus</a>   - Distribuição Linux Solus <br>
+🔖 <a href="https://www.tails.boum.org">Tails</a>   - Distribuição Linux Tails <br></p>
+<h2 id="-bibliotecas-javascript">📚 Bibliotecas JavaScript</h2>
+<p>🔖 <a href="https://github.com/alexfoxy/lax.js">Lax.js</a> <br>
+🔖 <a href="https://swiperjs.com/">Swiper</a> <br>
+🔖 <a href="https://wowjs.uk/">WOW</a> <br>
+🔖 <a href="https://animate.style/">Animate</a> <br>
+🔖 <a href="https://apexcharts.com/">ApexCharts</a> <br>
+🔖 <a href="https://vincentgarreau.com/particles.js/">Particles.js</a> <br>
+🔖 <a href="https://scrollmagic.io/">ScrollMagic</a> <br></p>
+<h2 id="-7-ferramentas-que-todo-dev-precisa-conhecer">📚 7 Ferramentas que todo DEV precisa conhecer</h2>
+<p>🔖 <a href="https://www.figma.com">Figma</a>  - ferramenta para design de interfaces. <br>
+🔖 <a href="https://insomnia.rest">Insomnia</a>  - é um API Client, uma ferramenta para fazer testes de API’s. <br>
+🔖 <a href="https://rive.app">Rive</a>  - ferramenta colaborativa de animação para apps, jogos e sites. <br>
+🔖 <a href="https://www.cloudcraft.co">CloudCraft</a>  - plataforma com foco em criar desenhos de arquiteturas AWS. <br>
+🔖 <a href="https://bundlephobia.com">BundlePhobia</a>  - site para descobrir o custo de adicionar um npm package no seu pacote. <br>
+🔖 <a href="https://fontflipper.com">Font Flipper</a>  - Tinder das fontes, basta apertar X caso não goste e ❤ se você gostar, adicione aos favoritos já com o nome da fonte e faça o download pelo Google fonts. <br>
+🔖 <a href="https://github.com/GoogleChromeLabs/ProjectVisBug">VisBug</a>  - é uma extensão de Chrome, criada pelo google, ferramenta de design que te permite mudar o layout das páginas da web desde o estilo de fontes até a posição dos elementos. <br>
+🔖 <a href="https://www.thunderclient.io">ThunderClient</a>  - é um Rest API Client totalmente leve e compatível com Visual Studio Code. Idêntico ao Postman, ele serve para realizar testes com nossas requisções HTTP. <br></p>
+<h2 id="-sites-para-praticar-uiux">📚 Sites para praticar UI/UX</h2>
+<p>🔖 <a href="https://sharpen.design/">Sharpen</a> <br>
+🔖 <a href="https://www.dailyui.co/">Daily UI</a> <br>
+🔖 <a href="https://uxtools.co/challenges">UX Challenges</a> <br>
+🔖 <a href="https://drawerrr.com/challenge">Drawerrr</a> <br>
+🔖 <a href="https://www.uplabs.com/challenges">Uplabs</a> <br></p>
+<h2 id="-ferramentas-para-hospedar-seu-site">📚 Ferramentas para hospedar seu site</h2>
+<p>🔖 <a href="https://pages.github.com/">Github Pages</a> - Hospedado diretamente de seu repositório GitHub. Basta editar, enviar e suas alterações entrarão em vigor <br>
+🔖 <a href="https://www.awardspace.com/">Award Space</a> - Hospedagem gratuita na web + um subdomínio gratuito, PHP, MySQL, instalador de aplicativo, envio de e-mail e sem anúncios <br>
+🔖 <a href="https://byet.host/">Byet</a> - Hospedagem Gratuita e Serviços de Hospedagem Premium. <br>
+🔖 <a href="https://infinityfree.net/">Infinity Free</a> - Free Unlimited Web Hosting <br>
+🔖 <a href="http://www.1freehosting.com/">1FreeHosting</a> - Hospedagem de sites grátis com 100GB de largura de banda <br>
+🔖 <a href="https://aws.amazon.com/pt/">Amazon Web Services</a> - Serviço de aluguel de servidores e outros serviços <br>
+🔖 <a href="https://www.bluehost.com/">BlueHost</a> - Empresa americana de hospedagem de sites <br>
+🔖 <a href="https://www.digitalocean.com/">DigitalOcean</a> - Aluguel de servidores dedicados e compartilhados <br>
+🔖 <a href="https://www.dreamhost.com/">DreamHost</a> - Hospedagem de sites de alta disponibilidade <br>
+🔖 <a href="https://www.embratel.com.br/cloud/hospedagem-de-sites">Embratel</a> - Hospedagem de sites nacional <br>
+🔖 <a href="https://br.godaddy.com/hosting/web-hosting">GoDaddy</a> - Hospedagem de sites internacional <br>
+🔖 <a href="https://br.godaddy.com/">GoDaddy</a> - Empresa de aluguel de servidores compartilhados, dedicados e registro de domínio <br>
+🔖 <a href="https://cloud.google.com/solutions/smb/web-hosting/">Google Cloud</a> - Serviço de aluguel de servidores da Google <br>
+🔖 <a href="https://www.heroku.com/">Heroku</a> -  Hospedagem de sites grátis com suporte à NodeJS, Java, Ruby, PHP, Python, Go, Scala e Clojure <br>
+🔖 <a href="https://www.hostgator.com/">HostGator</a> - Hospedagem compartilhada e dedicada para sites e serviços <br>
+🔖 <a href="https://www.hostinger.com.br/">Hostinger</a> - Hospedagem de sites <br>
+🔖 <a href="https://hostoo.io/">Hostoo</a> - Hospedagem de sites em cloud computing dedicado <br>
+🔖 <a href="https://www.ipage.com/">iPage</a> - Hospedagem de sites gringa com descontos para anúncios <br>
+🔖 <a href="https://king.host/">KingHost</a> - Hospedagem compartilhada e dedicada para sites e serviços de marketing por e-mail <br>
+🔖 <a href="https://www.netlify.com/">Netlify</a> - Hospedagem para sites estáticos que combina implantação global, integração contínua e HTTPS automático <br>
+🔖 <a href="https://www.one.com/pt-BR/">One.com</a> - Serviços gerais digitais (incluindo hospedagem de sites) <br>
+🔖 <a href="https://surge.sh/">Surge</a> - Hospedagem gratuita para páginas estáticas <br>
+🔖 <a href="https://www.umbler.com/br">Umbler</a> - Hospedagem compartilhada, cloud computing sob taxação de uso <br>
+🔖 <a href="https://vercel.com/">Vercel</a> -  Hospedagem grátis de sites estáticos e serveless <br></p>
+<h2 id="-sites-para-inspirar-o-seu-desenvolvimento">📚 Sites para inspirar o seu desenvolvimento</h2>
+<p>🔖 <a href="https://www.producthunt.com/">Product Hunt</a> <br>
+🔖 <a href="https://namify.tech/?ref=producthunt">Namify</a> <br>
+🔖 <a href="https://dribbble.com/">Dribbble</a> <br>
+🔖 <a href="https://br.pinterest.com/">Pinterest</a> <br>
+🔖 <a href="https://www.deviantart.com/">Deviant Art</a> <br>
+🔖 <a href="https://www.lapa.ninja/">Lapa</a> <br>
+🔖 <a href="https://hyperpixel.io/">Hyper Pixel</a> <br>
+🔖 <a href="https://onepagelove.com/">One Page Love</a> <br>
+🔖 <a href="https://onepagelove.com/boring-avatars">One Page Love Avatars</a> <br>
+🔖 <a href="https://land-book.com/">Land Book</a> <br>
+🔖 <a href="https://www.awwwards.com">Awwwards</a> <br>
+🔖 <a href="https://www.bestfolios.com/home">Best Folios</a> <br>
+🔖 <a href="https://sitesee.co/">Sitesee</a> <br>
+🔖 <a href="https://httpster.net/2021/jun/">Httpster</a> <br>
+🔖 <a href="https://builders-club.com/">Builders Club</a> <br>
+🔖 <a href="https://cssnectar.com/">CSS Nectar</a> <br>
+🔖 <a href="https://collectui.com">Collect UI</a> <br>
+🔖 <a href="https://bestwebsite.gallery">Best Web Site</a> <br></p>
+<h2 id="-banco-de-imagens-gratuitas">📚 Banco de imagens gratuitas</h2>
+<p>🔖 <a href="https://500px.com/creativecommons">500px</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://pt.shopify.com/burst">Burst</a> - Plataforma de imagens do serviço de ecommerce Shopify <br>
+🔖 <a href="http://cupcake.nilssonlee.se/">Cupcake</a> - Imagens gratuitas para uso comercial <br>
+🔖 <a href="https://github.com/JulianaHelena5/BancoDeImagensComDiversidade">Banco De Imagens Com Diversidade</a> - Banco de imagens com pessoas diversas <br>
+🔖 <a href="https://www.drawkit.io/">DrawKIT</a> - Ilustrações para qualquer um usar <br>
+🔖 <a href="https://www.flaticon.com">FlatIcon</a> - Banco de ícones vetoriais <br>
+🔖 <a href="https://flickr.com/">Flickr</a> - Rede social de fotógrafos <br>
+🔖 <a href="https://pt.freeimages.com/">FreeImages</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://stories.freepik.com/">FreePik Stories</a> - Banco de ilustrações gratuitas <br>
+🔖 <a href="https://freerangestock.com/index.php">Freerange</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://www.glazestock.com">Glaze</a> - Banco de ilustrações, sem direitos autorais <br>
+🔖 <a href="https://gratisography.com/">Gratisography</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://www.humaaans.com/">Humaaans</a> - Ilustrações de humanóides <br>
+🔖 <a href="https://icons8.com.br/">Icons8</a> - Ícones em diversos estilos <br>
+🔖 <a href="https://imgur.com/">Imgur</a> - Plataforma com milhões de imagens <br>
+🔖 <a href="https://iradesign.io/illustrations">IraDesign</a> - Ilustrações editáveis de cores e objetos <br>
+🔖 <a href="https://www.lifeofpix.com/">Life of Pix</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://littlevisuals.co/">Little Visuals</a> - Banco de imagens gratuitas <br>
+🔖 <a href="http://lorempixel.com/">Lorempixel</a> - Banco de imagens para uso como template <br>
+🔖 <a href="https://lukaszadam.com/illustrations">Lukas Zadam</a> - Ilustrações SVG em diferentes tamanhos e estilos <br>
+🔖 <a href="https://www.manypixels.co/gallery/">ManyPixels</a> - Galeria de ilustrações com direito a edição de cores <br>
+🔖 <a href="https://morguefile.com/">Morguefile</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://www.nappy.co">Nappy</a> - Banco de imagens gratuitas (atribuição recomendada) <br>
+🔖 <a href="https://nos.twnsnd.co/">Nos.twnsnd</a> - Arquivo público de fotos antigas <br>
+🔖 <a href="https://openmoji.org/">OpenMoji</a> - Banco de emojis para uso <br>
+🔖 <a href="https://www.pexels.com/">Pexels</a> - Banco de imagens gratuitas <br>
+🔖 <a href="http://photopin.com/">PhotoPin</a> - Banco de imagens gratuitas no estilo criativo <br>
+🔖 <a href="https://picjumbo.com/">Picjumbo</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://picsum.photos/">Picsum</a> - Banco de imagens para uso como template <br>
+🔖 <a href="http://www.pixabay.com">Pixabay</a> - Banco de imagens gratuitas (não requer atribuição) <br>
+🔖 <a href="https://www.publicdomainarchive.com/">Public domain archive</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://remixicon.com/">RemixIcon</a> - Banco de Ícones para uso gratuito <br>
+🔖 <a href="https://stocksnap.io/">StockSnap</a> - Banco de imagens gratuitas (não requer atribuição) <br>
+🔖 <a href="https://undraw.co/">unDraw</a> - Ilustrações livres para usar <br>
+🔖 <a href="https://unsplash.com/">Unsplash</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://visualhunt.com/">Visual Hunt</a> - Banco de imagens gratuitas <br>
+🔖 <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> - Banco de imagens mundial <br></p>
+<h2 id="-aumentando-o-network">📚 Aumentando o network</h2>
+<p>🔖 <a href="https://linktr.ee/guiadevbrasil">Guia Dev Brasil</a> - Guia Dev Brasil <br>
+🔖 <a href="https://www.facebook.com/groups/osadpa/">APDA</a> - Associação de Programadores Depressivos Anônimos <br>
+🔖 <a href="https://comunidade.codigopratodos.com/">Comunidade CodigoPraTodos</a> - Comunidade CodigoPraTodos no Discord e Forum <br>
+🔖 <a href="https://discord.gg/YeeEAYj">Comunidade ColabCode</a> - Comunidade ColabCode no Discord <br>
+🔖 <a href="https://discord.gg/3y4X9pm">Comunidade Código Falado</a> - Comunidade do Código Falado no Discord <br>
+🔖 <a href="https://perifacode.com/">Comunidade PerifaCode</a> - Comunidade PerifaCode <br>
+🔖 <a href="https://discordapp.com/invite/gCRAFhc">Comunidade Rocketseat</a> - Comunidade Rocketseat no Discord <br>
+🔖 <a href="https://dev.to/">Dev.to</a> - Rede social para desenvolvedores <br>
+🔖 <a href="https://github.community/">GitHub Community Forum</a> - Comunidade de desenvolvedores do GitHub <br>
+🔖 <a href="http://listatelegram.github.io/">Grupos no Telegram</a> - Lista de grupos de tecnologia no Telegram <br>
+🔖 <a href="https://www.facebook.com/groups/102474963422805/">Tecnogrupo</a> - Grupo de Tecnologia do Tecnoblog <br></p>
+<h2 id="-sites-para-baixar-e-encontrar-fontes">📚 Sites para baixar e encontrar fontes</h2>
+<p>🔖 <a href="https://fonts.adobe.com/">Adobe Fonts</a> <br>
+🔖 <a href="https://fonts.google.com/">Google fonts</a> <br>
+🔖 <a href="https://www.dafont.com/pt/">Dafont</a><br>
+🔖 <a href="https://www.netfontes.com.br/">NetFontes</a> <br>
+🔖 <a href="https://www.urbanfonts.com/pt/">Urbanfonts</a> <br>
+🔖 <a href="https://befonts.com/">Befonts</a> <br>
+🔖 <a href="https://www.fontspace.com/">Fonts space</a> <br>
+🔖 <a href="https://www.1001fonts.com/">1001 fonts</a> <br>
+🔖 <a href="https://www.abstractfonts.com/">Abstract fonts</a> <br>
+🔖 <a href="https://www.fontget.com/">Fontget</a> <br>
+🔖 <a href="https://materialdesignicons.com/">Material Design Icons</a> <br></p>
+<h2 id="-sites-de-paletas-de-cores">📚 Sites de paletas de cores</h2>
+<p>🔖 <a href="https://paletton.com/">Paletton</a> <br>
+🔖 <a href="https://color.adobe.com/pt/create/color-wheel/">Adobe Color</a> <br>
+🔖 <a href="https://colorhunt.co/">Color Hunt</a> <br>
+🔖 <a href="https://www.happyhues.co/">Happy Hues</a> <br>
+🔖 <a href="https://coolors.co/">Coolors</a> <br>
+🔖 <a href="https://gradienthunt.com/">Gradient Hunt</a> <br>
+🔖 <a href="https://flatuicolors.com/">Flat UI Colors</a> <br>
+🔖 <a href="https://www.grabient.com/">Grabient</a> <br>
+🔖 <a href="https://pigment.shapefactory.co/">Pigment</a> <br>
+🔖 <a href="https://webgradients.com/">WebGradient</a> <br>
+🔖 <a href="https://colors.lol/">Color.lol</a> <br></p>
+<h2 id="-lista-de-ilustrações">📚 Lista de ilustrações</h2>
+<p>🔖 <a href="https://www.drawkit.io/">DrawKIT</a> <br>
+🔖 <a href="https://www.humaaans.com/">Humaaans</a>  <br>
+🔖 <a href="https://www.opendoodles.com/">Open Doodle</a> <br>
+🔖 <a href="https://storyset.com/">Storyset</a> <br>
+🔖 <a href="https://undraw.co/">unDraw</a> <br>
+🔖 <a href="https://www.kapwing.com/404-illustrations/">404 Illustrations (by kapwing)</a> <br>
+🔖 <a href="https://error404.fun/">404 Illustrations</a> <br>
+🔖 <a href="https://icons8.com.br/illustrations/">Ouch</a>  <br>
+🔖 <a href="https://delesign.com/free-designs/graphics/">Delesing</a> <br>
+🔖 <a href="https://www.pixeltrue.com/free-illustrations/">Pixeltru</a> <br>
+🔖 <a href="https://iconscout.com/">Iconscout</a> <br></p>
+<h2 id="-sites-de-icones">📚 Sites de icones</h2>
+<p>🔖 <a href="https://www.drawkit/free-icons/">DrawKIT</a> <br>
+🔖 <a href="https://akveo.github.io/eva-icons/#/">Eva Icons</a> <br>
+🔖 <a href="https://feathericons.com/">Feather Icons</a> <br>
+🔖 <a href="https://fontawesome.com">Font Awesome</a> <br>
+🔖 <a href="https://heroicons.dev/">Heroicons</a> <br>
+🔖 <a href="https://iconsvg.xyz/">Iconsvg</a>  <br>
+🔖 <a href="https://icons8.com/line-awesome/">Icons8 Line Awesome</a> <br>
+🔖 <a href="https://icons8.com.br/">Icons8</a> <br>
+🔖 <a href="https://shape.so/">Shape</a> <br>
+🔖 <a href="https://www.flaticon.com/br/">Flaticon</a> <br>
+🔖 <a href="https://icons.getbootstrap.com/">Bootstrap icons</a> <br>
+🔖 <a href="https://devicon.dev/">devicon</a> <br></p>
+<h2 id="-canais-do-youtube-com-conteúdo-grautito">📚 Canais do youtube com conteúdo grautito</h2>
+<p>🔖 <a href="https://www.youtube.com/user/aluracursosonline">Alura</a> - Uns camaradas legais que abordam os mais variados temas do mundo da tecnologia <br>
+🔖 <a href="https://www.youtube.com/user/codigofontetv">CódigoFonteTV</a> - Leon e Nilce da programação <br>
+🔖 <a href="https://www.youtube.com/user/androiddevelopers">Android Developers</a> - Canal oficial da comunidade de desenvolvedores do Android <br>
+🔖 <a href="https://www.youtube.com/CodeShowBR">CodeShow</a> - Canal sobre Python e Rust <br>
+🔖 <a href="https://www.youtube.com/channel/UClFE1N_sMek7cyvwsAK_XJQ">CodigoPraTodos</a> - Canal com lives de resolução de exercícios do CS50 e mais dicas de programação <br>
+🔖 <a href="https://www.youtube.com/channel/UCcMcmtNSSQECjKsJA1XH5MQ">Cod3r Cursos</a> - Canal com aulas e cursos gratuitos sobre diversas tecnlogias <br>
+🔖 <a href="https://www.youtube.com/channel/UCVheRLgrk7bOAByaQ0IVolg">CollabCode</a> - Lives insanas sobre JS, front-end, etc <br>
+🔖 <a href="https://www.youtube.com/c/DanielDonda">Daniel Donda</a> - Canal sobre administração de redes, carreiras e certificação, hacking, segurança da informação <br>
+🔖 <a href="https://www.youtube.com/channel/UC-lHCBqKEtnXA0SBtdOP0bw">Dev Samurai</a> - Canal sobre tecnologia e comunidade de desenvolvedores <br>
+🔖 <a href="https://www.youtube.com/channel/UClBrpNsTEFLbZDDMW1xiOaQ">DevMedia</a> - Canal de um dos maiores portais sobre programação do Brasil <br>
+🔖 <a href="https://youtube.com/devsuperior">DevSuperior</a> - Canal para estudantes e profissionais iniciantes <br>
+🔖 <a href="https://www.youtube.com/user/diolinux">Diolinux</a> - Canal sobre o mundo Unix e outras tecnologias <br>
+🔖 <a href="https://www.youtube.com/c/ErickWendelTreinamentos">Erick Wendel</a> - Canal com conteúdos inéditos e exclusivos sobre Node.js, Javascript <br>
+🔖 <a href="https://www.youtube.com/user/especializati">EspecializaTI</a> - Cursos gratuitos sobre PHP, Laravel, Linux e HTML+CSS <br>
+🔖 <a href="https://www.youtube.com/user/AkitaOnRails">Fabio Akita</a> - Canal sobre tecnologia e desenvolvimento <br>
+🔖 <a href="https://www.youtube.com/user/FacebookDevelopers">Facebook Developers</a> - Canal oficial da comunidade de desenvolvedores do Facebook <br>
+🔖 <a href="https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw">Felipe Deschamps</a> - Desenvolvedor da Pagar.me e criador de robôs com inteligencia artificial <br>
+🔖 <a href="https://www.youtube.com/channel/UCD_26rOE3ClALcZreTkyIoQ">Felipe Elia</a> - Canal sobre programação para Web com foco em WordPress <br>
+🔖 <a href="https://www.youtube.com/Filhodanuvem">Filho da nuvem</a> - Canal sobre desenvolvimento de testes automatizados, GitHub, PHP, Golang e outras linguagens <br>
+🔖 <a href="https://www.youtube.com/channel/UCplT2lzN6MHlVHHLt6so39A">Flutterando</a> - Canal sobre desenvolvimento de interface com Flutter <br>
+🔖 <a href="https://www.youtube.com/channel/UCGObNjkNjo1OUPLlm8BTb3A">Fábrica de Noobs</a> - Canal com intruduções a conceitos básicos dentro da computação <br>
+🔖 <a href="https://www.youtube.com/channel/UC70YG2WHVxlOJRng4v-CIFQ">Gabriel Pato</a> - Canal sobre tecnologia e hacking <br>
+🔖 <a href="https://www.youtube.com/user/GoogleDevelopers">Google Developers</a> - Canal oficial da comunidade de desenvolvedores da Google <br>
+🔖 <a href="https://www.youtube.com/c/GuiadoProgramador">Guia do Programador</a> - Canal de cursos de NodeJS gratuitos <br>
+🔖 <a href="https://www.youtube.com/user/LimaoAzeddo">Guru da Ciência</a> - Canal sobre tecnologia e ciências <br>
+🔖 <a href="https://www.youtube.com/c/OneBitCode">One Bit Code</a> - Canal com aulas de React e Ruby <br>
+🔖 <a href="https://www.youtube.com/channel/UC5cfBZHUQpcMvBJDBaX8-jg/featured">O Irmão mais Velho</a> - Aprenda UX/UI, Web e Mobile e desenvolva o seu mindset <br>
+🔖 <a href="https://www.youtube.com/channel/UCrdgeUeCll2QKmqmihIgKBQ">ProgramadorBR</a> - Programador brasileiro com atual residência no Canadá <br>
+🔖 <a href="https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica">Programação Dinâmica</a> - Canal sobre Python, Ciencias de Dados, Machine learning e Inteligência Artificial <br>
+🔖 <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg">Rocketseat</a> - Projeto de ensino gratuito sobre as tecnologias mais quentes do mercado <br>
+🔖 <a href="https://www.youtube.com/user/rodrigobranas">Rodrigo Branas</a> - Canal sobre desenvolvimento web com foco em JavaScript <br>
+🔖 <a href="https://www.youtube.com/c/RogerMelo">Roger Melo</a> - Canal com aula e dicas de JavaScript puro <br>
+🔖 <a href="https://www.youtube.com/channel/UCPIAn-SWhJzBilt1MekO4Vg">TekZoom</a> - Canal raíz sobre tecnologia do YouTube <br>
+🔖 <a href="https://www.youtube.com/channel/UCf_kacKyoRRUP0nM3obzFbg">Universo Programado</a> - Canal sobre lógica por trás do desenvolvimento de inteligências artificiais <br>
+🔖 <a href="https://www.youtube.com/c/ThiengoCalopsita/">Vinícius Thiengo</a> - Canal com aulas de desenvolvimento android e técnicas de código limpo <br>
+🔖 <a href="https://www.youtube.com/c/ZeroBugs">Zero Bugs</a> - Canal sobre desenvolvimento web com PHP e JavaScript <br>
+🔖 <a href="https://youtube.com/c/baltaio">Balta.io</a> - Canal explicando uma ferramenta completa para auxiliar você em seu caminho para se tornar um desenvolvedor de respeito, - om mais de 80 cursos direcionados <br>
+🔖 <a href="https://youtube.com/c/CodAffection">CodAffection</a> - Este canal tem como objetivo ensinar e inspirar desenvolvedores a criar aplicativos <br>
+🔖 <a href="https://youtube.com/c/codedamn">Codedamn</a> - Canal sobre programação e tecnologia no geral <br>
+🔖 <a href="https://youtube.com/c/EspecializatiBr">EspecializaTi</a> - Canal de cursos Online de Desenvolvimento Web <br>
+🔖 <a href="https://youtube.com/channel/UCoqYHkQy8q5nEMv1gkcZgSw">Jose Carlos Macoratti</a> - Vídeo Aulas sobre a plataforma .NET e tecnologias web: C# , VB .NET , ASP .NET , ASP .NET MVC, ASP .NET Core, Entity Framework,  Xamarin Forms, Xamarin Android, Angular, ADO .NET , SQL,  Node,  etc <br>
+🔖 <a href="https://youtube.com/c/MichelliBrito">Michelli Brito</a> - Canal sobre conteúdos de programação, arquitetura de software e carreira em TI <br>
+🔖 <a href="https://youtube.com/c/TheNetNinja">The Net Ninja</a> - Habilidades de desenvolvimento web. Mais de 1000 tutoriais de programação gratuitos sobre <br>
+🔖 <a href="https://youtube.com/c/ThiengoCalopsita">Vinícius Thiengo</a> - Vídeos tutoriais sobre desenvolvimento Android e técnicas de código limpo <br>
+🔖 <a href="https://youtube.com/c/TraversyMedia">Traversy Media</a> - Traversy Media apresenta os melhores tutoriais de desenvolvimento e programação da web on-line para todas as tecnologias da web mais recentes <br>
+🔖 <a href="https://youtube.com/c/MangoDeveloper">Mango</a> - Cursos avançados completos utilizando Clean Architecture, TDD, SOLID principles e design patterns <br>
+🔖 <a href="https://youtube.com/c/Academind">Academind</a> - Cursos e tutoriais que ensinam tudo relacionado ao desenvolvimento web <br>
+🔖 <a href="https://youtube.com/user/saimon1924">Simon Grimm</a> - Tutoriais Ionic semanalmente com dicas e truques para melhorar seus aplicativos híbridos! <br>
+🔖 <a href="https://youtube.com/c/Freecodecamp">freeCodeCamp.org</a> - Aprenda a codificar gratuitamente. <br>
+🔖 <a href="https://youtube.com/c/IgorRemas">Igor Remas</a> - Desenvolvimento Web <br>
+🔖 <a href="https://youtube.com/c/SantosEnoque">Santos Enoque</a> - Ensinar as pessoas a construir softwares do mundo real e garantir que elas tenham habilidades que são realmente necessárias no mercado <br>
+🔖 <a href="https://youtube.com/channel/UCjBxAm226XZvgrkO-JyjJgQ">Raja Yogan</a> - Fornecendo tutoriais de tecnologia de qualidade para todos. <br>
+🔖 <a href="https://youtube.com/c/DesignCourse">DesignCourse</a> - Tutoriais sobre UI / UX, Frontend Dev, Backend Dev, Design gráfico e muito mais! <br>
+🔖 <a href="https://youtube.com/c/Londonappbrewery">London App Brewery</a> - Ensinam desenvolvimento Web para iniciantes, como fazer aplicativos iOS, Flutter e Android, bem como ciência de dados <br>
+🔖 <a href="https://youtube.com/c/eddydn71">EDMT Dev</a> - Tutoriais para code e hacking <br>
+🔖 <a href="https://www.youtube.com/user/cursosemvideo">Curso em Vídeo</a> - Cursos em vídeo-aulas totalmente gratuitos, criados pelo Professor Gustavo Guanabara <br>
+🔖 <a href="https://youtube.com/c/ThizerAplicativos">Thizer Aplicativos</a> - Tecnologia no Geral <br>
+🔖 <a href="https://youtube.com/c/loianegroner">Loiane Groner</a> - Canal com aulas gratuitas sobre Java, Sencha (Ext JS), JavaScript, Angular e desenvolvimento mobile com Cordova e Ionic. <br>
+🔖 <a href="https://youtube.com/c/CanalDotNET">Canal dotNET</a> - Canal sobre .NET C# <br>
+🔖 <a href="https://youtube.com/c/ProtocoloAlterado">Protocolo Alterado</a> - Conteúdos sobre Programação e Desenvolvimento Web por Beto Muniz. <br>
+🔖 <a href="https://youtube.com/c/DevSoutinho">Dev Soutinho</a> - Conteúdos sobre Programação por Mario Souto <br>
+🔖 <a href="https://www.youtube.com/channel/UCwn-9qpyukBnuA3eB-3F0Sg">Simplificando TI</a> - Conteúdo de TI no geral <br>
+🔖 <a href="https://www.youtube.com/c/ProgramadorREAL">Vida de Programador</a> - Conteúdo sobre  tecnologia e programação <br>
+🔖 <a href="https://www.youtube.com/c/professorramos/">ProfessorRamos</a> - Conteúdo de informática e afins <br>
+🔖 <a href="https://www.youtube.com/c/RoboticapraticaBr/">Professor José de Assis</a> - Arduino com foco em robótica educacional, Programação Linguagem C, Java e desenvolvimento WEB, Linux com foco em servidores de rede <br>
+🔖 <a href="https://www.youtube.com/c/zero1ti/">zer01ti</a> - Novidades da tecnológica <br>
+🔖 <a href="https://www.youtube.com/user/RafaellaBallerini/">Rafaella Ballerini</a> - Experiência no mundo tech e dicas sobre como se encaixar na área. <br>
+🔖 <a href="https://www.youtube.com/channel/UCB12jjYsYv-eipCvBDcMbXw">Tech Primers</a> - TechPrimers é um canal educacional para fornecer insights sobre implementações de tecnologia <br>
+🔖 <a href="https://www.youtube.com/channel/UCjF0OccBT05WxsJb2zNkL4g">DevDojo</a> - Tutoriais sobre programação, playlist, e conteúdo sobre a área de informática <br>
+🔖 <a href="https://www.youtube.com/c/Descompila/">Descompila</a> - Vídeo-aulas de programação objetivas <br>
+🔖 <a href="https://www.youtube.com/c/UnicornCoder/">Ka Solution Oficial</a> - Nesse canal, vamos abordar temas referente ao mercado de tecnologia e dar excelentes dicas de carreira. <br>
+🔖 <a href="https://www.youtube.com/c/KaSolutionOficial/">UnicornCoder</a> - Videos de programação e cursos <br>
+🔖 <a href="https://www.youtube.com/c/CanalTekZoom/">TekZoom - Reinaldo Silotto</a> - Compartilhar conteúdos sobre tecnologia, programação, gadgets e dispositivos móveis, como smartphones e tablets.<br>
+🔖 <a href="https://www.youtube.com/c/BoniekyLacerdaLeal">Bonieky Lacerda</a> - Cursos de programação <br>
+🔖 <a href="https://www.youtube.com/c/Programadorbr">Programador BR</a> - Programação, carreira e empreendedorismo <br>
+🔖 <a href="https://www.youtube.com/c/ZUPIT/">ZUP</a> - Canal sobre tecnologia <br>
+🔖 <a href="https://www.youtube.com/c/BeerandCode/">Beer and Code</a> - Faça seu futuro com as tecnologias mais utilizadas nas Startups de sucesso. <br>
+🔖 <a href="https://www.youtube.com/c/AttekitaDev/">Attekita Dev</a> - Engenheira de software entusiasta em UX, com mais de mais de 20 aplicativos publicados na App Store <br>
+🔖 <a href="https://www.youtube.com/c/WebDevSimplified/">Web Dev Simplified</a> - Web Dev Simplified tem tudo a ver com o ensino de habilidades e técnicas de desenvolvimento web de maneira eficiente e prática <br>
+🔖 <a href="https://www.youtube.com/c/EscolaFrontend/">Escola Front-end</a> - Conteúdo sobre Front-end <br>
+🔖 <a href="https://www.youtube.com/c/ProgrameseufuturoComWagnerGaspar">Programe seu futuro</a> - Programação, Algoritmos e Lógica de Programação <br>
+🔖 <a href="https://www.youtube.com/c/cfbcursos">CFBCursos</a> - Canal de cursos/aulas de informática que disponibiliza conteúdo de qualidade e gratuito <br>
+🔖 <a href="https://www.youtube.com/channel/UCNDmzGYwwT3rdY3xQuW8QOA">Coding Snow</a> - Coding Snow é um canal para design e desenvolvimento criativo da Web, designs de front-end, designs de interface do usuário, Web design responsivo e designs de back-end usando HTML, CSS, Javascript / JQuery, PHP, MYSQL <br>
+🔖 <a href="https://www.youtube.com/c/pessonizando">Pessonizando</a> - Canal fala sobre Programação, Teste de Software, Carreira em Computação e como é viver e trabalhar com TI na EUROPA. <br>
+🔖 <a href="https://www.youtube.com/c/LamaDev">Lama Dev</a> - Tutoriais de desenvolvimento da Web para todos. Aprenda JavaScript, React.js, Node.js e encontre inspiração para HTML, CSS e web design com Lama e torne-se um desenvolvedor web. <br></p>
+<h2 id="-pentest">📚 Pentest</h2>
+<p>🔖 <a href="https://beefproject.com/">Beef-Project</a> - Framework de exploração de browser <br>
+🔖 <a href="https://capturetheflag.com.br/">Capture The Flag - CTF</a> - Desafios reais de hacking, desenvolvido por especialistas brasileiros <br>
+🔖 <a href="https://www.hackthebox.eu/">HackTheBox</a> - Site com laboratórios para praticar pentest de forma gratuita e legal <br>
+🔖 <a href="https://hstrike.com/">HStrike</a> - Ferramentas de pentest em nuvem <br>
+🔖 <a href="http://www.httrack.com/">HTTRack</a> - Browser utility <br>
+🔖 <a href="https://www.paterva.com/">Maltego</a> - Ambiente open source para análise de redes completa <br>
+🔖 <a href="https://nmap.org/">NMap</a> - Scanner de portas de rede <br>
+🔖 <a href="https://picoctf.com/">picoCTF</a> - Jogo gratuito de segurança de computador voltado para alunos do ensino fundamental, médio e iniciantes <br>
+🔖 <a href="http://sqlmap.org/">SQLMap</a> - Ferramenta de teste de penetração open source que automatiza injeção de SQL <br></p>
+<h2 id="-blogs-e-podcasts">📚 Blogs e Podcasts</h2>
+<p>🔖 <a href="https://devnaestrada.com.br/">DevNaEstrada</a> - Desenvolvimento web em geral <br>
+🔖 <a href="https://dicasdeprogramacao.com.br/">Dicas de programação</a>: Dicas para  <br>
+🔖 <a href="https://podprogramar.com.br/">PodProgramar</a> - Focado em programação, notícias e histórias da área <br>
+🔖 <a href="https://hipsters.tech/">Hipsters.tech</a> - Desenvolvimento de aplicações, design digital, startups e tecnologias em geral <br>
+🔖 <a href="https://www.linuxtips.io/podcast">LinuxTips</a> - Linux, DevOps, Docker e T.I <br>
+🔖 <a href="https://www.etudonuve.com.br/i/">É tudo nuve</a> - Pesquisa  <br>
+🔖 <a href="https://dev.to/">Dev.to</a> - Rede social para desenvolvedores <br>
+🔖 <a href="https://playcode.com.br/">Playcode</a> - Site com algumas dicas para programação <br>
+🔖 <a href="https://deploy.codenation.com.br/podcasts/home">Codenation</a> <br>
+🔖 <a href="https://open.spotify.com/show/07cPNODgBHWh2JMkHbZxXG">Ambev Tech Talk</a>: Podcast da Ambev sobre tecnologia e cerveja <br>
+🔖 <a href="https://blog.corujadeti.com.br/">Coruja de TI</a> - Blog com várias dicas de TI no geral <br>
+🔖 <a href="https://cooperati.com.br/">Cooperati</a> - Site com algumas informações sobre tecnologia <br>
+🔖 <a href="https://www.zup.com.br/blog">Zup</a> - Blog com informação sobre tecnologia <br>
+🔖 <a href="https://open.spotify.com/show/003zbichzSTjf3m7W2Sfvc">Boss Level</a> - O Boss Level é um Podcast sobre desenvolvimento, Frontend, Backend e DevOps <br>
+🔖 <a href="https://www.cabecadelab.com.br/">Cabeça de Labs</a> - O Cabeça de Lab é o podcast do Luizalabs, o laboratório de inovação e tecnologia do Magalu <br>
+🔖 <a href="https://www.carreirasemfronteiras.com.br/">Carreira sem Fronteiras</a> - Podcast com brasileiros que vivem e trabalham no exterior <br>
+🔖 <a href="https://www.b9.com.br/shows/codigoaberto/">Codigo Aberto</a> - Conversas com os profissionais mais influentes do mercado sobre o futuro <br>
+🔖 <a href="https://castbox.fm/app/castbox/player/id1323408">DioCast</a> - Tecnologia geral do canal DioLinux <br>
+🔖 <a href="https://open.spotify.com/show/3TNsKUGlP9YbV1pgy3ACrW">FalaDev</a> - Podcast da Rocketseat sobre desenvolvimento <br>
+🔖 <a href="http://www.ufrgs.br/frontdaciencia/">Fronteiras da Ciência</a> - Ciência, pseudociências e tudo o mais, feito pelo IFUFGRS <br>
+🔖 <a href="https://mission.org/itvisionaries/">IT Visionaries (em inglês)</a> - Tecnologias quentes e inovação <br>
+🔖 <a href="https://www.lambda3.com.br/tag/podcast/">Lambda3</a> - Desenvolvimento de software e tecnologia em geral <br>
+🔖 <a href="https://jovemnerd.com.br/nerdcast/">NerdCast</a> - Tecnologia, ciência e universo POP <br>
+🔖 <a href="https://pizzadedados.com/">Pizza de dados</a> -  Ciência de dados e conselhos de carreira <br>
+🔖 <a href="https://podprogramar.com.br/">PodProgramar</a> - Focado em programação, notícias e histórias da área <br>
+🔖 <a href="https://podtag.com.br/">PodTag</a> - Desenvolvimento de software e tecnologia em geral <br>
+🔖 <a href="https://quebradev.com.br/">QuebraDev</a> - Quebrada + tecnologia <br></p>
+<h2 id="-business">📚 Business</h2>
+<p>🔖 <a href="https://bossabox.com/">BossaBox</a> - Rede de desenvolvedores, designers e gerentes <br>
+🔖 <a href="https://codeinterview.io/">CodeInterview</a> - Realize entrevistas de emprego com codificação ao vivo <br>
+🔖 <a href="https://impulso.network/">Impulso</a> - Uma rede gratuita para impulsionar o seu crescimento profissional <br>
+🔖 <a href="https://rocket.chat/">Rocket.Chat</a> - Chat corporativo open-source e gratuito para equipes <br></p>
+<h2 id="-web-developer-roadmap">📚 Web Developer Roadmap</h2>
+<p>🔖 <a href="https://github.com/kamranahmedse/developer-roadmap">Web Developer Roadmap</a>: Trilha de caminhos para seguir para se tornar um desenvolvedor WEB <br></p>
+<h2 id="-extensões-para-o-seu-navegador">📚 Extensões para o seu navegador</h2>
+<p>🔖 <a href="https://chrome.google.com/webstore/detail/file-icons-for-github-and/ficfmibkjjnpogdcfhfokmihanoldbfe">File Icons for GitHub and GitLab</a> <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl">GoFullPage</a> <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=pt-BR">Web Developer</a> <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Developer Tools</a> <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR">Window Resizer</a> <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=pt-BR">Vue Devtools</a> <br>
+🔖 <a href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=pt-BR">Dark Reader</a> <br></p>
+<h2 id="-recomendação-de-livros">📚 Recomendação de livros</h2>
+<p>🔖 <a href="https://g.co/kgs/62wx9t">Clean Code - Código Limpo</a> <br>
+🔖 <a href="https://g.co/kgs/Hf2eY3">Refactoring - Refatoração</a> <br>
+🔖 <a href="https://g.co/kgs/Hf2eY3">Clean Archtecture - Arquitertura Limpa</a> <br>
+🔖 <a href="https://g.co/kgs/5nbqB3">O programador pragmático</a> <br></p>
+<h2 id="-apps-para-praticar-programação">📚 Apps para praticar programação</h2>
+<p>🔖 <a href="https://www.sololearn.com/home">SoloLearn</a> <br>
+🔖 <a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3&#x26;hl=en_US&#x26;gl=US">Pydriod3 Android</a> <br>
+🔖 <a href="https://play.google.com/store/apps/details?id=com.getmimo&#x26;hl=pt_BR&#x26;gl=US">Mimo Android</a> <br>
+🔖 <a href="https://play.google.com/store/apps/details?id=com.paprbit.dcoder&#x26;hl=pt_BR&#x26;gl=US">Dcoder Android</a> <br>
+🔖 <a href="https://play.google.com/store/apps/details?id=com.ryzac.codecademygo&#x26;hl=pt_BR&#x26;gl=US">Codecademy Android</a> <br>
+🔖 <a href="https://apps.apple.com/us/app/codecademy-go/id1376029326">Codecademy iOS</a> <br>
+🔖 <a href="https://play.google.com/store/apps/details?id=com.area120.grasshopper&#x26;hl=pt_BR&#x26;gl=US6">GrassHopper Android</a> <br></p>
+<h2 id="-sites-para-treinar-projetos-front-end">📚 Sites para treinar projetos front-end</h2>
+<p>🔖 <a href="https://www.frontendmentor.io/">Frontend Mentor</a> - Desafios de Programação Front-end, análise dos resultados feita pela comunidade, sem IDE integrada <br>
+🔖 <a href="https://codier.io/challenge">Codier</a> - Desafios de Programação Front-end, análise dos resultados feita pela comunidade. IDE integrada <br>
+🔖 <a href="https://codewell.cc/">Code Well</a> - Treine suas habilidade de HTML e CSS com alguns templates <br>
+🔖 <a href="https://www.devchallenge.com.br/">DevChallenge</a> - Site com desafios de front-end, back-end e mobile <br>
+🔖 <a href="https://codepen.io/challenges">CodePen Challenges</a> - Desafios de Programação Front-end. IDE integrada <br></p>
+<h2 id="-sites-para-treinar-projetos-back-end">📚 Sites para treinar projetos back-end</h2>
+<p>🔖 <a href="https://devchallenge.vercel.app/challenges?type=backend">Dev Challenge Back-End</a> - Treine suas habilidades com desafios Back-end <br></p>
+<h2 id="-sites-para-treinar-projetos-mobile">📚 Sites para treinar projetos mobile</h2>
+<p>🔖 <a href="https://devchallenge.vercel.app/challenges?type=mobile">Dev Challenge Mobile</a> - Treine suas habilidades com desafios Mobile <br></p>
+<h2 id="-ideias-para-projeto">📚 Ideias para projeto</h2>
+<p>🔖 <a href="https://github.com/florinpop17/app-ideas">App Ideas</a> - Compilado de desafios para você testar seus conhecimentos e aumentar seu portfólio <br>
+🔖 <a href="https://what-to-code.com/">What to Code</a> - Compilado de desafio e ideias para você praticar seus códigos e aumentar seu portfólio <br></p>
+<h2 id="-cursos-de-java">📚 Cursos de Java</h2>
+<p>🔖 <a href="https://www.youtube.com/watch?v=eIrMbAQSU34">Java Tutorial for Beginners</a> <br>
+🔖 <a href="https://youtu.be/VKjFuX91G5Q">Maratona Java</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=grEKMHGYyns">Learn Java 8 Full Course in 9 Hours</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRjKA_NuK9mHmlk0dZzuP1P5">Java Programming</a>: <br>
+🔖 <a href="https://www.codigofonte.com.br/artigos/os-dez-melhores-frameworks-java-do-mercado">Frameworks de Java</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=xk4_1vDrzzo">Java Full Course</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR">Curso de Java</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r">Curso de Java 2</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLucm8g_ezqNrQmqtO0qmew8sKXEEcaHvc">Curso de Java 3</a> <br></p>
+<h2 id="-cursos-de-javascript">📚 Cursos de JavaScript</h2>
+<p>🔖 <a href="https://goo.gl/zfjfkQ">Curso completo de Javascript (46 aulas):</a> <br>
+🔖 <a href="https://youtu.be/i6Oi-YtXnAU">Curso de introdução ao Java script</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm">Curso Java script básico</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC">Curso Java Script</a> <br>
+🔖 <a href="https://www.rodrigobrito.dev.br/blog/js-0701-javascript-completo-es6-classes">Att Java Script</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=8GPPJpiLqHk">JavaScript 1</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=dtKciwk_si4">JavaScript 2</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">JavaScript 3</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=jS4aFq5-91M">JavaScript 4</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=EfAl9bwzVZk">JavaScript 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD">Cursos de JavaScript em inglês</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=3PHXvlpOkf4">Faça 15 Projetos em JavaScript (Inglês)</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLajjpPyc2dmbt0KebBvT9VQV8y2R_IO7j">Playlist de projetos de JS</a> <br>
+🔖 <a href="https://www.cod3r.com.br/courses/javascript-funcional-fundamentos">Fundamentos de JavaScript Funcional</a> <br></p>
+<h2 id="-cursos-de-html-e-css">📚 Cursos de HTML e CSS</h2>
+<p>🔖 <a href="https://github.com/gustavoguanabara/html-css">Curso em video</a>:  <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Curso completo e atual de HTML5 e CSS3 - Módulo 1 de 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s">Curso completo e atual de HTML5 e CSS3 - Módulo 2 de 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ">Curso completo e atual de HTML5 e CSS3 - Módulo 3 de 5</a> <br>
+🔖 <a href="https://app.rocketseat.com.br/node/o-guia-estelar-de-html">Rocketseat HTML</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c">HTML 5 Curso 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o">HTML 5 Curso 2</a> <br>
+🔖 <a href="https://goo.gl/SD4p4g">Curso Completo de HTML5 (42 aulas)</a>: <br>
+🔖 <a href="https://goo.gl/1kfBCZ">Curso Aprenda HTML em 1 hora (22 aulas)</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLwXQLZ3FdTVGf7GUtiOFLc_9AXO25iIzG">Curso de CSS3 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLx4x_zx8csUi47Bnugpk78nqJN6rYvEnV">Curso de CSS3 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLwXQLZ3FdTVF_HYP5r1oR7vK1_7ZuTU78">Curso de CSS3 3</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=FRhM6sMOTfg&#x26;list=PLwXQLZ3FdTVGf7GUtiOFLc_9AXO25iIzG&#x26;ab_channel=NodeStudioTreinamentos">Curso de CSS3 4</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=Rz-rey4Q1bw&#x26;t=10659s">Curso de CSS3 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLgCTlR71eB4-ZGpajuh01zexg8f9Qd98z">Curso de CSS3 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLai7Iw-TAFJr5IQ83rIo_iSUiWaiXen5G">Curso de CSS3 7</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=ZFQkb26UD1Y">Curso de CSS3 8</a> <br>
+🔖 <a href="https://goo.gl/1kfBCZ">Curso Aprenda HTML em 1 hora (22 aulas):</a>  <br>
+🔖 <a href="https://goo.gl/ebjzVG">Curso completo de CSS3 (22 aulas)</a> <br>
+🔖 <a href="https://goo.gl/bAO0hE">Curso de CSS3 com Sass e Compass (9 aulas)</a> <br></p>
+<h2 id="-cursos-de-python">📚 Cursos de Python</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">Curso de Python 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLfCKf0-awunOu2WyLe2pSD2fXUo795xRe">Curso de Python 2</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=XKHEtdqhLK8">Curso de Python 3</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc">Curso de Python 4</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">Curso de Python 5</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=8DvywoWv6fI">Curso de Python 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3">Curso de Python 7</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=t8pPdKYpowI">Curso de Python 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j">Curso de Python 9</a> <br>
+🔖 <a href="https://solyd.com.br/treinamentos/python-basico/?fbclid=IwAR0WJYyqSTr2E28c2dvqL6HnIfb2DiA1aAB40khxKwFc6L197DfZTK7iQ7k">Curso de Python 10</a> <br></p>
+<p>🔖 <a href="https://www.youtube.com/playlist?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">PYTHON 3 COMPLETO CURSO EM VIDEO:</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6">Curso de Python 3 - Mundo 1: Fundamentos</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dk_nZHmxxf_J0WRAqy5Czye">Curso de Python 3 - Mundo 2: Estruturas de Controle</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dksnH2jVTIVNviIMBVYyFnH">Curso de Python 3 - Mundo 3: Estruturas Compostas</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-">Exercícios de Python 3</a> <br>
+🔖 <a href="https://www.cod3r.com.br/courses/python-3-curso-rapido">Python 3 - Curso Rápido</a> <br></p>
+<h2 id="-cursos-de-php">📚 Cursos de PHP</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLwXQLZ3FdTVEITn849NlfI9BGY-hk1wkq">Curso de PHP 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k">Curso de PHP 2</a> <br>
+🔖 <a href="https://goo.gl/wLra9o">Curso Básico de PHP (20 aulas)</a> <br>
+🔖 <a href="https://goo.gl/1th6ok">Curso Completo de PHP (108 aulas)</a> <br></p>
+<h2 id="-cursos-de-c">📚 Cursos de C#</h2>
+<p>🔖 <a href="https://www.youtube.com/playlist?list=PLxd1RHU8YgYkHCbZqtqWuaYHASNERx-Tn">Curso de C# 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi">Curso de C# 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLCPwMcbEISGFu-hmzvTQyvogjAlAbOKQx">Curso de C# 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLXik_5Br-zO-rMqpRy5qPG2SLNimKmVCO">Curso de C# 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLEdPHGYbHhlcxWx-_LrVVYZ2RRdqltums">Curso de C# 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLesCEcYj003SFffgnOcITHnCJavMf0ArD">Curso de C# 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL50rZONmv8ZTLPRyqb37EoPlBpSmVBJWX">Curso de C# 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLucm8g_ezqNoMPIGWbRJXemJKyoUpTjA1">Curso de C# 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLO_xIfla8f1wDmI0Vd4YJLKBJhOeQ3xbz">Curso de C# 9</a> <br></p>
+<h2 id="-cursos-de-c-1">📚 Cursos de C</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLesCEcYj003SwVdufCQM5FIbrOd0GG1M4">Curso de C 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL_c9BZzLwBRKKqOc9TJz1pP0ASrxLMtp2">Curso de C 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR">Curso de C 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLD28639E2FFC4B86A">Curso de C 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL78280D6BE6F05D34">Curso de C 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW">Curso de C 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLesCEcYj003SwVdufCQM5FIbrOd0GG1M4">Curso de C 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLGgRtySq3SDMLV8ee7p-rA9y032AU3zT8">Curso de C 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL8iN9FQ7_jt4DJbeQqv--jpTy-2gTA3Cp">Curso de C 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLucm8g_ezqNqzH7SM0XNjsp25AP0MN82R">Curso de C 10</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLIfZMtpPYFP5qaS2RFQxcNVkmJLGQwyKE">Curso de C 11</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxMw67OGLa0kW_TeweK2-9gXRlMLYzC1o">Curso de C 12</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLZ8dBTV2_5HTGGtrPxDB7zx8J5VMuXdob">Curso de C 13</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL9PzDKD_B1nNpJxJ9kKFEWtN7Uzk6RpFa">Curso de C 14</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL21rh82DRnmobAWFir6DxPuTOa82myc8_">Curso de C 15</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLqJK4Oyr5WSjjEQCKkX6oXFORZX7ro3DA">Curso de C 16</a> <br></p>
+<h2 id="-cursos-de-c-2">📚 Cursos de C++</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLx4x_zx8csUjczg1qPHavU1vw1IkBcm40">Curso de C++ 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLR8Jf69jN0ulqMI8n85Cr2NsoerSF9DF5">Curso de C++ 2</a> <br>
+🔖 <a href="https://www.inf.ufpr.br/ci208/NotasAula.pdf">Guia de C++ 3</a> <br></p>
+<h2 id="-cursos-de-kotlin">📚 Cursos de Kotlin</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLPs3nlHFeKTr-aDDvUxU971rPSVTyQ6Bn">Curso de Kotlin 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLmcyA-BbqsvJnOZoGNHPMF1dCBq0m6Qzg">Curso de Kotlin 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLM8_o_MDe-LEpabjij2vyHZnxI7Knrxkj">Curso de Kotlin 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLAzlSdU-KYwVlDl-939Vv0_r5XhU7zgX1">Curso de Kotlin 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLM8_o_MDe-LEas_XSKIyaFAp_MS__5j4p">Curso de Kotlin 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLCTD_CpMeEKSjzbsW_zmVNz23GyOVsdbS">Curso de Kotlin 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL8ie04dqq7_M8nfPA9DPiAy7NsoZQpVAf">Curso de Kotlin 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHZwU4kNI8DXL2ennM5kR8kHm5zwS6hOz">Curso de Kotlin 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLM8_o_MDe-LElQqV-SZtlyGt8l7iz770r">Curso de Kotlin 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLufC_h3b0C2BbBfAB3rZXXkhtRDEuQFcq">Curso de Kotlin 10</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLDqAb8tE7SQYE7NJqwuku7e1S46MOav6X">Curso de Kotlin 11</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLkws8CjXqzRkpooBmF4CdSkDIrcTlSFQS">Curso de Kotlin 12</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLRxQg_wrhrC5K3-7eNuP_1KdN2AqIe3Ie">Curso de Kotlin 13</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxcGiBXcK0kblgnLEEC0ZphoG-PRB4x1d">Curso de Kotlin 14</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLM8_o_MDe-LEu4XrXKjA48dt1d07FPYP1">Curso de Kotlin 15</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLATOxdAcWIvPbiiK0_mn_LTQyS1FBYdaW">Curso de Kotlin 16</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=r_6Ku38sA-c&#x26;t=11746s">Curso de Kotlin 17</a> <br>
+🔖 <a href="https://cursos.alura.com.br/course/fundamentos-android-kotlin">Curso de Kotlin 18</a> <br>
+🔖 <a href="https://play.kotlinlang.org/koans/Classes/Data%20classes/Task.kt">Curso de Kotlin 19</a> <br></p>
+<h2 id="-cursos-de-swift">📚 Cursos de Swift</h2>
+<p>🔖 <a href="https://www.youtube.com/playlist?list=PLJ0AcghBBWShgIH122uw7H9T9-NIaFpP-">Curso de Swift 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLMdYygf53DP46rneFgJ7Ab6fJPcMvr8gC">Curso de Swift 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxNM4ef1BpxjjMKpcYSqXI4eY4tZG2csm">Curso de Swift 2</a> <br></p>
+<h2 id="-cursos-de-go">📚 Cursos de Go</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg">Curso de GO 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLUbb2i4BuuzCX8CLeArvx663_0a_hSguW">Curso de GO 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLdKnuzc4h6gFmPLeous4S0xn0j9Ik2s3Y">Curso de GO 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLt1J5u9LpM5-L-Ps8jjr91pKhFxAnxKJp">Curso de GO 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLXFk6ROPeWoAvLMyJ_PPfu8oF0-N_NgEI">Curso de GO 5</a> <br></p>
+<h2 id="-cursos-de-ruby">📚 Cursos de Ruby</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLdDT8if5attEOcQGPHLNIfnSFiJHhGDOZ">Introdução ao Ruby On-Rails</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLFeyfVYazTkJN6uM5opCfSN_xjxrMybXV">Curso de Ruby On-Rails 1</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLe3LRfCs4go-mkvHRMSXEOG-HDbzesyaP">Curso de Ruby On-Rails 2</a> <br>
+🔖 <a href="https://youtube.com/playlist?list=PLEdPHGYbHhldWUFs2Q-jSzXAv3NXh4wu0">Curso de Ruby On-Rails 3</a> <br>
+🔖 <a href="https://goo.gl/LcHcn4">Curso de Ruby On-Rails (15 aulas)</a> <br>
+🔖 <a href="https://goo.gl/4oXEAP">Curso de Ruby On Rails (49 aulas)</a> <br></p>
+<h2 id="-cursos-de-react">📚 Cursos de React</h2>
+<p>🔖 <a href="https://youtube.com/playlist?list=PLXik_5Br-zO9YVs9bxi7zoQlKq59VPTX1">Curso de React.js 1</a> <br>
+🔖 <a href="https://www.alura.com.br/imersao-react/aula01-react-alurakut">Curso de React.js 2</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=sZ0bZGfg_m4">Curso de React.js 3</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=JZQ8m08cbF0">Curso de React.js 4</a> <br>
+🔖 <a href="https://www.cod3r.com.br/courses/curso-intensivo-next-react">Curso Intensivo de Next JS e React</a> <br>
+🔖 <a href="https://www.cod3r.com.br/courses/react-native-crud">Curso de React Native com Hooks e Context API - Cadastro Completo</a> <br></p>
+<h2 id="-cursos-de-react-native">📚 Cursos de React Native</h2>
+<p>🔖 <a href="https://www.youtube.com/playlist?list=PLx4x_zx8csUgyDN7j9L7gykBjxByM_etD">Curso de React Native 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL85ITvJ7FLojBfY7TifCq7P417AZdsP4k">Curso de React Native 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLx4x_zx8csUgyDN7j9L7gykBjxByM_etD">Curso de React Native 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL8fIRnD1uUSnRqz3E2caAWDqbtIFXmNtW">Curso de React Native 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLbnAsJ6zlidsqILBeTaeUr7aaWcqAtMrW">Curso de React Native 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL_Axpn7FrXHSt92vK3EthJCId4mUn7viv">Curso de React Native 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL4zG19BCs4pdPJzElbUxCykHTClU-B0Ts">Curso de React Native 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL69eBMqNvxhVer10WY3nxgV0qiO8xenOP">Curso de React Native 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ">Curso de React Native 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLAF5G8rnMmBb2XMMfo79GWnsFvuDuLHA7">Curso de React Native 10</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxF2lyHGcERApnjQPgeeEIzJJdGurraMW">Curso de React Native 11</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLkOyNuxGl9jyhndcnbFcgNM81fZak7Rbw">Curso de React Native 12</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL8kfZyp--gEXs4YsSLtB3KqDtdOFHMjWZ">Curso de React Native 13</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLVzrOYTg7zYD__qifpofsQDhHVHEvSx_h">Curso de React Native 14</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLcDaXGnNU58bmEbkYNUHsrLMF6a_AqjF9">Curso de React Native 15</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLB5l-YuqoyEFATE6Ax6WXB0P4AGjRDljr">Curso de React Native 16</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxNM4ef1Bpxhe_PxwprF0R2fp0UurDZuw">Curso de React Native 17</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxNM4ef1BpxgALv5Vm-ooZo8qYRgCzKSV">Curso de React Native 18</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL6sXCB6Pgqf9RbLaxmiSQQXp-a0_j56xe">Curso de React Native 19</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLH7791M3Es82ztdPxpeLZXmfBG4tAJloH">Curso de React Native 20</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLvVYUfc9tf-JMETwebyYaA4vk3YoXlWAM">Curso de React Native 21</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLEk7yXd40KELpioDsnXbGu45nhx9xTbiL">Curso de React Native 22</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLg1BUBhZiTHNYFDZUYplk9m0D1hF_tr3j">Curso de React Native 23</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLizN3WA8HR1wRbFttKXDdc_yQ5CWj2msJ">Curso de React Native 24</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLvmEIQBREIvS_gS6BX5Tk1z61i85BZF7E">Curso de React Native 25</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLZ3MwD-soTTEGG42-BvoqD0qK0vKV2ygm">Curso de React Native 26</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLBWrrrRI1gZBbmG43QE1hYOsqu5QXjilT">Curso de React Native 27</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLd4Jo6d-yhDIOgnG4EueCh2ADbMCJyJoX">Curso de React Native 28</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLntXnq2Zot_04VH1IFSZwJspOfKquAyKq">Curso de React Native 29</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLYxzS__5yYQmdfEyKDrlG5E0F0u7_iIUo">Curso de React Native 30</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL9Fgd5f5dgGIjrHsbqQNFUsgo7uQRIAdj">Curso de React Native 31</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLTYREodEJtnVW4oseGzb5oCk0Sbd6TumK">Curso de React Native 32</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLTYm84ujubwL3aYYWkU9FoZBrkW9GFy2G">Curso de React Native 33</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL0CFwZ06NyfKR1x7aYBXBwplNMwa2CMFX">Curso de React Native 34</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLTLAlheiUm5G6yzSN0KTBbZwZS8xVKYxI">Curso de React Native 35</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLSMIv0i-2Ebmp-FpmJW84UO_48ErxzhAB">Curso de React Native 36</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLfDIQS3HDSgmkbsdN-fLVagFdKt7O5tFa">Curso de React Native 37</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLA_u3gtc5zsyEgLaTLY7clKiM2IRU4ndI">Curso de React Native 38</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLaAoUJDWH9Wqatfwa4SEfyFevrl8QefcN">Curso de React Native 39</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLQWFhX-gwJblNXe9Fj0WomT0aWKqoDQ-h">Curso de React Native 40</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLyOq2o1zHOI9lAMMKr9OEhm5ZUUA8UX1V">Curso de React Native 41</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLLEQmYfSF6FQCrSxRuq-4OCYx8wE67yfV">Curso de React Native 42</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLC8ntN5__iMLKFGge64ZXIwFtlMYKh50k">Curso de React Native 43</a> <br></p>
+<h2 id="-cursos-de-angular">📚 Cursos de Angular</h2>
+<p>🔖 <a href="https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G">Curso de Angular 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLdPPE0hUkt0rPyAkdhHIIquKbwrGUkvw3">Curso de Angular 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHlHvK2lnJneQPfbOvUait1MtAoXeYhtL">Curso de Angular 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL4iwH9RF8xHnMnKewOLjDvTHzTmyxJNHF">Curso de Angular 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL8iIphQOyG-DSLV6qWs8wh37o0R_F9Q_Q">Curso de Angular 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLA8Qj9w4RGkVOj-xGYJCHJ0Ob4CMg-8NI">Curso de Angular 6</a> <br>
+🔖 <a href="https://goo.gl/6rT9ZC">Curso de Angular (17 aulas)</a> <br>
+🔖 <a href="https://goo.gl/mxPqRt">Curso de Angular 2 (56 aulas)</a> <br>
+🔖 <a href="https://www.cod3r.com.br/courses/angular-9-essencial">Curso de Angular 9 - Essencial</a> <br></p>
+<h2 id="-cursos-de-vue">📚 Cursos de Vue</h2>
+<p>🔖 <a href="https://revue-draggable.vercel.app/">Library de Vue</a> <br>
+🔖 <a href="https://github.com/kyvg/vue3-notification">Vue 3 Notification</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLWNaqtzH6CWR-dykXeDD5XmMzJur9JBIh">Curso de Vue 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLcoYAcR89n-qq1vGRbaUiV6Q9puy0qigW">Curso de Vue 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLXik_5Br-zO_xQHAH9GrNR1gAefYWaKxz">Curso de Vue 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLWhiA_CuQkbDxptXchXrYuGZnhlwnJgOF">Curso de Vue 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLPl81lqbj-4J-gfAERGDCdOQtVgRhSvIT">Curso de Vue 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLYAyQauAPx8l7G8lTbSv23UTAwbVORY1r">Curso de Vue 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLygIEirBzJi6qaDltMN44zyVHjbqUa4e-">Curso de Vue 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLVSNL1PHDWvRbZsrcQ249Ae5MoKrlBTdd">Curso de Vue 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL0_f8nzxZ-FksYjJ8Oj4WwD13OVE2tNiH">Curso de Vue 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLSuKjujFoGJ2RBs4bX03JPuqJtHqJme9B">Curso de Vue 10</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLCTD_CpMeEKSiIog15wqiNOH52gYn42kW">Curso de Vue 11</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLIUcOrGGQI6QaH57pVTWnF8vmPIgp_Jv_">Curso de Vue 12</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLJCJl1zIiLEOgN0m46LkNwDfRgLgf__wc">Curso de Vue 13</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLp7Agl_Dsq-xqtT7jn6PgzwC2jqdMajP2">Curso de Vue 14</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLSsqMeVmrPfHCeWzNeZSC5WitC8yGe4dZ">Curso de Vue 15</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLL0TiOXBeDajWIEXDUvQbzjV4D4GiruLy">Curso de Vue 16</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLlf-3U45Cg7VwJ2MTT83eREUM1xsndRJa">Curso de Vue 17</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL6u1VNwqZdJYGyfb99ct-xF5f3kIy4icr">Curso de Vue 18</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLhJsCsTdxwvuMqZJq_5s0bJKbduM3vHNS">Curso de Vue 19</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLSk-H3V-Rn5E5DrKFFeROu5j1FaYGA7gl">Curso de Vue 20</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLUW39uIualVtC9sciopJGnuOsjZuytE4z">Curso de Vue 21</a> <br></p>
+<h2 id="-cursos-de-svelte">📚 Cursos de Svelte</h2>
+<p>🔖 <a href="https://www.cod3r.com.br/courses/svelte-intensivo">Curso Intensivo de Svelte</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLV8x_i1fqBw2QScggh0pw2ATSJg_WHqUN">Curso de Svelte 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLPl81lqbj-4J6xcUu7SW4f3Y1ou8X8rRY">Curso de Svelte 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLvEHfHi6ADDvRNq3tqf13-iQA5hKLKPvV">Curso de Svelte 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLtEoLIi1AQhWzcCE76KQi4OLHqlDu_XUh">Curso de Svelte 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLDyYHqVG_tvWnbi94m0SxQeKZW8E4LVnQ">Curso de Svelte 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLLp1rKaDevPcGSBjdX0jxdUOYQrT_wS8X">Curso de Svelte 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLNBi2FtnN_UY_bLPWm2_0O8dReEsCNYhv">Curso de Svelte 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL0dTfY76y54PSpCel0rBb5VR2A-mMnDLJ">Curso de Svelte 8</a> <br></p>
+<h2 id="-cursos-de-flutter">📚 Cursos de Flutter</h2>
+<p>🔖 <a href="https://www.cod3r.com.br/courses/flutter-desenvolva-um-cadastro-completo">Curso de Flutter - Desenvolva um Cadastro Completo 2020</a>  <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLl_hIu4u7P677H9f6zPOHiOz2izkvQq2E">Curso de Flutter 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL_wKlpKIC9vWubXsj3IRPZ2Rk6QMfsPPg">Curso de Flutter 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLEXr-WZRgPjwk2v5wYi70WN--pCGvN-9u">Curso de Flutter 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLRpTFz5_57cufduUDgiZZqA_k5Q7UV_50">Curso de Flutter 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLrfnI95Js56bWvNYF5ItofdQy3aoJj4tQ">Curso de Flutter 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLlBnICoI-g-d-J57QIz6Tx5xtUDGQdBFB">Curso de Flutter 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLqdwHeoSjEN-9aGd-RxaS_2cyD_AKT0c_">Curso de Flutter 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLg5-aZqPjMmBmCIgUZ0kNtoE7KJfvJZXS">Curso de Flutter 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLHlHvK2lnJndhgbqLl5DNEvKQg5F4ZenQ">Curso de Flutter 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL5EmR7zuTn_aX0pG4oWTyKKQT25Hkq2XG">Curso de Flutter 10</a> <br></p>
+<h2 id="-cursos-de-jquery">📚 Cursos de jQuery</h2>
+<p>🔖 <a href="https://goo.gl/tHdIZ7">Curso Completo de jQuery (56 aulas)</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLIZ0d6lKIbVpF5DffKAX5e9L119PleIqg">Curso de jQuery 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLcHPNq67CaVnHwfOeK9-7n57aOV6orMSO">Curso de jQuery 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLH4WTsFKLXIcswDAqSge13AC76FiX4fCk">Curso de jQuery 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxQNfKs8YwvGOv4evjpsB3JWWZnYChp04">Curso de jQuery 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLB-cqguyT0racOkvxOYP6Am-Z0v7sdEcF">Curso de jQuery 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUYvLDfVUXOhnZ6QSouIfQQ7">Curso de jQuery 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLtLYd79f_qX9uufvXcgMrG6XVyc0VHlMp">Curso de jQuery 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLTE0X123tz-yxigJHnmuEgqWeVMI7YI-W">Curso de jQuery 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLu_qC9Zc8vNwlFP_1hSOXN2906iN_tvBL">Curso de jQuery 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLYIucmTPLjx6ENmhonMnyu2nai5NAYter">Curso de jQuery 10</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLdrT3osfZM8wqtx9pEDyXmbn5NpSRSJOL">Curso de jQuery 11</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLoRfWwOOv4jzx5mQTbL_un5KSFEAhkm8K">Curso de jQuery 12</a> <br></p>
+<h2 id="-cursos-de-less">📚 Cursos de Less</h2>
+<p>🔖 <a href="https://goo.gl/Y5UkLQ">Curso de Less (6 aulas)</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLWhiA_CuQkbBSfhS9nzc5BkopBY-22K-D">Curso de Less </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLwzKFCxxOMjPUOJitRL31rD1Zsd030sYX">Curso de Less </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLCTD_CpMeEKT70itw70uVs0vlFbvbCPQN">Curso de Less </a> <br></p>
+<h2 id="-cursos-de-sass">📚 Cursos de Sass</h2>
+<p>🔖 <a href="https://goo.gl/DzRv1e">Curso de Sass (18 aulas) /Inglês/</a> <br>
+🔖 <a href="https://www.youtube.com/watch?v=Wo5t3uUV8n4">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLCTD_CpMeEKQXywJB8KMN_-GccZuVf9ag">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLhSj3UTs2_yVyMlZyW-NAbgjtgAgLBzFP">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLPl81lqbj-4I4VwUdjbV2iFg7wispiXKP">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL0FXkz5ILg9Y0ADavZORWRUU3mqG80N8s">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLF3tsQa29IM2KG0OIHYxN_uqaVSI0gnbg">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL5mZlJHWhPyxKrfbsw5-1GxErJrOrSkWI">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL5mZlJHWhPyxKrfbsw5-1GxErJrOrSkWI">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLF3tsQa29IM2KG0OIHYxN_uqaVSI0gnbg">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLMy95_4XE08OmaSd_GOLKNkqhoJFvg7w7">Curso de Sass </a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL97KElaimHeGRtfkksKwxg6IGVZi_cR7J">Curso de Sass </a> <br></p>
+<h2 id="-cursos-de-bootstrap">📚 Cursos de Bootstrap</h2>
+<p>🔖 <a href="https://goo.gl/xFDOxT">Curso de Bootstrap (16 aulas)</a>  <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLnDvRpP8Bnexu5wvxogy6N49_S5Xk8Cze">Curso de Bootstrap 1</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxNM4ef1Bpxjh7ZRXg6wXgPaACdFqoBhM">Curso de Bootstrap 2</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLBbHLUbqqCrTwIrdix6kl84m4OPE0JexR">Curso de Bootstrap 3</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxNM4ef1BpxjYsjQCzv_POTOssvR1zL2L">Curso de Bootstrap 4</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxNM4ef1BpxjV5B9tXA7D7_4Ovp_k_2lB">Curso de Bootstrap 5</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLxIWikUsH2nQcHKUTu8S7cNTzqT-_HOr4">Curso de Bootstrap 6</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLZL68elhOXv9TzSOF1TSRWJZanzfdl5FG">Curso de Bootstrap 7</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLL0TiOXBeDagsYUYFO9WMwDtuDuoGZVB9">Curso de Bootstrap 8</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLXik_5Br-zO-iwhAe12sirOo_LZ0t-qEm">Curso de Bootstrap 9</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLd4yfya-3PIomj2O-W0s9A-0i1ThWJncj">Curso de Bootstrap 10</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLZOpILNI-A8kF_-OsviJK8-Saao7aAVaJ">Curso de Bootstrap 11</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLMy95_4XE08Pr2_9gRnZ4niSgp00FgIHP">Curso de Bootstrap 12</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLXik_5Br-zO9pxSxRtgESquGT2OhR3o8B">Curso de Bootstrap 13</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLO38D8juJBEPoryQhCkI_HjFePeH9_opW">Curso de Bootstrap 14</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PL4fEIiChAHVvUZ4AphnSc5GdxL9s6yrnB">Curso de Bootstrap 15</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLsAGEZyePyj9_J7aj4oss5R1z6BlP9Jrv">Curso de Bootstrap 16</a> <br>
+🔖 <a href="https://www.youtube.com/playlist?list=PLdrT3osfZM8x7J_p0DI3r3WSfrvEc2ZWU">Curso de Bootstrap 17</a> <br></p>
+<h2 id="-cursos-de-git-e-github">📚 Cursos de Git e Github</h2>
+<p>🔖 <a href="https://github.com/DanielHe4rt/git4noobs">Git 4 Noobs</a> <br>
+🔖 <a href="https://github.com/theandersonn/comandos-git">Comandos Git</a> <br>
+🔖 <a href="https://learngitbranching.js.org/">Aprenda Git</a> <br>
+🔖 <a href="https://git-school.github.io/visualizing-git/">Git School</a> <br>
+🔖 <a href="https://danielkummer.github.io/git-flow-cheatsheet/">Git Flow Cheatsheet</a> <br></p>
+<p>ls (Listar as pastas) <br>
+cd .. (voltar um diretório) <br>
+CD: <br>
+dir / tree /f (ver o que tem dentro da pasta) <br>
+mkdir (nome da pasta) - criar novos diretórios/pastas <br>
+git status (Verifica o status do repositório) <br>
+git add -A (Trackear o que não foi trackeado, inserir tudo) <br>
+git commit -m (Para commitar) / git commit -am <br>
+<a href="https://pt.stackoverflow.com/questions/344986/diferen%C3%A7a-do-git-commit-am-e-m">Diferença do commit -m para o git commit -am</a> <br>
+git log (lista de commits) <br>
+git reset (—soft / —mixed / —hard) <br>
+git checkout (Mudar a branch atual) <br>
+git diff (Checar o que houve nas alterações) / git diff —name-only / git diff //nome do arquivo// (vê apenas a alteração feita naquele arquivo) <br>
+git checkout HEAD — “diff” //nome do arquivo// (retroceder até a posição) <br>
+git push origin <link> <br>
+git pull origin <link> <br>
+git clone <link> <br></p>
+<p>Configurações iniciais do Git <br></p>
+<p>Baixando e instalando o Git <br>
+<a href="https://git-scm.com/downloads">Site para instalar o Git</a> <br></p>
+<p>Configura nome de usuário: <br>
+git config —global user.name <br></p>
+<p>Configura email de usuário: <br>
+git config —global user.email <a href="mailto:email@email.com.br">email@email.com.br</a> <br></p>
+<p>Inicializando um repositório <br></p>
+<p>Inicializa o versionamento no respectivo diretório: <br>
+git init <br></p>
+<p>Comandos básicos para sobreviver: <br></p>
+<p>Verificando o status do repositório: <br>
+git status <br></p>
+<p>Adicionando todos os arquivos para serem commitados: <br>
+git add . / git add -A <br></p>
+<p>Commitando arquivos: <br>
+git commit -m “inserir um comentário significativo” <br></p>
+<p>Visualizando relatório de commits: <br>
+git log // todos os commits <br>
+git log —oneline // exibe log com hash e título do commit <br></p>
+<p>Adicionando um repositório remoto: <br>
+git remote add origin <a href="https://github.com/User/Repository.git">https://github.com/User/Repository.git</a> <br></p>
+<p>Enviando as modificações para o repositório remoto: <br>
+git push origin <branch> <br></branch></p>
+<p>Puxando alterações do repositório remoto: <br>
+git pull origin <branch> <br></branch></p>
+<p>Trabalhando com branches: <br>
+git checkout -b nome-branch <br></p>
+<p>Aplicando merge em branches: <br>
+git merge nome-branch // precisa estar na branch de destino <br></p>
+<p>Visualizando todas as branches existentes no repositório: <br>
+git branch <br></p>
+<p>Deletando uma branch local: <br>
+git branch -D nome-branch <br>
+git branch -d nome-branch <br></p>
+<p>Deletando uma branch remota: <br>
+git push origin :nome-branch <br></p>
+<p>Deletando todas branch que não se encontram no repositório remoto: <br>
+git branch —merged ## <br>
+git branch -r | egrep -v -f /dev/fd/0 &#x3C;(git branch -vv | grep origin | grep -v “master”) | xargs git branch -d <br></p>
+<p>Deletando todos branches no repositório local (exceto a master): <br>
+git branch | grep -v “master” | xargs git branch -D <br></p> </div> <!-- related posts --> <footer> <h2 class="font-bold text-lg dark:text-white mb-6">Posts relacionados</h2> <section class="flex flex-col md:flex-row sm:justify-between gap-8"> <div class="flex flex-wrap gap-2"> <div class="min-h-full"> <img src="/assets/img/ChatGPT.webp" width="200" height="200" class="w-16 h-16 object-cover rounded-full" alt="img of Awesome ChatGPT: Uma Coleção de Ferramentas e Recursos de IA"> </div> <header class="flex justify-center items-center"> <a class="font-medium  hover:underline" href="/post/2025-06-27-awesome-chatgpt/"> Awesome ChatGPT: Uma Coleção de Ferramentas e Recursos de IA </a> </header> </div><div class="flex flex-wrap gap-2"> <div class="min-h-full"> <img src="/assets/img/develop.webp" width="200" height="200" class="w-16 h-16 object-cover rounded-full" alt="img of Guias de Desenvolvimento e Tecnologia"> </div> <header class="flex justify-center items-center"> <a class="font-medium  hover:underline" href="/post/2025-12-06-guias-desenvolvimento/"> Guias de Desenvolvimento e Tecnologia </a> </header> </div> </section> </footer> </article> </div>  </div> </article>  <footer class="flex justify-center items-center w-full px-16 h-28 border-t-2">
+&copy; 2026 Artes do Sul. Todos os direitos reservados.
+</footer> </main>    </body> </html> 
