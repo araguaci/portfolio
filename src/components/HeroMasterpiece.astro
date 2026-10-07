@@ -1,0 +1,138 @@
+---
+// HeroMasterpiece.astro — Cinematic Masterpiece Hero com estética Cyber-Growth
+---
+
+<section
+	class='relative w-full rounded-3xl overflow-hidden border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-[#07090e] shadow-2xl mb-4'
+>
+	<!-- Cinematic Visual Background with Dynamic Overlay -->
+	<div class='absolute inset-0 z-0 select-none pointer-events-none'>
+		<img
+			src='/assets/img/artesdosul-hero-cyber.jpg'
+			alt='Artes do Sul Cyber-Growth Studio Bombinhas Santa Catarina'
+			class='w-full h-full object-cover object-center filter brightness-90 contrast-105 transform scale-[1.02] transition-transform duration-1000'
+			loading='eager'
+		/>
+		<!-- Dynamic Gradient Overlays blending into background -->
+		<div class='absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/75 to-[#050505]/40'>
+		</div>
+		<div
+			class='absolute inset-0 bg-gradient-to-r from-[#050505]/90 via-transparent to-[#050505]/60'
+		>
+		</div>
+		<div
+			class='absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(0,217,255,0.12),_transparent_60%)]'
+		>
+		</div>
+	</div>
+
+	<!-- Content Container -->
+	<div
+		class='relative z-10 px-6 py-12 sm:px-10 sm:py-16 md:py-20 lg:py-24 max-w-4xl flex flex-col items-start gap-6'
+	>
+		<!-- Authority Kicker & Live Status -->
+		<div class='flex flex-wrap items-center gap-3'>
+			<span
+				class='as-kicker tracking-widest text-xs font-mono font-semibold px-3 py-1 rounded-full border border-[var(--accent-orange)]/30 bg-[var(--accent-orange)]/10 text-[var(--accent-orange)] shadow-sm'
+			>
+				BOMBINHAS · SANTA CATARINA // 1999–2026
+			</span>
+			<span
+				class='inline-flex items-center gap-1.5 font-mono text-[11px] px-2.5 py-0.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400'
+			>
+				<span class='w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse'></span>
+				ENGENHARIA WEB & ARTE
+			</span>
+		</div>
+
+		<!-- Main Headline -->
+		<h1
+			class='font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.05]'
+		>
+			Arquitetura digital de <span
+				class='text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-orange)] via-[#ff8c42] to-[var(--accent-cyan)]'
+				>alta tração</span
+			> e precisão cirúrgica.
+		</h1>
+
+		<!-- Value Proposition Description -->
+		<p class='text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed'>
+			Transformamos visão estratégica em aplicações web ultra-velozes, portais Jamstack, e-commerces
+			e sistemas sob medida com <strong>25 anos de experiência contínua</strong> no Brasil e no mundo.
+		</p>
+
+		<!-- Floating Validation Badges (Skill Requirement) -->
+		<div class='grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-2xl pt-2'>
+			<div
+				class='flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:border-[var(--accent-orange)]/40 transition-colors'
+			>
+				<div
+					class='flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-orange)]/20 text-[var(--accent-orange)] font-bold text-sm'
+				>
+					25+
+				</div>
+				<div class='flex flex-col'>
+					<span class='font-display font-semibold text-xs text-white'>Anos no Mercado</span>
+					<span class='text-[11px] text-gray-400'>Soluções consolidadas</span>
+				</div>
+			</div>
+
+			<div
+				class='flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:border-[var(--accent-cyan)]/40 transition-colors'
+			>
+				<div
+					class='flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[var(--accent-cyan)]/20 text-[var(--accent-cyan)] font-bold text-sm'
+				>
+					30+
+				</div>
+				<div class='flex flex-col'>
+					<span class='font-display font-semibold text-xs text-white'>Projetos Ativos</span>
+					<span class='text-[11px] text-gray-400'>Em produção contínua</span>
+				</div>
+			</div>
+
+			<div
+				class='flex items-center gap-3 p-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:border-emerald-500/40 transition-colors'
+			>
+				<div
+					class='flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-500/20 text-emerald-400 font-bold text-sm'
+				>
+					98+
+				</div>
+				<div class='flex flex-col'>
+					<span class='font-display font-semibold text-xs text-white'>Score Performance</span>
+					<span class='text-[11px] text-gray-400'>Core Web Vitals</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Action CTAs -->
+		<div class='flex flex-wrap items-center gap-4 pt-3'>
+			<a
+				href='#acervo'
+				class='px-6 py-3 rounded-xl font-semibold text-sm bg-[var(--accent-orange)] hover:bg-[#ff7b4b] text-black transition-all shadow-[0_0_24px_rgba(255,107,53,0.3)] hover:shadow-[0_0_32px_rgba(255,107,53,0.5)] active:scale-95 flex items-center gap-2'
+			>
+				<span>Explorar Acervo Online</span>
+				<span class='font-mono'>↓</span>
+			</a>
+
+			<a
+				href='#simulador'
+				class='px-5 py-3 rounded-xl font-semibold text-sm border border-white/20 bg-white/5 hover:bg-white/10 text-white backdrop-blur-md transition-all hover:border-[var(--accent-cyan)]/50 flex items-center gap-2'
+			>
+				<span>Simulador de Briefing</span>
+				<span class='text-xs font-mono text-[var(--accent-cyan)]'>⚡ 1-Clique</span>
+			</a>
+
+			<a
+				href='https://wa.me/5547999818818?text=Ol%C3%A1!%20Vim%20pelo%20portfolio%20Artes%20do%20Sul%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.'
+				target='_blank'
+				rel='noopener noreferrer'
+				class='px-4 py-3 rounded-xl text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 transition-colors flex items-center gap-2'
+			>
+				<span>WhatsApp</span>
+				<span class='text-xs text-emerald-400 font-mono'>● Direto</span>
+			</a>
+		</div>
+	</div>
+</section>

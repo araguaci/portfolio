@@ -1,14 +1,15 @@
 ---
-title: "Análise Interativa do Pacto Federativo Brasileiro"
-description: "Uma exploração visual da assimetria fiscal entre as regiões do Brasil, suas causas estruturais e as soluções propostas para um desenvolvimento mais equilibrado."
+draft: true
+title: 'Análise Interativa do Pacto Federativo Brasileiro'
+description: 'Uma exploração visual da assimetria fiscal entre as regiões do Brasil, suas causas estruturais e as soluções propostas para um desenvolvimento mais equilibrado.'
 date: 2025-11-11T11:11:11.111Z
 image:
   path: /assets/img/pacto-federativo.webp
 categories: showcase
 category: showcase
-tags: [ia, apps, projeto, estudo] 
+tags: [ia, apps, projeto, estudo]
 links:
-  - title: Pacto Federativo Brasileiro 
+  - title: Pacto Federativo Brasileiro
     url: https://gemini.google.com/share/4172a5e8ceb3
 ---
 

@@ -1,12 +1,13 @@
 ---
-title: "Censura no Brasil"
-description: "investiga os casos de censura ocorridos no Brasil entre 2019 e 2025, abordando as dimensões judicial, midiática e eleitoral, e compilando uma linha do tempo, dossiês e análises críticas sobre prisões políticas, influências estrangeiras e impactos na democracia."
+draft: true
+title: 'Censura no Brasil'
+description: 'investiga os casos de censura ocorridos no Brasil entre 2019 e 2025, abordando as dimensões judicial, midiática e eleitoral, e compilando uma linha do tempo, dossiês e análises críticas sobre prisões políticas, influências estrangeiras e impactos na democracia.'
 date: 2024-09-08T01:15:46.234Z
 image:
   path: /assets/img/censura-no-brasil1.webp
 categories: showcase
 category: showcase
-tags: [ia, apps, projeto] 
+tags: [ia, apps, projeto]
 links:
   - title: Censura no Brasil
     url: https://abusosupremo.vercel.app/
@@ -20,7 +21,7 @@ Entre 2019 e 2025, o Brasil enfrentou uma série de episódios de censura que ma
 
 > **Alerta de Uso Responsável**
 > Este aplicativo não deve ser usado para difamar indivíduos sem evidências. Em caso de suspeita de informação incorreta, o usuário pode reportar via “Denúncia de Fato”. O conteúdo será revisado por equipe de verificação antes de qualquer publicação.
-{: .prompt-warning }
+> {: .prompt-warning }
 
 > “Clama a mim, e responder-te-ei, e anunciar-te-ei coisas grandes e firmes que não sabes.” <br/>~~ Jeremias 33:3
-{: .prompt-tip }
+> {: .prompt-tip }

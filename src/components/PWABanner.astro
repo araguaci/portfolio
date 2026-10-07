@@ -1,0 +1,112 @@
+---
+// PWABanner.astro — Banner A2HS com persistência local
+---
+
+<aside
+	id='pwa-install-banner'
+	class='fixed bottom-6 left-6 z-40 max-w-sm rounded-2xl border border-[var(--as-border-paper)] bg-[var(--as-bg-paper-card)]/95 dark:border-[var(--border)] dark:bg-[#0e1017]/95 p-4 shadow-2xl backdrop-blur-xl transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none'
+	aria-label='Instalação de aplicativo'
+>
+	<div class='flex items-start gap-3'>
+		<div
+			class='flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--accent-orange)] to-[#ff4500] text-black font-bold text-lg shadow-md'
+		>
+			⚡
+		</div>
+		<div class='flex flex-1 flex-col gap-1'>
+			<h4
+				class='text-sm font-semibold font-display tracking-tight text-[var(--as-text-ink)] dark:text-white'
+			>
+				Instalar Artes do Sul App
+			</h4>
+			<p
+				class='text-xs text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] leading-relaxed'
+			>
+				Acesse o portfólio e ferramentas em tela cheia com carregamento instantâneo offline.
+			</p>
+			<div class='mt-2 flex items-center gap-2'>
+				<button
+					id='pwa-install-btn'
+					type='button'
+					class='px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--accent-orange)] hover:bg-[#ff7b4b] text-black transition-all shadow-sm active:scale-95'
+				>
+					Instalar App
+				</button>
+				<button
+					id='pwa-dismiss-btn'
+					type='button'
+					class='px-2.5 py-1.5 rounded-lg text-xs font-medium text-[var(--as-text-dim)] hover:text-white hover:bg-white/5 transition-colors'
+				>
+					Agora não
+				</button>
+			</div>
+		</div>
+		<button
+			id='pwa-close-btn'
+			type='button'
+			class='text-[var(--as-text-dim)] hover:text-white text-base leading-none p-1'
+			aria-label='Fechar aviso'
+		>
+			✕
+		</button>
+	</div>
+</aside>
+
+<script>
+	let deferredPrompt: any = null
+
+	const setupPwaBanner = () => {
+		const banner = document.getElementById('pwa-install-banner')
+		const installBtn = document.getElementById('pwa-install-btn')
+		const dismissBtn = document.getElementById('pwa-dismiss-btn')
+		const closeBtn = document.getElementById('pwa-close-btn')
+
+		if (!banner) return
+
+		const isDismissed = localStorage.getItem('artesdosul_pwa_dismissed') === 'true'
+		const isStandalone =
+			window.matchMedia('(display-mode: standalone)').matches || (navigator as any).standalone
+
+		if (isDismissed || isStandalone) {
+			return
+		}
+
+		window.addEventListener('beforeinstallprompt', (e) => {
+			e.preventDefault()
+			deferredPrompt = e
+
+			// Exibe o banner após 3 segundos
+			setTimeout(() => {
+				banner.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none')
+				banner.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto')
+			}, 3000)
+		})
+
+		const hideBanner = (persist = true) => {
+			banner.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none')
+			banner.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto')
+			if (persist) {
+				localStorage.setItem('artesdosul_pwa_dismissed', 'true')
+			}
+		}
+
+		installBtn?.addEventListener('click', async () => {
+			if (deferredPrompt) {
+				deferredPrompt.prompt()
+				const { outcome } = await deferredPrompt.userChoice
+				if (outcome === 'accepted') {
+					hideBanner(true)
+				}
+				deferredPrompt = null
+			} else {
+				hideBanner(true)
+			}
+		})
+
+		dismissBtn?.addEventListener('click', () => hideBanner(true))
+		closeBtn?.addEventListener('click', () => hideBanner(true))
+	}
+
+	setupPwaBanner()
+	document.addEventListener('astro:after-swap', setupPwaBanner)
+</script>

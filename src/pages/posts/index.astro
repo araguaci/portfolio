@@ -16,7 +16,7 @@ const sortedPosts = sortByDate(posts)
 	<div class='flex justify-start items-center gap-2 title'>
 		<Shape />
 
-		<h1 class='text-5xl font-semibold tracking-wide'>Todos Projetos</h1>
+		<h1 class='as-page-title font-display'>Todos os projetos</h1>
 		<a
 			target='_blank'
 			href='/rss.xml'
@@ -48,7 +48,10 @@ const sortedPosts = sortByDate(posts)
 	<ListCategories />
 
 	<div>
-		<h2 class='text-lg font-medium tracking-wide text-end'>Último Projeto</h2>
+		<div class='as-section-label'>
+			<p class='as-kicker'>Diário</p>
+			<h2>Último projeto</h2>
+		</div>
 		<ListPosts FirstBig={false} posts={posts} />
 	</div>
 </BaseLayout>

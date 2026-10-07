@@ -1,7 +1,8 @@
 ---
+draft: true
 title: A Arquitetura do Privilégio ✨
 image:
-  path: "/assets/img/arquitetura-do-privilegio.webp"
+  path: '/assets/img/arquitetura-do-privilegio.webp'
 description: 'Um painel interativo sobre os supersalários no setor público brasileiro.
 
   '
@@ -9,16 +10,17 @@ hide_description: true
 categories: showcase
 category: showcase
 tags:
-- ia
-- apps
-- estudo
+  - ia
+  - apps
+  - estudo
 links:
-- title: Arquitetura do Privilégio
-  url: https://gemini.google.com/share/d82951f5926a
+  - title: Arquitetura do Privilégio
+    url: https://gemini.google.com/share/d82951f5926a
 date: '2025-08-15T12:00:00.000Z'
 ---
+
 - &nbsp;
-{:toc .large-only}
+  {:toc .large-only}
 
 A Constituição Federal estabelece um teto para a remuneração no serviço público, mas uma complexa arquitetura de "penduricalhos" e verbas indenizatórias permite que esse limite seja sistematicamente contornado, especialmente nos altos escalões do Judiciário e do Ministério Público. Este painel visualiza os dados e casos que re
 
@@ -29,6 +31,7 @@ A Constituição Federal estabelece um teto para a remuneração no serviço pú
 ![](/assets/img/arquitetura-do-privilegio2.webp)
 
 ## Insights e Criação com IA
+
 Use a Inteligência Artificial para analisar os dados, propor soluções ou até mesmo gerar uma matéria jornalística sobre os resultados encontrados.
 
 ![](/assets/img/arquitetura-do-privilegio3.webp)
@@ -38,4 +41,3 @@ Use a Inteligência Artificial para analisar os dados, propor soluções ou até
 ![](/assets/img/arquitetura-do-privilegio4.webp)
 
 <!-- links -->
-

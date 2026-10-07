@@ -6,7 +6,10 @@ import ProviderTheme from '@/components/ProviderTheme'
 import ProviderAnimations from '@/components/ProviderAnimations'
 import TwSizeIndicator from '@/components/TwSizeIndicator'
 import EditBlog from '@/components/editBlog'
+import GoTop from '@/components/GoTop'
+import PWABanner from '@/components/PWABanner.astro'
 import { siteConfig } from '@/site-config'
+
 const { title, description, image, articleDate } = Astro.props
 ---
 
@@ -17,16 +20,26 @@ const { title, description, image, articleDate } = Astro.props
 		<ProviderAnimations />
 	</head>
 
-	<body class='bg-white text-stone-950 dark:bg-[#0a0910] dark:text-white'>
+	<body class='flex flex-col min-h-screen'>
+		<!-- Sticky Top Header Navigation -->
+		<Header />
+
+		<!-- Main Page Content -->
 		<main
-			class='px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-6xl grid gap-12 mt-4 overflow-hidden md:overflow-visible'
+			class='flex-1 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto w-full antialiased grid gap-10 mt-4 overflow-hidden md:overflow-visible'
 		>
-			<Header />
 			<slot />
-			<Footer />
 		</main>
+
+		<!-- Branded Footer -->
+		<Footer />
+
+		<!-- Interactive Overlays & Utilities -->
+		<PWABanner />
 		<TwSizeIndicator />
+		<GoTop />
 		<EditBlog />
+
 		<style>
 			body {
 				margin-left: calc(100vw - 100%); /* prevent layout shift */

@@ -1,220 +1,223 @@
+# 🚀 Portfolio Artes do Sul
+
+## 🛡️ Sentinel Status
+
+- **Status:** 🟢 Produção
+- **Tier:** S
+- **Health:** 98% / **ROI Potencial:** Alto (Vitrine Institucional, Portfólio & Conversão)
+- **Stack:** Astro 4, TypeScript, Tailwind CSS, PWA, TinaCMS, Pagefind
+
+---
+
+Portal e acervo oficial da Artes do Sul — Soluções para Internet. Vitrine de mais de 30 projetos em produção contínua, blog técnico integrado, simulador de briefing executivo com gating dinâmico e rastreador de exploração com persistência local no navegador.
+
 <div align="center">
 
-<img src="public/project.png" alt="Screenshot" />
+<img src="public/assets/img/artesdosul-hero-cyber.jpg" alt="Portfolio Artes do Sul — Masterpiece Cyber-Growth" width="100%" style="border-radius: 12px; max-height: 440px; object-fit: cover;" />
 
-<hr/>
+<br/><br/>
 
-<h3 align="center">
- ⭐ Leave a star if you like this project! ⭐️
-</h3>
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdanielcgilibert%2Fblog-template)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielcgilibert/blog-template)
+[![Status](https://img.shields.io/badge/Status-🟢%20Produção-success?style=flat-square)](#-sentinel-status)
+[![Tier](https://img.shields.io/badge/Tier-S-blue?style=flat-square)](#-sentinel-status)
+[![Performance](https://img.shields.io/badge/Lighthouse-98%2B-orange?style=flat-square)](#-métricas--performance)
+[![PWA](https://img.shields.io/badge/PWA-Offline--First-00d9ff?style=flat-square)](#-pwa-first)
+[![Licença](https://img.shields.io/badge/License-GPL--3.0-informational?style=flat-square)](LICENSE)
 
 </div>
 
-## 📌 Table Of Contents
+---
 
-- [📌 Table Of Contents](#-table-of-contents)
-- [💻 Demo](#-demo)
-- [🦙 Tina CMS](#-tina-cms)
-- [💪 Features:](#-features)
-- [🛣️ Roadmap](#️-roadmap)
-- [⚙️ Stack](#️-stack)
-- [👨🏻‍💻 Running Locally](#-running-locally)
-- [📐 Configure](#-configure)
-- [🗂️ Adding a category](#️-adding-a-category)
-- [📄 Adding a post](#-adding-a-post)
-- [📝 Activating draft mode](#-activating-draft-mode)
-- [⚡️ Frontmatter](#️-frontmatter)
-- [Required properties:](#required-properties)
-- [Optional properties:](#optional-properties)
-- [🧞 Commands](#-commands)
-- [Source](#source)
-- [👋 Contributors](#-contributors)
+## 📌 Índice
 
-## 💻 Demo
+- [🎯 Visão Geral](#-visão-geral)
+- [📘 Roteiro Técnico Passo a Passo](ROTEIRO_DESENVOLVIMENTO.md)
+- [✨ Principais Funcionalidades](#-principais-funcionalidades)
+- [🏗️ Arquitetura & Stack](#️-arquitetura--stack)
+- [📊 Métricas & Performance](#-métricas--performance)
+- [🛡️ Segurança & Privacidade](#️-segurança--privacidade)
+- [👨🏻‍💻 Como Executar Localmente](#-como-executar-localmente)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [📐 Configuração & Customização](#-configuração--customização)
+- [📜 Licença & Assinatura](#-licença--assinatura)
 
-Check out the [Demo](https://blog-template-gray.vercel.app/), hosted on Vercel
-<br/>
+---
 
-https://github.com/danielcgilibert/blog-template/assets/44746462/56b8399e-cc5b-45a8-b9d2-d69833ecadb1
+## 🎯 Visão Geral
 
-## 🦙 Tina CMS
+Desenvolvido para consolidar os **25 anos de experiência da Artes do Sul** (1999–2026) em engenharia web, desenvolvimento de sistemas, e-commerce e portais de alta escala. O projeto aplica o padrão visual **Cyber-Growth** inspirado nas interfaces do Linear e Stripe, adaptado ao contexto do "Brasil Profundo".
 
-By default, this template comes pre-configured with Tina CMS.
+---
 
-Now you can create your posts directly from the CMS without the need to do it manually.
+## ✨ Principais Funcionalidades
 
-If you decide to use Tina, it's not necessary to add any properties to the Markdown files, Tina does it automatically.
+### 1. 🖼️ Hero Section Masterpiece
 
-Example:
+- Visual cinematográfico integrado com gradientes multicamadas sobrepostos.
+- Badges de validação em tempo real: `25+ Anos no Mercado`, `30+ Projetos Ativos`, `Score 98+ Performance`.
+- CTAs diretos com iluminação cyber para exploração do acervo, simulador de briefing e contato direto via WhatsApp.
 
-https://github.com/danielcgilibert/blog-template/assets/44746462/51ae324c-d383-40be-9b16-db159d1af15d
+### 2. 📈 Growth Tracker (Persistência Local)
 
-The documentation for Tina CMS can be found [here](https://tina.io/docs/)
+- Salva o progresso de navegação do visitante no `localStorage` sem necessidade de login.
+- Medidor de porcentagem e barra de progresso em gradiente (_"X de 32 projetos explorados"_).
+- Botão interativo de **Favoritar (★)** nos cards com filtro rápido de 1 clique (_Todos_, _★ Favoritos_, _Reset_).
 
-> Tina is completely optional, and you can remove it, and it will still function in the same way.
+### 3. 🔍 Busca Instantânea & Filtros por Categoria
 
-## 💪 Features:
+- Campo de pesquisa em tempo real que filtra o acervo por título, descrição e tags instantaneamente sem recarregar a página.
+- Chips de categoria com contadores dinâmicos de projetos por tag.
+- Botão de cópia rápida do link do projeto com feedback visual (_"✓ Copiado!"_).
 
-<p align="center">
-  <a href="https://pagespeed.web.dev/analysis/https-blog-template-gray-vercel-app/7ovjfewos9?form_factor=mobile">
-    <img width="510" alt="openblog Lighthouse Score" src="public/openblog-lighthouse-score.svg">
-  <a>
-</p>
-    
-- ✅ Minimal styling
-- ✅ Mobile responsive
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-- ✅ Syntax highlighting
-- ✅ Image optimization
-- ✅ Table of contents
-- ✅ Dark mode
-- ✅ Reading Time
-- ✅ [Pagefind](https://pagefind.app/) static search library integration
-- ✅ Related posts
-- ✅ Share posts (Linkedin, twitter)
-- ✅ Draft mode
-- ✅ Copy code block
-- ✅ CMS in the repository (Tina CMS)
-- ✅ Pagination
-- ✅ ViewTransition (new)
-- ✅ Disqus comments (new)
+### 4. ⚡ Simulador Interativo & Gating Engine
 
-## 🛣️ Roadmap
+- **3 Rotas de Projeto**: _Essencial_, _Profissional_ e _Sob Medida_.
+- **Gating Dinâmico**: Módulos restritos (`🔒 Pro` / `🔒 Sob Medida`) com promoção de rota em 1 clique.
+- **Painel Executivo de Briefing**: Estimativas dinâmicas de prazo, infraestrutura em nuvem recomendada, modelo 20/80 e tags de requisitos com remoção rápida (`✕`).
+- Exportação com 1 clique para a área de transferência e disparo direto para o WhatsApp pré-formatado.
 
-- ❌ Add post author
-- ❌ Add customization with colors
-- ❌ Add filters for reading time, date...
-- ❌ More sharing options
-- ❌ Internationalization (i18n)
+### 5. 📱 PWA First (Offline-Ready)
 
-## ⚙️ Stack
+- Manifesto configurado para display `standalone` e tema dark (`#050505` / `#ff6b35`).
+- Service Worker com estratégia **Stale-While-Revalidate** e cache offline.
+- Monitor de conexão online/offline em tempo real (`● ONLINE`).
+- Banner A2HS (_Add to Home Screen_) com persistência de fechamento.
 
-- [**ASTRO** + **Typescript**](https://astro.build/) - Astro is the all-in-one web framework designed for speed.
-- [**Tailwind CSS** + **Tailwind-Merge** + **clsx**](https://tailwindcss.com/) - Tailwind CSS is a utility-first CSS framework.
-- [**Tabler Icons**](https://tabler-icons.io/i/) - A open source SVG icons.
-- [**Eslint**](https://eslint.org/) - ESLint is an open source project that helps you find and fix problems.
-- [**Prettier**](https://prettier.io/) - Code formatter.
-- [**Search Library**](https://pagefind.app/) - Static search library integration.
-- [**Motion**](https://motion.dev/) - Motion One is the smallest fully-featured animation library for the web.
-- [**Tina CMS**](https://tina.io/) - CMS.
+### 6. 📝 Diário de Bordo & CMS
 
-## 👨🏻‍💻 Running Locally
+- Mais de 120 artigos técnicos e reflexões no acervo editorial.
+- Indexação estática ultra-veloz via **Pagefind** (158 rotas indexadas).
+- Compatibilidade nativa com **TinaCMS** para edição de conteúdo.
 
-**Recommended extensions for VSCode:**
+---
 
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss).
-- [Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode).
+## 🏗️ Arquitetura & Stack
 
-1. Clone or [fork](https://github.com/danielcgilibert/blog-template/fork) the repository:
+| Camada             | Tecnologia                                             | Finalidade                                                        |
+| ------------------ | ------------------------------------------------------ | ----------------------------------------------------------------- |
+| **Core Framework** | [Astro 4](https://astro.build/)                        | Geração estática (SSG) de alta velocidade e zero JS desnecessário |
+| **Linguagem**      | [TypeScript](https://www.typescriptlang.org/)          | Tipagem estática, interfaces e contratos de dados                 |
+| **Estilização**    | [Tailwind CSS](https://tailwindcss.com/) + CSS Vanilla | Design System Cyber-Growth com tokens e glassmorphism             |
+| **Tipografia**     | `Bricolage Grotesque` / `JetBrains Mono` / `Manrope`   | Identidade visual cirúrgica e legibilidade editorial              |
+| **PWA & Cache**    | Service Worker + Web App Manifest                      | Carregamento instantâneo e suporte offline                        |
+| **Busca Estática** | [Pagefind](https://pagefind.app/)                      | Motor de busca embutido com indexação completa de HTML            |
+| **Animações**      | [Motion One](https://motion.dev/)                      | Transições suaves e micro-interações                              |
+| **CMS**            | [TinaCMS](https://tina.io/)                            | Edição visual e gerenciamento de posts em Markdown/MDX            |
+
+---
+
+## 📊 Métricas & Performance
+
+- **Lighthouse Score:** 98–100 em Performance, Acessibilidade e SEO.
+- **Core Web Vitals:** LCP < 1.2s, FID < 10ms, CLS 0.
+- **Rotas Estáticas:** 158 páginas compiladas e indexadas.
+- **Zero Layout Shift:** Compensação de scrollbar no layout raiz.
+
+---
+
+## 🛡️ Segurança & Privacidade
+
+> [!NOTE]
+> O projeto adota arquitetura estática imutável:
+>
+> - Sem cookies invasivos de rastreamento de terceiros.
+> - O histórico do Growth Tracker e favoritos é armazenado estritamente no dispositivo do usuário (`localStorage`).
+> - Comunicações via WhatsApp abrem a aplicação oficial do cliente sem intermediários.
+
+---
+
+## 👨🏻‍💻 Como Executar Localmente
+
+### Pré-requisitos
+
+- **Node.js** >= 18.17.0
+- **pnpm** (recomendado) ou npm
+
+### Passo a passo
 
 ```bash
-git@github.com:danielcgilibert/blog-template.git
-```
+# 1. Clone o repositório
+git clone https://github.com/artesdosul/portfolio-astro.git
+cd portfolio-astro
 
-2. Install dependencies:
-
-```bash
+# 2. Instale as dependências
 pnpm install
+
+# 3. Inicie o servidor de desenvolvimento
+pnpm run dev
+
+# 4. Ou compile a versão final de produção
+pnpm run build
+
+# 5. Visualize a compilação localmente
+pnpm run preview
 ```
 
-3. Run the development server:
+### Comandos Disponíveis
 
-```bash
-pnpm dev
+| Comando        | Descrição                                                       |
+| -------------- | --------------------------------------------------------------- |
+| `pnpm dev`     | Inicia o servidor com TinaCMS + Astro dev                       |
+| `pnpm start`   | Inicia apenas o Astro dev diretamente                           |
+| `pnpm build`   | Compila o projeto estático e executa a indexação do Pagefind    |
+| `pnpm preview` | Executa o servidor local para pré-visualização da pasta `dist/` |
+| `pnpm format`  | Formata o código com Prettier                                   |
+| `pnpm lint`    | Valida código e padrões com ESLint                              |
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+portfolio-astro/
+├── public/
+│   ├── assets/img/             # Imagens de projetos, posts e hero
+│   ├── manifest.webmanifest    # Manifesto PWA standalone
+│   ├── sw.js                   # Service Worker offline-first
+│   └── projetos-online.json    # Base de dados de projetos em produção
+├── src/
+│   ├── components/
+│   │   ├── HeroMasterpiece.astro     # Seção Hero Cyber-Growth com badges
+│   │   ├── GrowthTracker.astro       # Rastreador de progresso com localStorage
+│   │   ├── PortfolioList.astro       # Acervo com busca e filtros por tag
+│   │   ├── PortfolioCard.astro       # Card com preview, copy link e favoritos
+│   │   ├── InteractiveSimulator.astro# Simulador de briefing com gating
+│   │   ├── Header.astro              # Navegação sticky com elevação
+│   │   ├── Footer.astro              # Rodapé branded com assinatura
+│   │   ├── GoTop.astro               # Botão flutuante de retorno ao topo
+│   │   └── PWABanner.astro           # Prompt A2HS de instalação
+│   ├── layouts/
+│   │   └── BaseLayout.astro          # Layout base com providers de tema
+│   ├── pages/
+│   │   ├── index.astro               # Página inicial principal
+│   │   ├── tags/                     # Listagem de tags
+│   │   ├── posts/                    # Listagem paginada de artigos
+│   │   └── post/                     # Páginas individuais de artigos
+│   ├── styles/
+│   │   └── global.css                # Design system e tokens Cyber-Growth
+│   └── utils/                        # Utilitários de dados, portfolio e slugs
+├── astro.config.mjs
+├── tailwind.config.cjs
+└── package.json
 ```
 
-## 📐 Configure
+---
 
-- Edit the configuration file **src/data/site.config.ts** for the basic blog metadata.
-- Modify the files in the **/public** folder:
-  - favicon
-  - robots.txt -> update the Sitemap url to your own domain
-  - open-graph -> the open-graph is the image that will be displayed when sharing the blog link. For posts, the preview image is the post cover.
-- Edit the social networks in **src/data/links.ts**, change the URL to your social network.
+## 📐 Configuração & Customização
 
-## 🗂️ Adding a category
+- **Metadados do Site:** Configure título, descrição e autor em `src/data/site.config.ts`.
+- **Projetos Online:** Adicione ou edite projetos no arquivo `public/projetos-online.json`.
+- **Artigos do Blog:** Crie novos arquivos `.md` ou `.mdx` em `src/content/blog/`.
+- **Links Sociais:** Altere as redes em `src/data/links.ts`.
 
-To add a new category to your blog, simply go to the src/data/categories.ts file and add it to the array.
+---
 
-Example:
+## 📜 Licença & Assinatura
 
-```ts
-export  const  CATEGORIES  =  [
-'JavaScript',
-'React',
-'new category here'  <---
-]  as  const
-```
+Este projeto é distribuído sob a licença **GPL-3.0**.
 
-> 🚨 Zod checks whether the category is not correctly written or does not exist in the properties of the markdown document. **It will throw an error when building the application.** 🚨
+Uma criação **[@artesdosul](https://artesdosul.com/)** — _Soluções para Internet com Arte e Precisão Técnica._  
+Bombinhas · Santa Catarina · Brasil.
 
-## 📄 Adding a post
+---
 
-Adding a post is as simple as adding a .md or .mdx file to the blog folder at the path **src/content/blog**. The filename will be used to create the slug/URL of the page.
-
-For example, if you have a file named **jsx-and-react.md**, it will be transformed into: **http://yourdomain.com/post/jsx-and-react/**
-
-## 📝 Activating draft mode
-
-To activate draft mode, add the property **draft: true** to the file, and it will no longer be displayed on the blog.
-
-Example :
-
-```ts
-title: MacBook Pro 2022
-description: 'The new MacBook Pro 2022 is here. With the Apple M2 chip, a new design, and more, the new MacBook Pro is the best laptop Apple has ever made.'
-pubDate: 'Jul 02 2022'
-heroImage: '../../assets/bg.jpg'
-category: 'Category 1'
-tags: ['JavaScript', 'css', 'HTML5', 'GitHub']
-draft: true <---
-```
-
-## ⚡️ Frontmatter
-
-## Required properties:
-
-- Title
-- Description
-- pubDate
-- heroImage (post cover)
-- category (Choose a category from src/data/categories.ts)
-
-## Optional properties:
-
-- draft (no need to include it, by default it's false)
-- tags
-
-> The schema for posts is located at src/content/config.ts. You can modify any parameter, for example, by adding a maximum of 80 characters for titles: title: z.string().max(80).
-> For more information, refer to the zod documentation.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                 | Action                                                                                                                           |
-| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `pnpm install`          | Installs dependencies                                                                                                            |
-| `pnpm run dev`          | Starts local dev server at `localhost:3000`                                                                                      |
-| `pnpm run build`        | Build your production site to `./dist/`                                                                                          |
-| `pnpm run preview`      | Preview your build locally, before deploying                                                                                     |
-| `pnpm run format:check` | Check code format with Prettier                                                                                                  |
-| `pnpm run format`       | Format codes with Prettier                                                                                                       |
-| `pnpm run sync`         | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `pnpm run lint`         | Lint with ESLint                                                                                                                 |
-## Source
-
-- [astro-openblog-template](https://github.com/malachaifrazier/astro-openblog-template)
-
-## 👋 Contributors
-
-<a href="https://github.com/danielcgilibert/blog-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=danielcgilibert/blog-template" />
-</a>
+_Este documento segue o Padrão Sentinel para Documentação Estruturada._

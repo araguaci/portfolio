@@ -39,7 +39,7 @@ const { posts } = Astro.props
 									/>
 								)
 							) : (
-								<div class='w-16 h-16 rounded-full bg-stone-200 dark:bg-stone-700' />
+								<div class='w-16 h-16 rounded-full bg-black/5 dark:bg-white/5' />
 							)}
 						</div>
 						<header class='flex justify-center items-center'>
@@ -51,7 +51,7 @@ const { posts } = Astro.props
 				)
 			})
 		) : (
-			<span class='text-gray-500'>Ainda não há posts relacionados. 😢</span>
+			<span class='text-[var(--as-text-muted)]'>Ainda não há posts relacionados.</span>
 		)
 	}
 </section>

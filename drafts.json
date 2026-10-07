@@ -1,0 +1,365 @@
+{
+	"updated": "2026-10-06",
+	"motivo": "Preview com retorno 404 ou captura sem sucesso",
+	"posts": [
+		{
+			"arquivo": "src/content/blog/2023-06-11-ponerologia-psicopatas-no-poder.md",
+			"titulo": "Ponerologia Psicopatas No Poder",
+			"descricao": "** É assim que um grupo relativamente pequeno de líderes psicopáticos destrói a alma de uma nação. **",
+			"data": "2023-06-11T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://ponerologia-psicopatas-no-poder.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2023-06-14-ocaminhodaservidao.md",
+			"titulo": "Ocaminhodaservidao",
+			"descricao": "O CAMINHO DA SERVIDÃO F.A. HAYEK Tradução e revisão Anna Maria Capovilla, José Ítalo Stelle e Liane de Morais Ribeiro",
+			"data": "2023-06-14T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://ocaminhodaservidao.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2023-06-16-a-esperanca-estilhacada.md",
+			"titulo": "A Esperanca Estilhacada",
+			"descricao": "O que aconteceu exatamente? Como pôde acontecer? Qual terá sido a gênese da inverossímil seqüência de escândalos? Quem são e o que pensam os personagens do drama? Como será o rosto do Brasil redesenhado pela tempestade?",
+			"data": "2023-06-16T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://a-esperanca-estilhacada.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2023-06-16-drogavermelha.md",
+			"titulo": "Drogavermelha",
+			"descricao": "“A fraude e as drogas são os nossos dois primeiros escalões estratégicos na guerra contra o capitalismo.” NIKITA KHRUSHCHEV, 1963",
+			"data": "2023-06-16T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://drogavermelha.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2023-06-17-os-5-carteis.md",
+			"titulo": "Os 5 Carteis",
+			"descricao": "Os 5 Cartéis Que Governam a América e o Mundo",
+			"data": "2023-06-17T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://os-5-carteis.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2023-06-23-os-cinco-niveis-de-apego.md",
+			"titulo": "Os Cinco Niveis De Apego",
+			"descricao": "Seguindo os ensinamentos de Don Miguel Ruiz, o leitor agora tem a oportunidade de ler um afinado estudo de seu filho, Don Miguel Ruiz Jr., sobre a busca da liberdade e do equilíbrio interior.",
+			"data": "2023-06-23T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://os-cinco-niveis-de-apego.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2023-06-30-partido-das-sombras.md",
+			"titulo": "Partido Das Sombras",
+			"descricao": "Do Partido das Sombras ao Governo Clandestino. ~~DAVID HOROWITZ",
+			"data": "2023-06-30T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "estudo"],
+			"urls": ["https://partido-das-sombras.vercel.app"]
+		},
+		{
+			"arquivo": "src/content/blog/2024-05-01-ayrtonsenna-memories.md",
+			"titulo": "Ayrton Senna Memories",
+			"descricao": "No dia 1 de maio de 1994, há 30 anos, Ayrton Senna deixa um legado histórico. O piloto brasileiro foi vítima de um despiste fatal do GP San Marino, em Ímola, um acidente que mudou para sempre a Fórmula 1.",
+			"data": "2024-05-01T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "css", "website"],
+			"urls": ["https://ayrtonsenna-memories.netlify.app/"]
+		},
+		{
+			"arquivo": "src/content/blog/2024-12-12-hatevaom.md",
+			"titulo": "HATEVAOM",
+			"descricao": "É um estudo teológico-filosófico-universalista, sem vínculos com qualquer organização, seita ou religião.",
+			"data": "2024-12-12T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["showcase", "artesdosul", "projeto", "website"],
+			"urls": ["https://celsozymon.com.br/hatevaom/"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-02-24-inprincipioverbum.md",
+			"titulo": "In Principio Verbum",
+			"descricao": "Este espaço é destinado a publicação de pensamentos e reflexões.",
+			"data": "2024-02-24T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["blog", "estudo", "website"],
+			"urls": ["https://inprincipioverbum.github.io/"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-08-15-analise-de-supersalarios.md",
+			"titulo": "Sistema de Análise de Supersalários ✨",
+			"descricao": "Judiciário Brasileiro - Compliance & Accountability.",
+			"data": "2025-08-15T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://claude.ai/public/artifacts/7a531da0-acc3-4ca3-ba58-dec82efcb683"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-08-15-arquitetura-do-privilegio.md",
+			"titulo": "A Arquitetura do Privilégio ✨",
+			"descricao": "Um painel interativo sobre os supersalários no setor público brasileiro.",
+			"data": "2025-08-15T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://gemini.google.com/share/d82951f5926a"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-08-15-soberania-do-brasil.md",
+			"titulo": "Soberania do Brasil - Análise Estratégica ✨",
+			"descricao": "Visão geral do dossiê investigativo e recomendações estratégicas.",
+			"data": "2025-08-15T12:00:00.000Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://gemini.google.com/share/751e504a5707"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-08-17-painel-da-corrupcao-no-brasil.md",
+			"titulo": "Painel da Corrupção no Brasil",
+			"descricao": "Uma visão geral dos dados de escândalos desde a década de 1980.",
+			"data": "2024-08-17T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://gemini.google.com/share/74f96fa1676c"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-abusosupremo.md",
+			"titulo": "Censura no Brasil",
+			"descricao": "investiga os casos de censura ocorridos no Brasil entre 2019 e 2025, abordando as dimensões judicial, midiática e eleitoral, e compilando uma linha do tempo, dossiês e análises críticas sobre prisões políticas, influências estrangeiras e impactos na democracia.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto"],
+			"urls": ["https://abusosupremo.vercel.app/"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-canvas.md",
+			"titulo": "Criação de Identidade Visual",
+			"descricao": "Gerador de paletas de cores e kits completos de lançamento de marca utilizando inteligência artificial, destacando funcionalidades para criação de esquemas de cores temáticos, geração de ícones personalizados e verificação de acessibilidade.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto"],
+			"urls": ["https://gemini.google.com/share/8f3ea1d7a888"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-command-center.md",
+			"titulo": "Content Command Center",
+			"descricao": "Plataforma multifuncional que integra ferramentas avançadas para busca, análise, resumo, geração de títulos, verificação de fatos e criação de conteúdos otimizados a partir de dados da web.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://gemini.google.com/share/41c39a9af803"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-ecosistemas.md",
+			"titulo": "Ecossistemas Digitais",
+			"descricao": "Análise integrada e interativa sobre os principais aspectos dos ecossistemas digitais, explorando o papel das APIs, a importância da qualidade dos dados e os desafios da segurança de software para garantir sistemas confiáveis e eficientes.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto"],
+			"urls": ["https://gemini.google.com/share/f7264d9f7673"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-favoritos.md",
+			"titulo": "Coleção Curada de Ferramentas Essenciais",
+			"descricao": "Seleção pessoal de ferramentas e recursos úteis organizados em categorias como inteligência artificial, design gráfico, desenvolvimento de software, gerenciamento de servidores e APIs, oferecendo um panorama prático para aprimorar projetos digitais.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto"],
+			"urls": ["https://gemini.google.com/share/422dc70b3980"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-governanca-criminal.md",
+			"titulo": "Governança Criminal no Brasil",
+			"descricao": "Análise interativa e abrangente da governança criminal no Brasil, abordando a expansão das facções, modelos de controle em São Paulo e Rio de Janeiro, o ciclo vicioso da criminalidade e as propostas estratégicas para fortalecer a presença estatal e combater a impunidade.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://gemini.google.com/share/459e2fe745a0"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-guerra-da-informacao.md",
+			"titulo": "Guerra da Informação",
+			"descricao": "Um conflito multidimensional travado no campo de batalha da percepção humana, redefinindo a segurança, a economia e a sociedade na era digital.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto"],
+			"urls": ["https://gemini.google.com/share/4301898ce057"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-twitterfiles.md",
+			"titulo": "Twitter Files Brazil",
+			"descricao": "Evolução dos casos de censura no Brasil entre 2019 e 2025, destacando a atuação do Supremo Tribunal Federal (STF), a repressão a plataformas digitais e veículos de imprensa, e os efeitos dessa dinâmica sobre a democracia e os direitos civis.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["estudo", "website"],
+			"urls": ["https://abusosupremo.netlify.app/"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-09-08-vazatoga.md",
+			"titulo": "Vaza Toga",
+			"descricao": "A série de vazamentos conhecida como **Vaza Toga**, evidenciando as diferentes fases do escândalo que revela supostas articulações e abusos no sistema judicial brasileiro, seus impactos políticos e repercussões sociais.",
+			"data": "2024-09-08T01:15:46.234Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "estudo"],
+			"urls": ["https://gemini.google.com/share/7c753729312b"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-11-11-influencia-estrangeira.md",
+			"titulo": "Influência Estrangeira no Brasil — Análise Multifacetada",
+			"descricao": "Análise interativa dos impactos e desafios do financiamento estrangeiro à sociedade civil no Brasil, com visualização de dados sobre políticas públicas, ativismo, e legislação.",
+			"data": "2025-11-11T11:11:11.111Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto", "estudo"],
+			"urls": ["https://gemini.google.com/share/da8535f2df88"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-11-11-operacoes-policiais.md",
+			"titulo": "Operações Policiais no Brasil: Duas Realidades",
+			"descricao": "Aplicação interativa que mapeia operações policiais de destaque no Brasil, entre 1990 e o presente, com filtros e visualização de casos emblemáticos envolvendo corrupção, violência e direitos humanos.",
+			"data": "2025-11-11T11:11:11.111Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto", "estudo"],
+			"urls": ["https://gemini.google.com/share/18eaf3b8c93e"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-11-11-pacto-federativo.md",
+			"titulo": "Análise Interativa do Pacto Federativo Brasileiro",
+			"descricao": "Uma exploração visual da assimetria fiscal entre as regiões do Brasil, suas causas estruturais e as soluções propostas para um desenvolvimento mais equilibrado.",
+			"data": "2025-11-11T11:11:11.111Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto", "estudo"],
+			"urls": ["https://gemini.google.com/share/4172a5e8ceb3"]
+		},
+		{
+			"arquivo": "src/content/blog/2025-11-11-plano-de-projetos.md",
+			"titulo": "Plano de Projetos Interativo",
+			"descricao": "Uma análise de alto nível do cenário demográfico e empresarial do Brasil, fornecendo o contexto fundamental para os projetos propostos. Explore os principais indicadores e a estratégia de implementação.",
+			"data": "2025-11-11T11:11:11.111Z",
+			"categoria": "showcase",
+			"tags": ["ia", "apps", "projeto", "estudo"],
+			"urls": ["https://gemini.google.com/share/b112f4480e4e"]
+		}
+	],
+	"projetos": [
+		{
+			"titulo": "Numerologia",
+			"descricao": "Calculadora e análise de numerologia personalizada com IA.",
+			"tags": ["portfolio", "numerologia", "IA"],
+			"url": "https://numerologia-blond.vercel.app"
+		},
+		{
+			"titulo": "Me Agenda AI",
+			"descricao": "Agendamento inteligente com IA para profissionais e empresas brasileiras.",
+			"tags": ["portfolio", "agendamento", "IA", "Brasil"],
+			"url": "https://meagendaai.vercel.app"
+		},
+		{
+			"titulo": "OmniCamp",
+			"descricao": "Plataforma omnichannel para campanhas de marketing e engajamento.",
+			"tags": ["portfolio", "omnichannel", "campanhas"],
+			"url": "https://omnicamp.vercel.app"
+		},
+		{
+			"titulo": "AI Scheduler",
+			"descricao": "Scheduler inteligente com IA para otimização de tarefas e reuniões.",
+			"tags": ["portfolio", "IA", "agenda", "Em breve"],
+			"url": "https://ai-scheduler-sandy.vercel.app"
+		},
+		{
+			"titulo": "Saúde Livre",
+			"descricao": "Plataforma de saúde digital — telemedicina, agendamento e gestão para clínicas.",
+			"tags": ["portfolio", "saúde", "telemedicina", "Brasil", "LGPD"],
+			"url": "https://saudelivre.artesdosul.com"
+		},
+		{
+			"titulo": "SWOT",
+			"descricao": "Análise SWOT interativa com IA para estratégia empresarial.",
+			"tags": ["portfolio", "SWOT", "estratégia"],
+			"url": "https://swot-chi.vercel.app"
+		},
+		{
+			"titulo": "PESTEL",
+			"descricao": "Framework PESTEL para análise de macro-ambiente de negócios.",
+			"tags": ["portfolio", "PESTEL", "macroambiente"],
+			"url": "https://pestel-chi.vercel.app"
+		},
+		{
+			"titulo": "5W2H",
+			"descricao": "Planejamento estruturado com a metodologia 5W2H interativa.",
+			"tags": ["portfolio", "5W2H", "planejamento"],
+			"url": "https://5w2h-chi.vercel.app"
+		},
+		{
+			"titulo": "Sun Tzu Chi",
+			"descricao": "Estratégias de Sun Tzu aplicadas ao mundo dos negócios modernos.",
+			"tags": ["portfolio", "Sun Tzu", "estratégia"],
+			"url": "https://suntzu-chi.vercel.app"
+		},
+		{
+			"titulo": "Vital Flow",
+			"descricao": "Gestão clínica inteligente com IA e integração WhatsApp.",
+			"tags": ["portfolio", "saúde", "clínica", "IA", "Em breve"],
+			"url": "https://vital-flow-zeta.vercel.app"
+		},
+		{
+			"titulo": "Partido das Sombras",
+			"descricao": "Análise do deep state e poder oculto na política brasileira.",
+			"tags": ["portfolio", "política", "poder"],
+			"url": "https://partido-das-sombras.vercel.app"
+		},
+		{
+			"titulo": "Ponerologia",
+			"descricao": "Estudo da ponerologia — psicopatas no poder e sistemas políticos.",
+			"tags": ["portfolio", "psicologia", "política"],
+			"url": "https://ponerologia-psicopatas-no-poder.vercel.app"
+		},
+		{
+			"titulo": "A Esperança Estilhaçada",
+			"descricao": "Análise do colapso das esperanças políticas na democracia brasileira.",
+			"tags": ["portfolio", "democracia", "Brasil"],
+			"url": "https://a-esperanca-estilhacada.vercel.app"
+		},
+		{
+			"titulo": "Droga Vermelha",
+			"descricao": "Documentação sobre o narcotráfico e sua relação com o poder político.",
+			"tags": ["portfolio", "tráfico", "política"],
+			"url": "https://drogavermelha.vercel.app"
+		},
+		{
+			"titulo": "No Princípio o Verbo",
+			"descricao": "Reflexão teológica sobre o Evangelho de João e o Verbo encarnado.",
+			"tags": ["portfolio", "teologia", "João"],
+			"url": "https://noprincipiooverbo.vercel.app"
+		},
+		{
+			"titulo": "Skills MP Website",
+			"descricao": "Site de skills e marketplace gerado com v0.dev.",
+			"tags": ["portfolio", "v0", "marketplace"],
+			"url": "https://v0-skills-mp-website.vercel.app"
+		},
+		{
+			"titulo": "Os Cinco Níveis de Apego",
+			"descricao": "Don Miguel Ruiz Jr. — estudo sobre liberdade e equilíbrio interior (tolteca).",
+			"tags": ["portfolio", "tolteca", "liberdade", "espiritualidade"],
+			"url": "https://os-cinco-niveis-de-apego.vercel.app"
+		},
+		{
+			"titulo": "O Caminho da Servidão",
+			"descricao": "F.A. Hayek — clássico sobre planejamento central e liberdade econômica.",
+			"tags": ["portfolio", "economia", "Hayek", "liberalismo"],
+			"url": "https://ocaminhodaservidao.vercel.app"
+		},
+		{
+			"titulo": "Os 5 Carteis",
+			"descricao": "Os 5 cartéis que governam a América e o mundo.",
+			"tags": ["portfolio", "política", "poder", "análise"],
+			"url": "https://os-5-carteis.vercel.app"
+		}
+	]
+}

@@ -1,0 +1,91 @@
+---
+// GoTop.astro — Go-To-Top Flutuante Artes do Sul
+---
+
+<button id='gotop' class='gotop' type='button' aria-label='Voltar ao topo da página'>
+	<svg
+		xmlns='http://www.w3.org/2000/svg'
+		width='18'
+		height='18'
+		viewBox='0 0 24 24'
+		fill='none'
+		stroke='currentColor'
+		stroke-width='2.5'
+		stroke-linecap='round'
+		stroke-linejoin='round'
+		aria-hidden='true'
+	>
+		<path d='M12 19V5'></path>
+		<path d='m5 12 7-7 7 7'></path>
+	</svg>
+</button>
+
+<script>
+	const setupGoTop = () => {
+		const button = document.getElementById('gotop')
+		if (!button || button.dataset.bound === 'true') return
+		button.dataset.bound = 'true'
+
+		const toggle = () => {
+			button.classList.toggle('is-visible', window.scrollY > 300)
+		}
+
+		toggle()
+		window.addEventListener('scroll', toggle, { passive: true })
+		button.addEventListener('click', () => {
+			window.scrollTo({ top: 0, behavior: 'smooth' })
+		})
+	}
+
+	setupGoTop()
+	document.addEventListener('astro:after-swap', setupGoTop)
+</script>
+
+<style>
+	.gotop {
+		position: fixed;
+		right: 24px;
+		bottom: 24px;
+		z-index: 99;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		border: 1px solid var(--as-border-paper);
+		border-radius: 12px;
+		background: var(--as-bg-paper-card);
+		color: var(--as-text-ink);
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(12px);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+		transition:
+			opacity 220ms var(--as-ease),
+			transform 220ms var(--as-ease),
+			border-color 220ms var(--as-ease),
+			color 220ms var(--as-ease),
+			box-shadow 220ms var(--as-ease);
+	}
+
+	:global(html.dark) .gotop {
+		border-color: var(--border);
+		background: rgba(18, 20, 26, 0.85);
+		backdrop-filter: blur(12px);
+		color: var(--as-text-main);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+	}
+
+	.gotop.is-visible {
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateY(0);
+	}
+
+	.gotop:hover {
+		border-color: var(--accent-orange);
+		color: var(--accent-orange);
+		box-shadow: 0 0 20px rgba(255, 107, 53, 0.35);
+		transform: translateY(-2px);
+	}
+</style>

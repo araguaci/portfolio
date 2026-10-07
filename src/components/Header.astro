@@ -7,59 +7,225 @@ import ToggleTheme from './ToggleTheme.astro'
 import { SOCIALNETWORKS } from '@/data/links'
 ---
 
-<header class='relative flex items-center h-12 font-semibold gap-4 flex-nowrap'>
-	<a class='text-lg shrink-0' href='/'>Início</a>
+<header id='main-header' class='as-header sticky top-0 z-50 w-full transition-all duration-300'>
+	<div class='flex items-center justify-between h-16 px-4 sm:px-6 max-w-6xl mx-auto'>
+		<!-- Brand Logo -->
+		<a class='as-brand shrink-0 group' href='/' aria-label='Artes do Sul — Página Inicial'>
+			<span class='as-mark' aria-hidden='true'></span>
+			<span class='flex flex-col sm:flex-row sm:items-baseline sm:gap-2'>
+				<span
+					class='font-display font-bold text-lg tracking-tight group-hover:text-[var(--accent-orange)] transition-colors'
+					>Artes do Sul</span
+				>
+				<span
+					class='font-mono text-[10px] tracking-widest uppercase text-[var(--accent-cyan)] hidden md:inline'
+					>// Studio</span
+				>
+			</span>
+		</a>
 
-	<div
-		id='astro-header-drawer'
-		class='shadow rounded-l-lg md:bg-transparent dark:md:bg-transparent bg-white dark:bg-[#0a0910] md:shadow-none md:rounded-none md:border-none md:h-auto md:static absolute transition-transform duration-300 ease-in translate-x-96 md:translate-x-0 top-12 -right-5 pl-4 pt-6 pb-4 md:p-0 h-[200px] w-[200px] z-50 md:w-auto md:h-auto md:flex-1 md:min-w-0 md:overflow-visible'
-	>
-		<nav
-			class='flex h-full flex-col justify-between gap-12 text-left md:flex-row md:w-full md:gap-5 md:items-center'
-		>
-			<div
-				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white shrink-0'
+		<!-- Navigation Links (Desktop) -->
+		<nav class='hidden md:flex items-center gap-6 text-sm font-medium'>
+			<HeaderLink href='/' class='hover:text-[var(--accent-orange)] transition-colors'>
+				Início
+			</HeaderLink>
+			<a
+				href='/#acervo'
+				class='hover:text-[var(--accent-orange)] transition-colors text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] hover:text-white'
 			>
-				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-base'>
-					<TagIcon /> Etiquetas
-				</HeaderLink>
+				Acervo
+			</a>
+			<a
+				href='/#simulador'
+				class='hover:text-[var(--accent-orange)] transition-colors text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] hover:text-white flex items-center gap-1.5'
+			>
+				<span class='w-1.5 h-1.5 rounded-full bg-[var(--accent-orange)]'></span> Simulador
+			</a>
+			<a
+				href='/#diario'
+				class='hover:text-[var(--accent-orange)] transition-colors text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] hover:text-white'
+			>
+				Diário
+			</a>
+			<HeaderLink
+				href='/tags'
+				class='hover:text-[var(--accent-orange)] transition-colors flex items-center gap-1'
+			>
+				<TagIcon /> Tags
+			</HeaderLink>
+		</nav>
+
+		<!-- Right Controls (Search, Social, Theme, Menu) -->
+		<div class='flex items-center gap-3 shrink-0'>
+			<!-- Live Online Status Indicator -->
+			<div
+				id='net-status-pill'
+				class='hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono border border-emerald-500/20 bg-emerald-500/10 text-emerald-400'
+			>
+				<span class='w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse'></span>
+				<span id='net-status-label'>ONLINE</span>
 			</div>
 
-			<div class='flex justify-center items-center md:justify-end gap-3 md:p-0 shrink-0'>
+			<!-- Search -->
+			<div class='flex items-center'>
+				<Search />
+			</div>
+
+			<!-- Theme Toggle -->
+			<ToggleTheme />
+
+			<!-- Mobile Menu Button -->
+			<button
+				id='astro-header-drawer-button'
+				type='button'
+				class='md:hidden p-2 rounded-lg border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-transparent hover:bg-white/5 transition-colors'
+				aria-label='Abrir menu'
+			>
+				<MenuIcon />
+			</button>
+		</div>
+	</div>
+
+	<!-- Mobile Drawer -->
+	<div
+		id='astro-header-drawer'
+		class='md:hidden fixed inset-x-4 top-20 z-50 p-6 rounded-2xl border border-[var(--as-border-paper)] bg-[var(--as-bg-paper-card)] dark:border-[var(--border)] dark:bg-[#0c0e14] shadow-2xl backdrop-blur-xl transition-all duration-300 transform scale-95 opacity-0 pointer-events-none'
+	>
+		<nav class='flex flex-col gap-4 text-base font-medium'>
+			<a href='/' class='py-2 border-b border-white/5 hover:text-[var(--accent-orange)]'>Início</a>
+			<a href='/#acervo' class='py-2 border-b border-white/5 hover:text-[var(--accent-orange)]'
+				>Acervo de Projetos</a
+			>
+			<a
+				href='/#simulador'
+				class='py-2 border-b border-white/5 hover:text-[var(--accent-orange)] flex items-center justify-between'
+			>
+				Simulador de Briefing
+				<span
+					class='text-xs px-2 py-0.5 rounded bg-[var(--accent-orange)]/20 text-[var(--accent-orange)] font-mono'
+					>NOVO</span
+				>
+			</a>
+			<a href='/#diario' class='py-2 border-b border-white/5 hover:text-[var(--accent-orange)]'
+				>Diário & Posts</a
+			>
+			<a
+				href='/tags'
+				class='py-2 border-b border-white/5 hover:text-[var(--accent-orange)] flex items-center gap-2'
+			>
+				<TagIcon /> Todas as Tags
+			</a>
+
+			<div class='pt-2 flex items-center gap-4 text-sm text-[var(--as-text-muted)]'>
 				{
 					SOCIALNETWORKS.map((network) => (
-						<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
-							<span>{<network.icon />} </span>
-						</HeaderLink>
+						<a
+							href={network.url}
+							target='_blank'
+							rel='noopener noreferrer'
+							aria-label={network.name}
+							class='hover:text-[var(--accent-cyan)] transition-colors'
+						>
+							<network.icon />
+						</a>
 					))
 				}
 			</div>
 		</nav>
 	</div>
-
-	<div class='flex items-center gap-3 shrink-0 md:pl-6 md:border-l md:border-stone-200 dark:md:border-stone-700' transition:persist='navbar'>
-		<div>
-			<Search />
-		</div>
-		<ToggleTheme />
-		<button id='astro-header-drawer-button' type='button' class='md:ml-6 md:hidden'>
-			<MenuIcon />
-			<span class='sr-only'>Mostrar menu</span>
-		</button>
-	</div>
 </header>
-<script>
-	document.addEventListener('click', (event) => {
-		const menu = document.getElementById('astro-header-drawer')
-		const menuButton = document.getElementById('astro-header-drawer-button')
-		const isClickInside =
-			menu?.contains(event.target as HTMLDivElement) ||
-			menuButton?.contains(event.target as HTMLButtonElement)
 
-		if (isClickInside) {
-			menu?.classList.toggle('translate-x-96')
-		} else {
-			menu?.classList.add('translate-x-96')
+<script>
+	const initHeader = () => {
+		const header = document.getElementById('main-header')
+		const drawer = document.getElementById('astro-header-drawer')
+		const drawerBtn = document.getElementById('astro-header-drawer-button')
+		const netStatusPill = document.getElementById('net-status-pill')
+		const netStatusLabel = document.getElementById('net-status-label')
+
+		// Sticky Scroll Elevation Effect
+		const handleScroll = () => {
+			if (!header) return
+			if (window.scrollY > 20) {
+				header.classList.add(
+					'scrolled',
+					'backdrop-blur-md',
+					'bg-white/80',
+					'dark:bg-[#050505]/85',
+					'border-b',
+					'border-black/5',
+					'dark:border-white/10',
+					'shadow-lg'
+				)
+			} else {
+				header.classList.remove(
+					'scrolled',
+					'backdrop-blur-md',
+					'bg-white/80',
+					'dark:bg-[#050505]/85',
+					'border-b',
+					'border-black/5',
+					'dark:border-white/10',
+					'shadow-lg'
+				)
+			}
 		}
-	})
+
+		window.addEventListener('scroll', handleScroll, { passive: true })
+		handleScroll()
+
+		// Mobile Drawer Toggle
+		let isDrawerOpen = false
+		const toggleDrawer = (open?: boolean) => {
+			isDrawerOpen = typeof open === 'boolean' ? open : !isDrawerOpen
+			if (!drawer) return
+			if (isDrawerOpen) {
+				drawer.classList.remove('scale-95', 'opacity-0', 'pointer-events-none')
+				drawer.classList.add('scale-100', 'opacity-100', 'pointer-events-auto')
+			} else {
+				drawer.classList.add('scale-95', 'opacity-0', 'pointer-events-none')
+				drawer.classList.remove('scale-100', 'opacity-100', 'pointer-events-auto')
+			}
+		}
+
+		drawerBtn?.addEventListener('click', (e) => {
+			e.stopPropagation()
+			toggleDrawer()
+		})
+
+		drawer?.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => toggleDrawer(false))
+		})
+
+		document.addEventListener('click', (e) => {
+			if (
+				isDrawerOpen &&
+				!drawer?.contains(e.target as Node) &&
+				!drawerBtn?.contains(e.target as Node)
+			) {
+				toggleDrawer(false)
+			}
+		})
+
+		// Live Network Status
+		const updateNetworkStatus = () => {
+			if (!netStatusPill || !netStatusLabel) return
+			if (navigator.onLine) {
+				netStatusPill.className =
+					'hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono border border-emerald-500/20 bg-emerald-500/10 text-emerald-400'
+				netStatusLabel.textContent = 'ONLINE'
+			} else {
+				netStatusPill.className =
+					'hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono border border-amber-500/30 bg-amber-500/10 text-amber-400'
+				netStatusLabel.textContent = 'OFFLINE (CACHE)'
+			}
+		}
+
+		window.addEventListener('online', updateNetworkStatus)
+		window.addEventListener('offline', updateNetworkStatus)
+		updateNetworkStatus()
+	}
+
+	initHeader()
+	document.addEventListener('astro:after-swap', initHeader)
 </script>

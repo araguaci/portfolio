@@ -1,510 +1,1339 @@
 {
-  "updated": "2026-03-12",
-  "fonte": "Central de Artefatos, Projects Hub, Inventário Hub, Inventário Projetos Landing",
-  "projetos": [
-    {
-      "titulo": "Numerologia",
-      "descricao": "Calculadora e análise de numerologia personalizada com IA.",
-      "tags": ["portfolio", "numerologia", "IA"],
-      "url": "https://numerologia-blond.vercel.app"
-    },
-    {
-      "titulo": "Dan Koe Inspired",
-      "descricao": "Dashboard inspirado na filosofia de Dan Koe para criadores digitais.",
-      "tags": ["portfolio", "produtividade", "criadores"],
-      "url": "https://dan-koe-inspired.vercel.app"
-    },
-    {
-      "titulo": "LifeOS Chi",
-      "descricao": "Sua vida, intencionalmente projetada. Versão alternativa.",
-      "tags": ["portfolio", "produtividade", "OS"],
-      "url": "https://lifeos-chi.vercel.app"
-    },
-    {
-      "titulo": "Content Genius",
-      "descricao": "Gerador de conteúdo com IA para redes sociais e marketing digital.",
-      "tags": ["portfolio", "conteúdo", "IA", "marketing"],
-      "url": "https://content-genius-ruddy.vercel.app"
-    },
-    {
-      "titulo": "Me Agenda AI",
-      "descricao": "Agendamento inteligente com IA para profissionais e empresas brasileiras.",
-      "tags": ["portfolio", "agendamento", "IA", "Brasil"],
-      "url": "https://meagendaai.vercel.app"
-    },
-    {
-      "titulo": "OmniCamp",
-      "descricao": "Plataforma omnichannel para campanhas de marketing e engajamento.",
-      "tags": ["portfolio", "omnichannel", "campanhas"],
-      "url": "https://omnicamp.vercel.app"
-    },
-    {
-      "titulo": "Sentinel",
-      "descricao": "Monitoramento e segurança inteligente com alertas em tempo real.",
-      "tags": ["portfolio", "segurança", "monitoramento"],
-      "url": "https://sentinel-sigma.vercel.app"
-    },
-    {
-      "titulo": "Serenity",
-      "descricao": "App de bem-estar mental com meditação guiada e journaling.",
-      "tags": ["portfolio", "meditação", "mindfulness"],
-      "url": "https://serenity-taupe.vercel.app"
-    },
-    {
-      "titulo": "AI Scheduler",
-      "descricao": "Scheduler inteligente com IA para otimização de tarefas e reuniões.",
-      "tags": ["portfolio", "IA", "agenda", "Em breve"],
-      "url": "https://ai-scheduler-sandy.vercel.app"
-    },
-    {
-      "titulo": "Prospec BR",
-      "descricao": "Prospecção de clientes B2B para o mercado brasileiro com automação.",
-      "tags": ["portfolio", "B2B", "prospecção", "Brasil", "Em breve"],
-      "url": "https://prospec-br.vercel.app"
-    },
-    {
-      "titulo": "Identity Flip",
-      "descricao": "Transformação de identidade pessoal e profissional com IA.",
-      "tags": ["portfolio", "identidade", "transformação", "Em breve"],
-      "url": "https://identity-flip.vercel.app"
-    },
-    {
-      "titulo": "Library of Excellence",
-      "descricao": "Biblioteca curada de conhecimento para alta performance e excelência.",
-      "tags": ["portfolio", "biblioteca", "conhecimento"],
-      "url": "https://library-of-excellence.vercel.app"
-    },
-    {
-      "titulo": "SaaS Starter",
-      "descricao": "Template base para novos produtos SaaS com autenticação e pagamentos.",
-      "tags": ["portfolio", "template", "boilerplate", "Em breve"],
-      "url": "https://saas-starter-mu-one.vercel.app"
-    },
-    {
-      "titulo": "TimeFlow",
-      "descricao": "Gestão de tempo visual com cronograma e análise de produtividade.",
-      "tags": ["portfolio", "tempo", "produtividade", "Em breve"],
-      "url": "https://timeflow-sable-gamma.vercel.app"
-    },
-    {
-      "titulo": "X2Doc",
-      "descricao": "Converte threads do X/Twitter em documentos e artigos formatados.",
-      "tags": ["portfolio", "Twitter", "automação", "docs"],
-      "url": "https://x2doc.vercel.app"
-    },
-    {
-      "titulo": "Aliança BR",
-      "descricao": "Plataforma de conexão e parceria para empreendedores brasileiros.",
-      "tags": ["portfolio", "networking", "Brasil"],
-      "url": "https://alianca-br.vercel.app"
-    },
-    {
-      "titulo": "Saúde Livre",
-      "descricao": "Plataforma de saúde digital — telemedicina, agendamento e gestão para clínicas.",
-      "tags": ["portfolio", "saúde", "telemedicina", "Brasil", "LGPD"],
-      "url": "https://saudelivre.artesdosul.com"
-    },
-    {
-      "titulo": "Gestão de Orçamentos",
-      "descricao": "Sistema completo para profissionais da construção civil. Orçamentos, clientes, PDF e aprovação digital.",
-      "tags": ["portfolio", "orçamento", "construção", "Laravel", "Brasil"],
-      "url": "https://orcamento.artesdosul.com"
-    },
-    {
-      "titulo": "AI Content Factory",
-      "descricao": "101 prompts + 5 templates HTML. Sistema para escritores técnicos e documentação. Pagamento PIX.",
-      "tags": ["portfolio", "conteúdo", "IA", "prompts", "PIX"],
-      "url": "https://iastudio.artesdosul.com/landing-page-pix/index.html"
-    },
-    {
-      "titulo": "Os Sete Pilares da Sabedoria",
-      "descricao": "Template de insights literários — T.E. Lawrence. Design editorial e conteúdo curado.",
-      "tags": ["portfolio", "literatura", "insights", "modelo", "design"],
-      "url": "https://modelos.artesdosul.com/insights/os-sete-pilares-da-sabedoria.html"
-    },
-    {
-      "titulo": "SWOT",
-      "descricao": "Análise SWOT interativa com IA para estratégia empresarial.",
-      "tags": ["portfolio", "SWOT", "estratégia"],
-      "url": "https://swot-chi.vercel.app"
-    },
-    {
-      "titulo": "PESTEL",
-      "descricao": "Framework PESTEL para análise de macro-ambiente de negócios.",
-      "tags": ["portfolio", "PESTEL", "macroambiente"],
-      "url": "https://pestel-chi.vercel.app"
-    },
-    {
-      "titulo": "5W2H",
-      "descricao": "Planejamento estruturado com a metodologia 5W2H interativa.",
-      "tags": ["portfolio", "5W2H", "planejamento"],
-      "url": "https://5w2h-chi.vercel.app"
-    },
-    {
-      "titulo": "Sun Tzu Chi",
-      "descricao": "Estratégias de Sun Tzu aplicadas ao mundo dos negócios modernos.",
-      "tags": ["portfolio", "Sun Tzu", "estratégia"],
-      "url": "https://suntzu-chi.vercel.app"
-    },
-    {
-      "titulo": "Sun Tzu",
-      "descricao": "A Arte da Guerra — versão interativa com filosofia e táticas clássicas.",
-      "tags": ["portfolio", "filosofia", "guerra", "táticas"],
-      "url": "https://suntzu.vercel.app"
-    },
-    {
-      "titulo": "Sun Tzu",
-      "descricao": "A Arte da Guerra — versão interativa com filosofia e táticas clássicas.",
-      "tags": ["portfolio", "filosofia", "guerra", "táticas"],
-      "url": "https://sabedoria-suntzu.vercel.app"
-    },
-    {
-      "titulo": "Fitness Tracker",
-      "descricao": "Rastreamento de treinos e evolução física com dashboards visuais.",
-      "tags": ["portfolio", "fitness", "treino"],
-      "url": "https://fitness-tracker-bice-omega.vercel.app"
-    },
-    {
-      "titulo": "Vital Flow",
-      "descricao": "Gestão clínica inteligente com IA e integração WhatsApp.",
-      "tags": ["portfolio", "saúde", "clínica", "IA", "Em breve"],
-      "url": "https://vital-flow-zeta.vercel.app"
-    },
-    {
-      "titulo": "PetMed Tracker",
-      "descricao": "Controle de saúde e medicamentos para pets com histórico veterinário.",
-      "tags": ["portfolio", "pets", "saúde animal", "Em breve"],
-      "url": "https://petmed-tracker.vercel.app"
-    },
-    {
-      "titulo": "Portfolio Artes do Sul",
-      "descricao": "Portfólio da Artes do Sul — 25+ anos de desenvolvimento web.",
-      "tags": ["portfolio", "artesdosul", "web"],
-      "url": "https://portfolio-artesdosul.vercel.app"
-    },
-    {
-      "titulo": "Artes do Sul XYZ",
-      "descricao": "Site institucional e showcase da Artes do Sul Desenvolvimento Web.",
-      "tags": ["portfolio", "institucional", "branding"],
-      "url": "https://artesdosul-xyz.vercel.app"
-    },
-    {
-      "titulo": "Pontiac Firebird",
-      "descricao": "Landing page imersiva do Pontiac Firebird — muscle car americano clássico.",
-      "tags": ["portfolio", "muscle car", "Pontiac", "clássico"],
-      "url": "https://pontiac-firebird.vercel.app"
-    },
-    {
-      "titulo": "Lawfare Timeline",
-      "descricao": "Timeline interativa documentando o lawfare político no Brasil.",
-      "tags": ["portfolio", "lawfare", "judiciário", "Brasil"],
-      "url": "https://lawfare-timeline.vercel.app"
-    },
-    {
-      "titulo": "Geoengenharia",
-      "descricao": "Análise e documentação sobre geoengenharia climática global.",
-      "tags": ["portfolio", "geoengenharia", "clima"],
-      "url": "https://geoengenharia.vercel.app"
-    },
-    {
-      "titulo": "Partido das Sombras",
-      "descricao": "Análise do deep state e poder oculto na política brasileira.",
-      "tags": ["portfolio", "política", "poder"],
-      "url": "https://partido-das-sombras.vercel.app"
-    },
-    {
-      "titulo": "O Imbecil Coletivo",
-      "descricao": "Ensaio político e social sobre o coletivismo e manipulação de massas.",
-      "tags": ["portfolio", "política", "ensaio"],
-      "url": "https://o-imbecil-coletivo.vercel.app"
-    },
-    {
-      "titulo": "Stop War For Ever",
-      "descricao": "Manifesto e conscientização contra guerras e conflitos armados.",
-      "tags": ["portfolio", "paz", "manifesto"],
-      "url": "https://stop-war-for-ever.vercel.app"
-    },
-    {
-      "titulo": "Pátria Amada Brasil",
-      "descricao": "Defesa dos valores nacionais e da soberania brasileira.",
-      "tags": ["portfolio", "Brasil", "soberania"],
-      "url": "https://patria-amada-brasil.vercel.app"
-    },
-    {
-      "titulo": "Ponerologia",
-      "descricao": "Estudo da ponerologia — psicopatas no poder e sistemas políticos.",
-      "tags": ["portfolio", "psicologia", "política"],
-      "url": "https://ponerologia-psicopatas-no-poder.vercel.app"
-    },
-    {
-      "titulo": "A Esperança Estilhaçada",
-      "descricao": "Análise do colapso das esperanças políticas na democracia brasileira.",
-      "tags": ["portfolio", "democracia", "Brasil"],
-      "url": "https://a-esperanca-estilhacada.vercel.app"
-    },
-    {
-      "titulo": "TaxaD",
-      "descricao": "Calculadora e análise da carga tributária brasileira.",
-      "tags": ["portfolio", "impostos", "economia"],
-      "url": "https://taxad.vercel.app"
-    },
-    {
-      "titulo": "Droga Vermelha",
-      "descricao": "Documentação sobre o narcotráfico e sua relação com o poder político.",
-      "tags": ["portfolio", "tráfico", "política"],
-      "url": "https://drogavermelha.vercel.app"
-    },
-    {
-      "titulo": "Futuro Roubado",
-      "descricao": "Análise sobre o roubo do futuro das gerações pela corrupção sistêmica.",
-      "tags": ["portfolio", "corrupção", "Brasil"],
-      "url": "https://futuroroubado.vercel.app"
-    },
-    {
-      "titulo": "Olavo de Carvalho",
-      "descricao": "Acervo e pensamentos do filósofo Olavo de Carvalho.",
-      "tags": ["portfolio", "filosofia", "conservadorismo"],
-      "url": "https://olavodecarvalho-org.vercel.app"
-    },
-    {
-      "titulo": "Oração de São Miguel",
-      "descricao": "Site devocional com a Oração de São Miguel Arcanjo.",
-      "tags": ["portfolio", "oração", "catolicismo"],
-      "url": "https://a-oracao-de-sao-miguel.vercel.app"
-    },
-    {
-      "titulo": "Santo Agostinho",
-      "descricao": "Pensamentos, escritos e filosofia de Santo Agostinho de Hipona.",
-      "tags": ["portfolio", "teologia", "filosofia"],
-      "url": "https://santo-agostinho.vercel.app"
-    },
-    {
-      "titulo": "Catequese para Adultos",
-      "descricao": "Material de catequese para adultos — formação cristã e doutrina católica.",
-      "tags": ["portfolio", "catequese", "fé"],
-      "url": "https://catequese-para-adultos.vercel.app"
-    },
-    {
-      "titulo": "No Princípio o Verbo",
-      "descricao": "Reflexão teológica sobre o Evangelho de João e o Verbo encarnado.",
-      "tags": ["portfolio", "teologia", "João"],
-      "url": "https://noprincipiooverbo.vercel.app"
-    },
-    {
-      "titulo": "Christo Nihil Praeponere",
-      "descricao": "\"Nada antepor a Cristo\" — Regra de São Bento e espiritualidade beneditina.",
-      "tags": ["portfolio", "São Bento", "monaquismo"],
-      "url": "https://christo-nihil-praeponere.vercel.app"
-    },
-    {
-      "titulo": "Os Quatro Compromissos",
-      "descricao": "Os acordos toltecas aplicados ao crescimento espiritual e pessoal.",
-      "tags": ["portfolio", "tolteca", "sabedoria"],
-      "url": "https://os-quatro-compromissos.vercel.app"
-    },
-    {
-      "titulo": "Open Graph",
-      "descricao": "Gerador de imagens Open Graph para compartilhamento em redes sociais.",
-      "tags": ["portfolio", "OG", "meta tags", "SEO"],
-      "url": "https://open-graph-plum.vercel.app"
-    },
-    {
-      "titulo": "IdeaBrowser Analysis",
-      "descricao": "Análise de design e UX gerada com v0 para o IdeaBrowser.",
-      "tags": ["portfolio", "v0", "design", "análise"],
-      "url": "https://v0-ideabrowser-design-analysis.vercel.app"
-    },
-    {
-      "titulo": "Skills MP Website",
-      "descricao": "Site de skills e marketplace gerado com v0.dev.",
-      "tags": ["portfolio", "v0", "marketplace"],
-      "url": "https://v0-skills-mp-website.vercel.app"
-    },
-    {
-      "titulo": "LorentzCTI Changelog",
-      "descricao": "Changelog e atualizações do sistema LorentzCTI.",
-      "tags": ["portfolio", "changelog", "releases"],
-      "url": "https://lorentzcti-changelog.vercel.app"
-    },
-    {
-      "titulo": "Healing Sound of the Earth",
-      "descricao": "Experiência sonora e visual com sons curativos da natureza.",
-      "tags": ["portfolio", "som", "cura", "natureza"],
-      "url": "https://healing-sound-of-the-earth.vercel.app"
-    },
-    {
-      "titulo": "Timeline Biowar",
-      "descricao": "Documentação cronológica sobre guerra biológica e pandemias.",
-      "tags": ["portfolio", "bioguerra", "pandemia", "timeline"],
-      "url": "https://timeline-biowar.vercel.app"
-    },
-    {
-      "titulo": "Timeline Surf Santa Catarina",
-      "descricao": "Timeline interativa da história do surf em Santa Catarina.",
-      "tags": ["portfolio", "surf", "Santa Catarina", "timeline", "história"],
-      "url": "https://timeline-surf-santa-catarina.vercel.app"
-    },
-    {
-      "titulo": "Lotofácil Neural",
-      "descricao": "Gerador de jogos com redes neurais e análise estatística para Lotofácil. Python/Flask.",
-      "tags": ["portfolio", "loteria", "IA", "Python", "Brasil"],
-      "url": "http://lotofacil.artesdosul.com:5000"
-    },
-    {
-      "titulo": "Sun Tzu Cast",
-      "descricao": "A Arte da Guerra de Sun Tzu — tratado militar chinês em formato podcast/audiobook.",
-      "tags": ["portfolio", "Sun Tzu", "estratégia", "audiobook"],
-      "url": "https://suntzucast.netlify.app"
-    },
-    {
-      "titulo": "Visão Ezequiel",
-      "descricao": "O chamado e a primeira visão de Ezequiel — profeta no exílio na Babilônia.",
-      "tags": ["portfolio", "teologia", "Ezequiel", "Bíblia"],
-      "url": "https://visao-ezequiel.vercel.app"
-    },
-    {
-      "titulo": "Via Sacra",
-      "descricao": "Meditação da Paixão de Cristo — as 14 estações do caminho sagrado.",
-      "tags": ["portfolio", "Via Sacra", "catolicismo", "meditação"],
-      "url": "https://viacrucis.vercel.app"
-    },
-    {
-      "titulo": "Estudo da Mente",
-      "descricao": "Biblioteca de obras de Rand, Nietzsche, Jung, Lewis, Castañeda e outros pensadores.",
-      "tags": ["portfolio", "filosofia", "psicologia", "literatura"],
-      "url": "https://estudodamente.vercel.app"
-    },
-    {
-      "titulo": "Provérbios",
-      "descricao": "Livro de Provérbios — sabedoria de Salomão do Antigo Testamento.",
-      "tags": ["portfolio", "Bíblia", "Provérbios", "sabedoria"],
-      "url": "https://proverbios-kappa.vercel.app"
-    },
-    {
-      "titulo": "Cronologia Operações EUA",
-      "descricao": "Timeline das operações militares dos EUA no mundo — baseado em relatórios do Congresso.",
-      "tags": ["portfolio", "timeline", "militar", "EUA"],
-      "url": "https://cronologia-operacoes-eua.vercel.app"
-    },
-    {
-      "titulo": "Abusofederal",
-      "descricao": "Fatos absurdos e não democráticos que não são evidenciados na mídia.",
-      "tags": ["portfolio", "política", "Brasil", "transparência"],
-      "url": "https://abusofederal.vercel.app"
-    },
-    {
-      "titulo": "Malvadofavorito",
-      "descricao": "Índices e resultados do governo — informações que não chegam ao público.",
-      "tags": ["portfolio", "política", "dados", "Brasil"],
-      "url": "https://malvadofavorito.vercel.app"
-    },
-    {
-      "titulo": "Solarstorm",
-      "descricao": "Tempestade solar G5 — condições extremas de 10 a 12 de maio de 2024.",
-      "tags": ["portfolio", "clima espacial", "ciência"],
-      "url": "https://solarstorm.vercel.app"
-    },
-    {
-      "titulo": "Ayrton Senna Magic",
-      "descricao": "Tributo a Ayrton Senna — 30 anos do legado do piloto brasileiro na F1.",
-      "tags": ["portfolio", "F1", "Senna", "tributo", "Brasil"],
-      "url": "https://ayrtonsenna-magic.vercel.app"
-    },
-    {
-      "titulo": "Docsify Awesome Stars",
-      "descricao": "Lista curada de projetos GitHub sobre recursos de aprendizado e desenvolvimento web.",
-      "tags": ["portfolio", "Docsify", "GitHub", "recursos"],
-      "url": "https://docsify-awesome-stars.vercel.app"
-    },
-    {
-      "titulo": "O Apagar das Luzes",
-      "descricao": "Quando a justiça não funciona — reflexão sobre sede e fome mencionadas por Jesus.",
-      "tags": ["portfolio", "teologia", "justiça", "ensaio"],
-      "url": "https://o-apagar-das-luzes.vercel.app"
-    },
-    {
-      "titulo": "A Arte de Alcançar uma Vida Plena",
-      "descricao": "Tradições e filosofias japonesas para o contentamento — caminho do guerreiro.",
-      "tags": ["portfolio", "filosofia", "Japão", "sabedoria"],
-      "url": "https://a-arte-de-alcancar-uma-vida-plena.vercel.app"
-    },
-    {
-      "titulo": "Por Que Lutamos",
-      "descricao": "Diagnóstico da civilização e programa de resistência, reconquista e regeneração.",
-      "tags": ["portfolio", "política", "ensaio", "resistência"],
-      "url": "https://por-que-lutamos.vercel.app"
-    },
-    {
-      "titulo": "Os Cinco Níveis de Apego",
-      "descricao": "Don Miguel Ruiz Jr. — estudo sobre liberdade e equilíbrio interior (tolteca).",
-      "tags": ["portfolio", "tolteca", "liberdade", "espiritualidade"],
-      "url": "https://os-cinco-niveis-de-apego.vercel.app"
-    },
-    {
-      "titulo": "O Caminho da Servidão",
-      "descricao": "F.A. Hayek — clássico sobre planejamento central e liberdade econômica.",
-      "tags": ["portfolio", "economia", "Hayek", "liberalismo"],
-      "url": "https://ocaminhodaservidao.vercel.app"
-    },
-    {
-      "titulo": "Os 5 Carteis",
-      "descricao": "Os 5 cartéis que governam a América e o mundo.",
-      "tags": ["portfolio", "política", "poder", "análise"],
-      "url": "https://os-5-carteis.vercel.app"
-    },
-    {
-      "titulo": "Os 10 Mandamentos",
-      "descricao": "Os mandamentos da lei de Deus — honra a Deus e proveito ao próximo.",
-      "tags": ["portfolio", "catolicismo", "mandamentos", "fé"],
-      "url": "https://os-10-mandamentos.vercel.app"
-    },
-    {
-      "titulo": "Supsocial",
-      "descricao": "Floripa SUP Club — Stand Up Paddle com ações de inclusão social e meio ambiente.",
-      "tags": ["portfolio", "surf", "SUP", "Florianópolis", "inclusão"],
-      "url": "https://supsocial.vercel.app"
-    },
-    {
-      "titulo": "Portfolio Particles",
-      "descricao": "Portfólio de projetos com efeito particles — trabalhos voluntários e amigos.",
-      "tags": ["portfolio", "artesdosul", "web", "particles"],
-      "url": "https://portfolio-particles.vercel.app"
-    },
-    {
-      "titulo": "Brasil Pela Liberdade",
-      "descricao": "Brasileiros unidos pedindo liberdade — eventos em todo o Brasil.",
-      "tags": ["portfolio", "Brasil", "liberdade", "eventos"],
-      "url": "https://brasil-pela-liberdade.vercel.app"
-    },
-    {
-      "titulo": "Guias de Desenvolvimento",
-      "descricao": "12 guias práticos: Flask, Docker, Nginx, Supabase, LLM, MCP, MVP, WASM e mais.",
-      "tags": ["portfolio", "guias", "DevOps", "IA", "desenvolvimento"],
-      "url": "https://guias.artesdosul.com"
-    },
-    {
-      "titulo": "Gorin no Sho",
-      "descricao": "O Livro dos Cinco Elementos de Miyamoto Musashi — estratégia e filosofia do guerreiro.",
-      "tags": ["portfolio", "Musashi", "estratégia", "Japão", "Dokodo"],
-      "url": "https://musashi.artesdosul.com"
-    },
-    {
-      "titulo": "Tributo a Charlie Kirk",
-      "descricao": "Homenagem ao ativista conservador — legado, citações e memorial.",
-      "tags": ["portfolio", "conservadorismo", "tributo", "memorial"],
-      "url": "https://tributo-a-charlie-kirk.vercel.app"
-    },
-    {
-      "titulo": "Organizador de Favoritos",
-      "descricao": "Interface com 170+ links em 12 categorias para desenvolvedores e criativos.",
-      "tags": ["portfolio", "produtividade", "links", "ferramentas"],
-      "url": "https://araguaci.github.io/links"
-    },
-    {
-      "titulo": "Let Me Ask",
-      "descricao": "Conecta leitores e autores — perguntas em trechos de livros com respostas dos autores.",
-      "tags": ["portfolio", "livros", "Q&A", "Firebase", "colaborativo"],
-      "url": "https://letmeask-42c3c.web.app"
-    }
-  ]
+	"updated": "2026-10-07T19:25:10Z",
+	"fonte": "Artes do Sul & Portfólio Consolidado",
+	"projetos": [
+		{
+			"titulo": "19 Startup Hacks • Primeiros Clientes",
+			"descricao": "19 Hacks validados e testados para conseguir seus primeiros clientes sem anúncios pagos. Estratégias comprovadas para tração e crescimento orgânico ($150k+ validados).",
+			"tags": ["b2b", "ia", "portfolio"],
+			"url": "https://hacks.artesdosul.com/",
+			"thumbnail": "/assets/img/hero.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "5W2H",
+			"descricao": "Metodologia ágil para definição clara de planos de ação (What, Why, Where, When, Who, How, How much) sem atrito de execução.",
+			"tags": ["5W2H", "ia", "planejamento", "portfolio"],
+			"url": "https://5w2h-chi.vercel.app",
+			"thumbnail": "/assets/img/plano-hero.webp",
+			"origem": "Artes do Sul",
+			"draft": true
+		},
+		{
+			"titulo": "A Arte de Alcançar uma Vida Plena",
+			"descricao": "Tradições e filosofias japonesas para o contentamento — caminho do guerreiro.",
+			"tags": ["portfolio", "filosofia", "Japão", "sabedoria"],
+			"url": "https://a-arte-de-alcancar-uma-vida-plena.vercel.app",
+			"thumbnail": "/assets/img/projects/a-arte-de-alcancar-uma-vida-plena.vercel.app.webp",
+			"origem": "public/assets/img/projects/a-arte-de-alcancar-uma-vida-plena.vercel.app.webp"
+		},
+		{
+			"titulo": "A Esperança Estilhaçada",
+			"descricao": "Análise do colapso das esperanças políticas na democracia brasileira.",
+			"tags": ["portfolio", "democracia", "Brasil"],
+			"url": "https://a-esperanca-estilhacada.vercel.app",
+			"thumbnail": "/assets/img/projects/a-esperanca-estilhacada.vercel.app.webp",
+			"origem": "public/assets/img/projects/a-esperanca-estilhacada.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "Abusofederal",
+			"descricao": "Fatos absurdos e não democráticos que não são evidenciados na mídia.",
+			"tags": ["portfolio", "política", "Brasil", "transparência"],
+			"url": "https://abusofederal.vercel.app",
+			"thumbnail": "/assets/img/projects/abusofederal.vercel.app.webp",
+			"origem": "public/assets/img/projects/abusofederal.vercel.app.webp"
+		},
+		{
+			"titulo": "Aliança BR",
+			"descricao": "Plataforma cívica independente com dados públicos, direitos constitucionais e acompanhamento transparente de políticas públicas.",
+			"tags": ["Brasil", "ia", "networking", "portfolio"],
+			"url": "https://alianca-br.vercel.app",
+			"thumbnail": "/assets/img/republica-sequestrada-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Amigos do Rio Capivari",
+			"descricao": "Amigos do Rio Capivari é uma associação orgânica do povo para o povo. O principal objetivo é cuidar e proteger o rio Capivari e o meio ambiente.",
+			"tags": ["dev", "ia", "portfolio"],
+			"url": "http://riocapivari.artesdosul.com",
+			"thumbnail": "/assets/img/amigosriocapivari.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Artes do Sul | Studio de Criação Digital",
+			"descricao": "Soluções para Internet com Arte 🧭. Mais de 25 anos desenvolvendo websites de alta performance, plataformas SaaS, observatórios de dados e engenharia digital.",
+			"tags": ["b2b", "cultura", "dev", "ia", "portfolio"],
+			"url": "https://landing.artesdosul.com/",
+			"thumbnail": "/assets/img/hero.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Associação Catarinense das Escolas de Surf",
+			"descricao": "Fornecer capacitação e qualificação profissional aos profissionais do segmento do surf e mais segurança aos alunos iniciantes, balneários, banhistas e atletas que praticam o surf no Brasil e em campeonatos internacionais.",
+			"tags": ["cultura", "geopolitica", "ia", "portfolio"],
+			"url": "http://www.escolasdesurf.org.br",
+			"thumbnail": "/assets/img/logoaces.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Attender Soluções em Atendimento",
+			"descricao": "Sistemas para gerenciamento e supervisão de Call Center Ativo e Receptivo.",
+			"tags": ["ia", "portfolio"],
+			"url": "http://attender.com.br",
+			"thumbnail": "/assets/img/callcenter.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "AudioVisualizer 3D • Sound Reactive Studio",
+			"descricao": "Estúdio WebGL e Web Audio API para visualização tridimensional de música e microfone com terrenos de frequência FFT e túneis neon.",
+			"tags": ["cultura", "dev", "ia", "portfolio", "saude"],
+			"url": "https://audioviz.artesdosul.com/",
+			"thumbnail": "/assets/img/audioviz-3d-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Ayrton Senna Inmemoriam",
+			"descricao": "No dia 1 de maio de 1994, há 30 anos, Ayrton Senna deixa um legado histórico. O piloto brasileiro foi vítima de um despiste fatal do GP San Marino, em Ímola, um acidente que mudou para sempre a Fórmula 1.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://ayrtonsenna-inmemoriam.netlify.app/",
+			"thumbnail": "/assets/img/senna_tricampea_o_655_x_425.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Ayrton Senna Magic",
+			"descricao": "Senna demonstrou que a determinação e o amor pelo que se faz são fundamentais para superar desafios e alcançar o sucesso. Sua citação, “Com seu poder mental, sua determinação, seu instinto e a experiência também, você pode voar muito alto”, reflete a essência de sua filosofia de vida e carreira.",
+			"tags": ["Brasil", "F1", "Senna", "filosofia", "ia", "portfolio", "tributo"],
+			"url": "https://ayrtonsenna-magic.vercel.app",
+			"thumbnail": "/assets/img/projects/ayrtonsenna-magic.vercel.app.webp",
+			"origem": "public/assets/img/projects/ayrtonsenna-magic.vercel.app.webp"
+		},
+		{
+			"titulo": "Ayrton Senna Memories",
+			"descricao": "Ayrton Senna da Silva, um ícone do automobilismo, deixou um legado que transcende o esporte. Sua paixão, dedicação e espírito competitivo são lembrados e celebrados não só no Brasil, mas em todo o mundo.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://ayrtonsenna-memories.netlify.app/",
+			"thumbnail": "/assets/img/0_ayrtonsenna_0_qvluyt.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Base Floripa Surf Club 360º",
+			"descricao": "Base Floripa Surf Club Surf School 360 🌊 Praia da Barra da Lagoa - Florianópolis - Santa Catarina - Brasil 🌎 Ao lado do Projeto Tamar",
+			"tags": ["cultura", "geopolitica", "ia", "portfolio"],
+			"url": "https://floripa-surf-club-surf-school-360.vercel.app",
+			"thumbnail": "/assets/img/floripa-surf-club-surf-school-360.vercel.app.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Biblioteca Olavo de Carvalho",
+			"descricao": "Olavo Luiz Pimentel de Carvalho é professor, filósofo, escritor, ensaísta e jornalista brasileiro. Autor profícuo, escreveu mais de 40 livros.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://olavodecarvalho.vercel.app/",
+			"thumbnail": "/assets/img/projects/olavobiblioteca.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Brasil Pela Liberdade",
+			"descricao": "Brasileiros unidos pedindo liberdade — eventos em todo o Brasil.",
+			"tags": ["portfolio", "Brasil", "liberdade", "eventos"],
+			"url": "https://brasil-pela-liberdade.vercel.app",
+			"thumbnail": "/assets/img/projects/brasil-pela-liberdade.vercel.app.webp",
+			"origem": "public/assets/img/projects/brasil-pela-liberdade.vercel.app.webp"
+		},
+		{
+			"titulo": "Canoas em madeira",
+			"descricao": "Construção de belíssimas Canoas Canadenses que são verdadeiras obras de arte da engenharia naval. São versáteis, seguras e com boa capacidade de carga. Feitas a partir do compensado naval, madeira, caxeta, cedro rosa e cedrinho que conferem a estas canoas uma exclusiva aparência e estilo único.",
+			"tags": ["cultura", "dev", "ia", "portfolio"],
+			"url": "http://mestreartesao.artesdosul.com",
+			"thumbnail": "/assets/img/estilomadeira.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Catequese para Adultos",
+			"descricao": "Material de catequese para adultos — formação cristã e doutrina católica.",
+			"tags": ["portfolio", "catequese", "fé"],
+			"url": "https://catequese-para-adultos.vercel.app",
+			"thumbnail": "/assets/img/projects/catequese-para-adultos.vercel.app.webp",
+			"origem": "public/assets/img/projects/catequese-para-adultos.vercel.app.webp"
+		},
+		{
+			"titulo": "Censura no Brasil",
+			"descricao": "investiga os casos de censura ocorridos no Brasil entre 2019 e 2025, abordando as dimensões judicial, midiática e eleitoral, e compilando uma linha do tempo, dossiês e análises críticas sobre prisões políticas, influências estrangeiras e impactos na democracia.",
+			"tags": ["geopolitica", "ia", "investigacao", "portfolio"],
+			"url": "https://abusosupremo.vercel.app/",
+			"thumbnail": "/assets/img/censura-no-brasil1.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "CENTRAL DE AVENTURAS",
+			"descricao": "Confraternização entre todos que adoram aventura, esporte e que respeitam a natureza. Profissionais e especialistas em SURF e Stand Up Paddle e devidamente capacitados nas melhores metodologias de pedagogia do esporte.",
+			"tags": ["cultura", "dev", "ia", "portfolio"],
+			"url": "http://centraldeaventuras.com.br",
+			"thumbnail": "/assets/img/centraldeaventuras.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Central de Suporte & Chamados",
+			"descricao": "Central de atendimento técnico e helpdesk com protocolo imediato, roteamento para WhatsApp SC e SP, e proteção anti-robôs Sentinela.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://suporte.artesdosul.com/",
+			"thumbnail": "/assets/img/suporte-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Christo Nihil Praeponere",
+			"descricao": "\"Nada antepor a Cristo\" — Regra de São Bento e espiritualidade beneditina.",
+			"tags": ["portfolio", "São Bento", "monaquismo"],
+			"url": "https://christo-nihil-praeponere.vercel.app",
+			"thumbnail": "/assets/img/projects/Christo-nihil-praeponere.webp",
+			"origem": "public/assets/img/projects/Christo-nihil-praeponere.webp"
+		},
+		{
+			"titulo": "ChromaMesh • Fluid Mesh Studio",
+			"descricao": "Gerador generativo de gradientes de malha fluida, ruído Perlin/Simplex, ondas orgânicas e exportação direta em CSS, SVG e PNG 4K.",
+			"tags": ["portfolio"],
+			"url": "https://chromamesh.artesdosul.com/",
+			"thumbnail": "/assets/img/chromamesh-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Ciclos do Brasil • Caserna, Poder & Instituições",
+			"descricao": "Dossiê histórico-institucional auditando 26 intervenções, tentativas e recusas militares na história republicana carimbadas pelo grau de evidência (1889-2026).",
+			"tags": ["cultura", "geopolitica", "ia", "investigacao", "portfolio"],
+			"url": "https://ciclos.artesdosul.com/",
+			"thumbnail": "/assets/img/ciclos-brasil-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Coleção Curada de Ferramentas Essenciais",
+			"descricao": "Seleção pessoal de ferramentas e recursos úteis organizados em categorias como inteligência artificial, design gráfico, desenvolvimento de software, gerenciamento de servidores e APIs, oferecendo um panorama prático para aprimorar projetos digitais.",
+			"tags": ["autoconhecimento", "dev", "ia", "portfolio", "saude"],
+			"url": "https://gemini.google.com/share/3b4452d871b6",
+			"thumbnail": "/assets/img/favoritos.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "ColorBook Studio • Coloring & Paint",
+			"descricao": "Estúdio interativo de páginas de colorir, pintura digital relaxante, conversor de fotos em traços e impressão de artes em alta definição.",
+			"tags": ["cultura", "ia", "portfolio"],
+			"url": "/colorbook/",
+			"thumbnail": "/assets/img/colorbook-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Content Command Center",
+			"descricao": "Plataforma multifuncional que integra ferramentas avançadas para busca, análise, resumo, geração de títulos, verificação de fatos e criação de conteúdos otimizados a partir de dados da web.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://gemini.google.com/share/41c39a9af803",
+			"thumbnail": "/assets/img/command-center.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "COVID-19 Data Repository",
+			"descricao": "Repositório de dados COVID-19 do Centro de Ciência e Engenharia de Sistemas (CSSE) da Universidade Johns Hopkins.",
+			"tags": ["dev", "ia", "portfolio"],
+			"url": "https://covid-19-data-repository.vercel.app/",
+			"thumbnail": "/assets/img/coviddata.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Criação de Identidade Visual",
+			"descricao": "Gerador de paletas de cores e kits completos de lançamento de marca utilizando inteligência artificial, destacando funcionalidades para criação de esquemas de cores temáticos, geração de ícones personalizados e verificação de acessibilidade.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://gemini.google.com/share/8f3ea1d7a888",
+			"thumbnail": "/assets/img/gemini-canvas.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Cronologia Operações EUA",
+			"descricao": "Timeline das operações militares dos EUA no mundo — baseado em relatórios do Congresso.",
+			"tags": ["portfolio", "timeline", "militar", "EUA"],
+			"url": "https://cronologia-operacoes-eua.vercel.app",
+			"thumbnail": "/assets/img/projects/cronologia-operacoes-eua.webp",
+			"origem": "public/assets/img/projects/cronologia-operacoes-eua.webp"
+		},
+		{
+			"titulo": "CSSML • Medalha de São Bento PWA",
+			"descricao": "A Sagrada Medalha de São Bento, oração rítmica de exorcismo, decodificador interativo das siglas sacras (CSSML, NDSMD, CSPB, VRS) e bênção espiritual.",
+			"tags": ["espiritualidade", "portfolio", "pwa"],
+			"url": "https://cssml.artesdosul.com/",
+			"thumbnail": "/assets/img/cssml-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Dan Koe Inspired",
+			"descricao": "Framework de síntese de conhecimento, monetização de criatividade e arquitetura de negócios de uma pessoa só no mercado moderno.",
+			"tags": ["b2b", "criadores", "ia", "portfolio", "produtividade"],
+			"url": "https://dan-koe-inspired.vercel.app",
+			"thumbnail": "/assets/img/about-artesdosul-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Design Fundamentals • Cyber-Growth Masterpiece",
+			"descricao": "Os 5 Fundamentos Vitais de UI/UX para Desenvolvedores: interface Cyber-Growth, testador de contraste ao vivo e rastreador de maestria.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://design-fundamentals-pi.vercel.app/",
+			"thumbnail": "/assets/img/cyber_growth_hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "DevStudio Soberano • Engineering Hub PWA",
+			"descricao": "Suite de engenharia de software e utilitários de alta performance: JSON Forge, MCP Connector, Base64 Lab, Hash Crypto, Validação e arquitetura anti-Droste.",
+			"tags": ["dev", "ia", "portfolio", "pwa"],
+			"url": "https://dev.artesdosul.com/",
+			"thumbnail": "/assets/img/dev-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Docsify Awesome Stars",
+			"descricao": "Lista curada de projetos GitHub sobre recursos de aprendizado e desenvolvimento web.",
+			"tags": ["portfolio", "Docsify", "GitHub", "recursos"],
+			"url": "https://docsify-awesome-stars.vercel.app",
+			"thumbnail": "/assets/img/projects/docsify-awesome-stars.vercel.app.webp",
+			"origem": "public/assets/img/projects/docsify-awesome-stars.vercel.app.webp"
+		},
+		{
+			"titulo": "Droga Vermelha",
+			"descricao": "Documentação sobre o narcotráfico e sua relação com o poder político.",
+			"tags": ["portfolio", "tráfico", "política"],
+			"url": "https://drogavermelha.vercel.app",
+			"thumbnail": "/assets/img/projects/drogavermelha.vercel.app.webp",
+			"origem": "public/assets/img/projects/drogavermelha.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "Ecossistema SELVA • Dossiê Estratégico",
+			"descricao": "Eixo investigativo e documental SELVA: cronologias geoestratégicas, soberania de dados e análise estruturada de conformidade.",
+			"tags": ["ia", "investigacao", "portfolio"],
+			"url": "https://ecosistema-selva.vercel.app",
+			"thumbnail": "/assets/img/ecosistema-selva-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Ecossistemas Digitais",
+			"descricao": "Análise integrada e interativa sobre os principais aspectos dos ecossistemas digitais, explorando o papel das APIs, a importância da qualidade dos dados e os desafios da segurança de software para garantir sistemas confiáveis e eficientes.",
+			"tags": ["dev", "ia", "portfolio"],
+			"url": "https://gemini.google.com/share/f7264d9f7673",
+			"thumbnail": "/assets/img/ecossistemas.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Escolas F.E.C.E.E.S.S.",
+			"descricao": "🏄Especialistas e Escolas de Surf Credenciadas 🌊 F.E.C.E.E.S.S. ☆ A.C.E.S. SANTA CATARINA🏄",
+			"tags": ["cultura", "ia", "portfolio"],
+			"url": "http://feceess.escolasdesurf.org.br/escolas",
+			"thumbnail": "/assets/img/feceess.escolasdesurf.org.br-escolas.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "ESP-NOW Hub • Rádio Sem Fio P2P",
+			"descricao": "Comunicação sem fio direta ESP-NOW de baixíssima latência (<5ms), nós de bateria com Deep Sleep e redes autônomas sem roteador.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://espnow.artesdosul.com/",
+			"thumbnail": "/assets/img/espnow-hub-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "F.E.C.E.E.S.S.☆A.C.E.S. SC",
+			"descricao": "Federação Catarinense de Especialistas e Escolas de Surf e Stand Up Paddle.",
+			"tags": ["cultura", "ia", "portfolio"],
+			"url": "http://feceess.escolasdesurf.org.br",
+			"thumbnail": "/assets/img/feceess.escolasdesurf.org.br.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "FLORIPA SUP CLUB",
+			"descricao": "Empresa especializada Stand Up Paddle Surf, fornecendo treinamento, consultoria, organização de eventos, aulas, aluguel de equipamentos, passeios ecológicos e gastronômicos, tudo isto com integração ao esporte.",
+			"tags": ["cultura", "ia", "portfolio", "produtividade"],
+			"url": "http://www.floripasupclub.com.br",
+			"thumbnail": "/assets/img/floripasupclub-logo.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Floripa Surf Club",
+			"descricao": "Escola surf Floripa Surf Club, ensina, divulga e expande o Surf de Santa Catarina. Trabalhando na organização de trips internacionais e eventos. Está situada na Praia Mole, santuário ecológico e palco para eventos nacionais e internacionais, bem como os direcionados ao Ecoturismo.",
+			"tags": ["cultura", "ia", "portfolio", "produtividade"],
+			"url": "http://floripasurfclub.com",
+			"thumbnail": "/assets/img/floripasurfclub.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Geoengenharia",
+			"descricao": "Portal dedicado à listagem e análise das mais de 200 patentes de alteração do clima — a geoengenharia — e sua interface com debates contemporâneos, tecnologia, riscos e governança global.",
+			"tags": ["clima", "dev", "geoengenharia", "ia", "portfolio"],
+			"url": "https://geoengenharia.vercel.app",
+			"thumbnail": "/assets/img/angel1.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "GlitchLab • Retro Cyber Shaders",
+			"descricao": "Estúdio WebGL de efeitos analógicos: distorção de tubo CRT, scanlines ajustáveis, aberração cromática RGB e gravação de vídeo WebM.",
+			"tags": ["portfolio"],
+			"url": "https://glitchlab.artesdosul.com/",
+			"thumbnail": "/assets/img/glitchlab-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Governança Criminal no Brasil",
+			"descricao": "Análise interativa e abrangente da governança criminal no Brasil, abordando a expansão das facções, modelos de controle em São Paulo e Rio de Janeiro, o ciclo vicioso da criminalidade e as propostas estratégicas para fortalecer a presença estatal e combater a impunidade.",
+			"tags": ["geopolitica", "portfolio"],
+			"url": "https://gemini.google.com/share/459e2fe745a0",
+			"thumbnail": "/assets/img/governanca-criminal.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Guerra da Informação",
+			"descricao": "Um conflito multidimensional travado no campo de batalha da percepção humana, redefinindo a segurança, a economia e a sociedade na era digital.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://gemini.google.com/share/be33041d37a1",
+			"thumbnail": "/assets/img/guerra-da-informacao.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Guias de Desenvolvimento",
+			"descricao": "Coleção completa de guias técnicos, tutoriais e estratégias de Growth, Infraestrutura & Persistência — 100% Funcional e Offline (PWA).",
+			"tags": [
+				"DevOps",
+				"IA",
+				"desenvolvimento",
+				"dev",
+				"geopolitica",
+				"guias",
+				"ia",
+				"portfolio",
+				"pwa"
+			],
+			"url": "https://guias.artesdosul.com",
+			"thumbnail": "/assets/img/develop.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Healing Sound of the Earth",
+			"descricao": "Experiência sonora e visual com sons curativos da natureza.",
+			"tags": ["portfolio", "som", "cura", "natureza"],
+			"url": "https://healing-sound-of-the-earth.vercel.app",
+			"thumbnail": "/assets/img/projects/healing-sound-of-the-earth.vercel.app.webp",
+			"origem": "public/assets/img/projects/healing-sound-of-the-earth.vercel.app.webp"
+		},
+		{
+			"titulo": "Homelab Soberano • Nuvem Própria",
+			"descricao": "Infraestrutura doméstica soberana: Proxmox VE, Docker Compose, Pi-hole, cofre Vaultwarden, Home Assistant e VPN WireGuard.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://homelab.artesdosul.com/",
+			"thumbnail": "/assets/img/homelab-soberania-digital-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Identity Flip — Digital Sovereign",
+			"descricao": "Transforme sua identidade em Digital Sovereign. PWA para gamificação comportamental com XP, Trust Moat, badges e evolução contínua.",
+			"tags": ["portfolio", "pwa"],
+			"url": "https://identity-flip-chi.vercel.app/",
+			"thumbnail": "/assets/img/og.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Inteligência Numerológica",
+			"descricao": "Decifre sua Assinatura Cósmica e Potencial de Negócios com a convergência Pitagórica e Caldeia, relatórios avançados e leitura contextual.",
+			"tags": ["b2b", "ia", "portfolio"],
+			"url": "https://numerologia.artesdosul.com/",
+			"thumbnail": "/assets/img/projects/numerologia-inteligencia.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "IsometricCraft • 3D Isometric Studio",
+			"descricao": "Construtor interativo de diagramas de arquitetura tecnológica, cidades modulares e badges 3D com exportação em SVG vetorial e PNG 4K.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://isometric.artesdosul.com/",
+			"thumbnail": "/assets/img/isometric-craft-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Itapira Norte Sul",
+			"descricao": "🏄Itapira Norte Sul Escola de Surf \"O surf na sua essência\" - IMBITUBA - SANTA CATARINA🏄",
+			"tags": ["cultura", "dev", "ia", "portfolio"],
+			"url": "http://feceess.escolasdesurf.org.br/easysurf",
+			"thumbnail": "/assets/img/feceess.escolasdesurf.org.br-itapiranortesul.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Kaizen · Excelência Lean PWA",
+			"descricao": "Plataforma de alta performance: Kokoro, Ikigai Gemba Canvas, 5 Whys Kintsugi Solver, escada SDCA de Taiichi Ohno, calculadora COPQ e matriz Hoshin Kanri.",
+			"tags": ["filosofia", "ia", "portfolio", "pwa"],
+			"url": "https://kaizen.artesdosul.com/",
+			"thumbnail": "/assets/img/kaizen-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Lawfare Timeline",
+			"descricao": "Lawfare é o uso estratégico do sistema legal para fins políticos, sob aparência de legalidade e seletividade. Intensificado no Brasil e no mundo, envolve atores estatais e privados.",
+			"tags": ["Brasil", "geopolitica", "ia", "investigacao", "judiciário", "lawfare", "portfolio"],
+			"url": "https://lawfare-timeline.vercel.app",
+			"thumbnail": "/assets/img/lawfare1.webp",
+			"origem": "public/assets/img/lawfare-timeline.vercel.app.webp"
+		},
+		{
+			"titulo": "Leonardo Mode • Pensamento Polímata para a Era Digital",
+			"descricao": "Framework de execução inspirado nos cadernos de Leonardo da Vinci para criadores modernos. Matriz polímata, ideação cruzada e síntese multidisciplinar.",
+			"tags": ["filosofia", "ia", "portfolio"],
+			"url": "https://eradigital.artesdosul.com/",
+			"thumbnail": "/assets/img/hero.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Library of Excellence",
+			"descricao": "Acervo curado dos melhores modelos mentais, princípios de primeiros princípios, heurísticas de decisão e pensamento de segunda ordem.",
+			"tags": ["biblioteca", "conhecimento", "ia", "portfolio", "saude"],
+			"url": "https://library-of-excellence.vercel.app",
+			"thumbnail": "/assets/img/modelos-artesdosul-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "LifeOS Chi",
+			"descricao": "Sua vida, intencionalmente projetada. Versão alternativa.",
+			"tags": ["portfolio", "produtividade", "OS"],
+			"url": "https://lifeos-chi.vercel.app",
+			"thumbnail": "/assets/img/lifeos-chi.vercel.app.webp",
+			"origem": "public/assets/img/lifeos-chi.vercel.app.webp"
+		},
+		{
+			"titulo": "LifeOS • Sistema Operacional Pessoal",
+			"descricao": "Dashboard central de gestão pessoal, controle de hábitos de alta performance, blocos de tempo profundo e alinhamento de metas de longo prazo.",
+			"tags": ["portfolio", "produtividade"],
+			"url": "https://lifeos.vercel.app",
+			"thumbnail": "/assets/img/mission-artesdosul-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Lorentz Energy",
+			"descricao": "Solução para controle e apresentação de informações detalhadas sobre o consumo da fatura de energia.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://lorentzenergy.vercel.app/",
+			"thumbnail": "/assets/img/empresa01.jpeg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "LorentzCTI Changelog",
+			"descricao": "Changelog e atualizações do sistema LorentzCTI.",
+			"tags": ["portfolio", "changelog", "releases"],
+			"url": "https://lorentzcti-changelog.vercel.app",
+			"thumbnail": "/assets/img/projects/lorentzcti-changelog.vercel.app.webp",
+			"origem": "public/assets/img/projects/lorentzcti-changelog.vercel.app.webp"
+		},
+		{
+			"titulo": "LorentzDocs Orbitall",
+			"descricao": "Base de Conhecimento, documentação técnica de arquitetura e manual de engenharia para gestão e monitoramento de Call Center CTI & Telefonia IP.",
+			"tags": ["dev", "ia", "portfolio", "produtividade"],
+			"url": "https://docs.orbitall.app/",
+			"thumbnail": "/assets/img/lorentz.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Lotofácil Neural",
+			"descricao": "Gerador de jogos com redes neurais e análise estatística para Lotofácil. Python/Flask.",
+			"tags": ["portfolio", "loteria", "IA", "Python", "Brasil"],
+			"url": "http://lotofacil.artesdosul.com:5000",
+			"thumbnail": "/assets/img/lotofacil.webp",
+			"origem": "public/assets/img/lotofacil.webp"
+		},
+		{
+			"titulo": "M5Stack Ecosystem • Portáteis ESP32",
+			"descricao": "Microcomputadores modulares portáteis: Cardputer com teclado, Core2/CoreS3, StickC Plus2, sensores Grove e visão computacional.",
+			"tags": ["portfolio"],
+			"url": "https://m5stack.artesdosul.com/",
+			"thumbnail": "/assets/img/m5stack-ecosystem-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Malvadofavorito",
+			"descricao": "Índices e resultados do governo — informações que não chegam ao público.",
+			"tags": ["portfolio", "política", "dados", "Brasil"],
+			"url": "https://malvadofavorito.vercel.app",
+			"thumbnail": "/assets/img/projects/malvadofavorito.vercel.app.webp",
+			"origem": "public/assets/img/projects/malvadofavorito.vercel.app.webp"
+		},
+		{
+			"titulo": "Mapa da Cura • Carta Náutica PWA",
+			"descricao": "Carta náutica devocional PWA com 16 rumos nas Escrituras para cada estado do coração, rosa-dos-ventos interativa, áudio e orações.",
+			"tags": ["dev", "espiritualidade", "portfolio", "pwa", "saude"],
+			"url": "https://cura.artesdosul.com/#p1",
+			"thumbnail": "/assets/img/mapa-da-cura-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "MATRIX",
+			"descricao": "Matrix Unicode init with Canadian Aboriginal.",
+			"tags": ["filosofia", "ia", "portfolio"],
+			"url": "https://matrix-five.vercel.app",
+			"thumbnail": "/assets/img/matrix.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Matrix · O Código da Realidade PWA",
+			"descricao": "Masterpiece filosófica e arquetípica: A desconstrução da Matrix, o Mito da Caverna de Platão, os 12 arquétipos junguianos, desprogramador do medo e o portal da Pílula Vermelha.",
+			"tags": ["arquetipos", "autoconhecimento", "dev", "filosofia", "ia", "portfolio", "pwa"],
+			"url": "https://matrix.artesdosul.com/",
+			"thumbnail": "/assets/img/matrix-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "MatrixText • ASCII & Glyph Studio",
+			"descricao": "Renderizador generativo de imagens em texto ASCII, glifos Unicode e chuva Matrix digital em tempo real com exportação TXT, HTML e SVG.",
+			"tags": ["filosofia", "portfolio"],
+			"url": "https://matrixtext.artesdosul.com/",
+			"thumbnail": "/assets/img/matrixtext-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "MEGATRONIX Telecomunicações",
+			"descricao": "Soluções em telecomunicação e telefonia CTI para Supervisão de Call Center Ativo e Receptivo.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://megatronix.com.br/#/",
+			"thumbnail": "/assets/img/megatronix.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Mili Surf School",
+			"descricao": "🏄Mili Surf School Carla Milene dos Santos Girolamo PROFESSORA DE SURF ● OCEANÓGRAFA🏄",
+			"tags": ["cultura", "portfolio"],
+			"url": "http://feceess.escolasdesurf.org.br/mariscal",
+			"thumbnail": "/assets/img/feceess.escolasdesurf.org.br-mariscal.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Mãe Maria • Devoção Mariana PWA",
+			"descricao": "Santuário digital católico com Santo Terço guiado, Ladainhas tradicionais, história das aparições e funcionamento 100% offline.",
+			"tags": ["cultura", "dev", "espiritualidade", "ia", "portfolio", "pwa"],
+			"url": "https://mae-maria.artesdosul.com/",
+			"thumbnail": "/assets/img/mae-maria-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "O Apagar das Luzes",
+			"descricao": "Quando a justiça não funciona — reflexão sobre sede e fome mencionadas por Jesus.",
+			"tags": ["portfolio", "teologia", "justiça", "ensaio"],
+			"url": "https://o-apagar-das-luzes.vercel.app",
+			"thumbnail": "/assets/img/projects/o-apagar-das-luzes.vercel.app.webp",
+			"origem": "public/assets/img/projects/o-apagar-das-luzes.vercel.app.webp"
+		},
+		{
+			"titulo": "O Caminho da Servidão",
+			"descricao": "F.A. Hayek — clássico sobre planejamento central e liberdade econômica.",
+			"tags": ["portfolio", "economia", "Hayek", "liberalismo"],
+			"url": "https://ocaminhodaservidao.vercel.app",
+			"thumbnail": "/assets/img/projects/ocaminhodaservidao.vercel.app.webp",
+			"origem": "public/assets/img/projects/ocaminhodaservidao.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "O Imbecil Coletivo",
+			"descricao": "Ensaio político e social sobre o coletivismo e manipulação de massas.",
+			"tags": ["portfolio", "política", "ensaio"],
+			"url": "https://o-imbecil-coletivo.vercel.app",
+			"thumbnail": "/assets/img/projects/o-imbecil-coletivo.vercel.app.webp",
+			"origem": "public/assets/img/projects/o-imbecil-coletivo.vercel.app.webp"
+		},
+		{
+			"titulo": "O Playbook do Manipulador • Persuasão PWA",
+			"descricao": "A arquitetura da persuasão, táticas de espionagem, psicologia do poder e o Grande Jogo de Westeros em um PWA interativo com simulador de contra-medidas.",
+			"tags": ["ia", "portfolio", "pwa"],
+			"url": "https://persuasao.artesdosul.com/",
+			"thumbnail": "/assets/img/persuasao-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Observatório Civil Brasil",
+			"descricao": "Compilação de dados abertos, monitoramento de violações de garantias fundamentais e acervo de documentação de interesse público.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://observatorio-civil-br.vercel.app",
+			"thumbnail": "/assets/img/observatorio-civil-br-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Oficina Maker • Bancada IoT",
+			"descricao": "Bancada de engenharia de hardware, pinouts interativos (ESP32, RP2040, Pico), esquemáticos e calculadoras de bancada.",
+			"tags": ["dev", "ia", "portfolio"],
+			"url": "https://oficina.artesdosul.com/",
+			"thumbnail": "/assets/img/oficina-maker-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "OmniCamp",
+			"descricao": "Hub analítico para gestão omnichannel de campanhas, segmentação avançada de público e métricas de conversão de alto impacto.",
+			"tags": ["campanhas", "ia", "omnichannel", "portfolio", "produtividade"],
+			"url": "https://omnicamp.vercel.app",
+			"thumbnail": "/assets/img/values-artesdosul-xarticle-hero.webp",
+			"origem": "Artes do Sul",
+			"draft": true
+		},
+		{
+			"titulo": "Open Lovable • Construtor de UI com IA",
+			"descricao": "Ambiente de experimentação rápida e geração generativa de protótipos de interfaces web com agentes inteligentes.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://open-lovable.vercel.app",
+			"thumbnail": "/assets/img/web-skills-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Oração de São Miguel",
+			"descricao": "Site devocional com a Oração de São Miguel Arcanjo.",
+			"tags": ["portfolio", "oração", "catolicismo"],
+			"url": "https://a-oracao-de-sao-miguel.vercel.app",
+			"thumbnail": "/assets/img/projects/a-oracao-de-sao-miguel.vercel.app.webp",
+			"origem": "public/assets/img/projects/a-oracao-de-sao-miguel.vercel.app.webp"
+		},
+		{
+			"titulo": "ORBITALL GESTÃO DE CALL CENTER",
+			"descricao": "Soluções em telecomunicação e telefonia CTI para Call Center Ativo e Receptivo (SIP, INTELBRAS, PANASONIC).",
+			"tags": ["ia", "portfolio", "produtividade"],
+			"url": "http://www.orbitall.net.br",
+			"thumbnail": "/assets/img/orbitall.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Organizador de Favoritos",
+			"descricao": "Interface com 170+ links em 12 categorias para desenvolvedores e criativos.",
+			"tags": ["portfolio", "produtividade", "links", "ferramentas"],
+			"url": "https://araguaci.github.io/links",
+			"thumbnail": "/assets/img/araguaci.github.io.webp",
+			"origem": "public/assets/img/araguaci.github.io.webp"
+		},
+		{
+			"titulo": "Os 10 Mandamentos",
+			"descricao": "Os mandamentos da lei de Deus — honra a Deus e proveito ao próximo.",
+			"tags": ["portfolio", "catolicismo", "mandamentos", "fé"],
+			"url": "https://os-10-mandamentos.vercel.app",
+			"thumbnail": "/assets/img/projects/os-10-mandamentos.vercel.app.webp",
+			"origem": "public/assets/img/projects/os-10-mandamentos.vercel.app.webp"
+		},
+		{
+			"titulo": "Os 5 Carteis",
+			"descricao": "Os 5 cartéis que governam a América e o mundo.",
+			"tags": ["portfolio", "política", "poder", "análise"],
+			"url": "https://os-5-carteis.vercel.app",
+			"thumbnail": "/assets/img/projects/os-5-carteis.vercel.app.webp",
+			"origem": "public/assets/img/projects/os-5-carteis.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "Os Cinco Níveis de Apego",
+			"descricao": "Don Miguel Ruiz Jr. — estudo sobre liberdade e equilíbrio interior (tolteca).",
+			"tags": ["portfolio", "tolteca", "liberdade", "espiritualidade"],
+			"url": "https://os-cinco-niveis-de-apego.vercel.app",
+			"thumbnail": "/assets/img/projects/os-cinco-niveis-de-apego.vercel.app.webp",
+			"origem": "public/assets/img/projects/os-cinco-niveis-de-apego.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "Os Filhos da Terra • Chefe Seattle",
+			"descricao": "Manifesto ecológico e espiritual do Chefe Seattle (1854): 'O que ocorrer com a terra, recairá sobre os filhos da terra.' Texto integral e áudio 432Hz.",
+			"tags": ["espiritualidade", "ia", "portfolio", "saude"],
+			"url": "https://filhosdaterra.artesdosul.com/",
+			"thumbnail": "/assets/img/filhosdaterra-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Os Quatro Compromissos",
+			"descricao": "Os acordos toltecas aplicados ao crescimento espiritual e pessoal.",
+			"tags": ["portfolio", "tolteca", "sabedoria"],
+			"url": "https://os-quatro-compromissos.vercel.app",
+			"thumbnail": "/assets/img/projects/os-quatro-compromissos.vercel.app.webp",
+			"origem": "public/assets/img/projects/os-quatro-compromissos.vercel.app.webp"
+		},
+		{
+			"titulo": "Partido das Sombras",
+			"descricao": "Análise do deep state e poder oculto na política brasileira.",
+			"tags": ["portfolio", "política", "poder"],
+			"url": "https://partido-das-sombras.vercel.app",
+			"thumbnail": "/assets/img/projects/partido-das-sombras.vercel.app.webp",
+			"origem": "public/assets/img/projects/partido-das-sombras.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "PESTEL",
+			"descricao": "Avaliação estratégica dos fatores Político, Econômico, Social, Tecnológico, Ecológico e Legal para planejamento corporativo.",
+			"tags": ["PESTEL", "ia", "macroambiente", "portfolio", "produtividade"],
+			"url": "https://pestel-chi.vercel.app",
+			"thumbnail": "/assets/img/serie-demografica-hero.webp",
+			"origem": "Artes do Sul",
+			"draft": true
+		},
+		{
+			"titulo": "Polygonize 3D • Generative Mesh Studio",
+			"descricao": "Transforme qualquer imagem em arte poligonal 3D, relevos topográficos paramétricos e wireframes futuristas em tempo real com WebGL e Three.js.",
+			"tags": ["cultura", "portfolio"],
+			"url": "https://polygonize.artesdosul.com/",
+			"thumbnail": "/assets/img/polygonize-3d-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Ponerologia",
+			"descricao": "Estudo da ponerologia — psicopatas no poder e sistemas políticos.",
+			"tags": ["portfolio", "psicologia", "política"],
+			"url": "https://ponerologia-psicopatas-no-poder.vercel.app",
+			"thumbnail": "/assets/img/projects/ponerologia-psicopatas-no-poder.vercel.app.webp",
+			"origem": "public/assets/img/projects/ponerologia-psicopatas-no-poder.vercel.app.webp",
+			"draft": true
+		},
+		{
+			"titulo": "Por Que Lutamos",
+			"descricao": "Diagnóstico da civilização e programa de resistência, reconquista e regeneração.",
+			"tags": ["portfolio", "política", "ensaio", "resistência"],
+			"url": "https://por-que-lutamos.vercel.app",
+			"thumbnail": "/assets/img/projects/por-que-lutamos.vercel.app.webp",
+			"origem": "public/assets/img/projects/por-que-lutamos.vercel.app.webp"
+		},
+		{
+			"titulo": "Portfolio Particles",
+			"descricao": "Portfólio de projetos com efeito particles — trabalhos voluntários e amigos.",
+			"tags": ["portfolio", "artesdosul", "web", "particles"],
+			"url": "https://portfolio-particles.vercel.app",
+			"thumbnail": "/assets/img/projects/portfolio-particles.vercel.app.webp",
+			"origem": "public/assets/img/projects/portfolio-particles.vercel.app.webp"
+		},
+		{
+			"titulo": "Pousada & Residencial Heiden Bombinhas",
+			"descricao": "Suítes para casais. Apartamentos para até 8 pessoas. Casa para até 10 pessoas. Ambiente familiar a 130 metros da praia no centro de Bombinhas.",
+			"tags": ["ia", "portfolio"],
+			"url": "http://www.bombinhasaluguel.com.br/site",
+			"thumbnail": "/assets/img/pousada_residencial_heiden.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Pousada Estância Rio Acima",
+			"descricao": "Em Itamonte - MG. Cercada por 2 rios que descem da montanha, a Pousada oferece banhos de cachoeira, sauna, salão de 80 metros quadrados para workshops, festas, casamentos e eventos de diversas naturezas. A comida é preparada em fogão a lenha, com verduras da nossa horta.",
+			"tags": ["ia", "portfolio"],
+			"url": "http://rioacima.com.br",
+			"thumbnail": "/assets/img/estaciarioacima.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Preditor 2026: Previsões de IA & Radar Tecnológico",
+			"descricao": "Masterpiece Dashboard de Previsões e Realidades de IA em 2026: 21 teses provocativas, diagnóstico Realidade vs Hype e Growth Tracker persistente.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://preditor.artesdosul.com/",
+			"thumbnail": "/assets/img/hero-cyber-growth.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Prospec BR",
+			"descricao": "Plataforma de inteligência de vendas B2B, enriquecimento de leads e mapeamento de contas no mercado corporativo brasileiro.",
+			"tags": ["B2B", "Brasil", "Em breve", "b2b", "geopolitica", "ia", "portfolio", "prospecção"],
+			"url": "https://prospec-br.vercel.app",
+			"thumbnail": "/assets/img/intel-strategy-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Prosperar · Governalismo & Equity PWA",
+			"descricao": "Hub Governalismo: Mente, Riqueza & Estratégia. Calculadora das 8.070h, simulador de Equity vs Lucro, Matriz C.A.T., imóveis em leilão e liderança exponencial.",
+			"tags": ["b2b", "filosofia", "ia", "portfolio", "pwa"],
+			"url": "https://prosperar.artesdosul.com/",
+			"thumbnail": "/assets/img/prosperar-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Pátria Amada Brasil",
+			"descricao": "Defesa dos valores nacionais e da soberania brasileira.",
+			"tags": ["portfolio", "Brasil", "soberania"],
+			"url": "https://patria-amada-brasil.vercel.app",
+			"thumbnail": "/assets/img/projects/patria-amada-brasil.vercel.app.webp",
+			"origem": "public/assets/img/projects/patria-amada-brasil.vercel.app.webp"
+		},
+		{
+			"titulo": "Reiniciar para Reconectar",
+			"descricao": "Projeto Reset to Reconnect é uma ponte para reconexão com o natural, com o humano e com o divino.",
+			"tags": ["ia", "portfolio"],
+			"url": "http://artesdosul.com/reconectar/",
+			"thumbnail": "/assets/img/re-conectar.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Residencial Casa da Praia Bombinhas",
+			"descricao": "Apartamentos de 1 dormitório e demais dependências mobiliados e equipados para até 4 pessoas.",
+			"tags": ["ia", "portfolio"],
+			"url": "http://www.residencialcasadapraia.com.br",
+			"thumbnail": "/assets/img/logo-residencialcasadapraia.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "SaaS Starter",
+			"descricao": "Arquitetura acelerada de microsserviços e frontend serverless para lançamento relâmpago de produtos digitais.",
+			"tags": ["Em breve", "b2b", "boilerplate", "cultura", "ia", "portfolio", "template"],
+			"url": "https://saas-starter-mu-one.vercel.app",
+			"thumbnail": "/assets/img/saas-launchpad-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Santo Agostinho",
+			"descricao": "Pensamentos, escritos e filosofia de Santo Agostinho de Hipona.",
+			"tags": ["portfolio", "teologia", "filosofia"],
+			"url": "https://santo-agostinho.vercel.app",
+			"thumbnail": "/assets/img/projects/santo-agostinho.vercel.app.webp",
+			"origem": "public/assets/img/projects/santo-agostinho.vercel.app.webp"
+		},
+		{
+			"titulo": "Saúde Livre - Plataforma de Saúde Digital",
+			"descricao": "Plataforma digital para agendamento de consultas, serviços de saúde e conexão autônoma entre profissionais e clínicas.",
+			"tags": ["ia", "portfolio", "saude"],
+			"url": "https://saude-livre.ainativo.cloud/",
+			"thumbnail": "/assets/img/og-image.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Sentinel",
+			"descricao": "Painel de observabilidade em tempo real, monitoramento de integridade de serviços, métricas de latência e relatórios de disponibilidade.",
+			"tags": ["ia", "monitoramento", "portfolio", "segurança"],
+			"url": "https://sentinel-sigma.vercel.app",
+			"thumbnail": "/assets/img/gridguard-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Serenity",
+			"descricao": "Ambiente digital minimalista para foco sem distrações, atenuação de ruído mental e estética serena inspirada na filosofia zen.",
+			"tags": ["dev", "filosofia", "ia", "meditação", "mindfulness", "portfolio"],
+			"url": "https://serenity-taupe.vercel.app",
+			"thumbnail": "/assets/img/vision-artesdosul-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Sistemas Embarcados 2026 • Guia de Silício",
+			"descricao": "Comparativo técnico de microcontroladores (ESP32, RP2040, STM32, Pi Zero), calculadora dinâmica de consumo elétrico e cenários de borda.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://embedded.artesdosul.com/",
+			"thumbnail": "/assets/img/embedded-iot-hardware-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "SLIDER-REVIEWS",
+			"descricao": "AVALIAÇÕES - FLORIPA SURF CLUB SURF Alunos e turistas avaliam desempenho dos serviços Laboratório para incluir em website",
+			"tags": ["cultura", "ia", "portfolio"],
+			"url": "https://floripasurfclub-reviews.vercel.app/",
+			"thumbnail": "/assets/img/sliderreview.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Solarstorm",
+			"descricao": "Tempestade solar G5 — condições extremas de 10 a 12 de maio de 2024.",
+			"tags": ["portfolio", "clima espacial", "ciência"],
+			"url": "https://solarstorm.vercel.app",
+			"thumbnail": "/assets/img/projects/solarstorm.vercel.app.webp",
+			"origem": "public/assets/img/projects/solarstorm.vercel.app.webp"
+		},
+		{
+			"titulo": "Stats Artes do Sul",
+			"descricao": "Aplicativo de analytics web privacy-friendly: conte acessos e uniques dos seus sites, por dia e por país, com snippet HTML leve e contador integrado.",
+			"tags": ["cultura", "ia", "portfolio"],
+			"url": "https://stats.artesdosul.com/",
+			"thumbnail": "/assets/img/stats-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Stop War For Ever",
+			"descricao": "Manifesto e conscientização contra guerras e conflitos armados.",
+			"tags": ["portfolio", "paz", "manifesto"],
+			"url": "https://stop-war-for-ever.vercel.app",
+			"thumbnail": "/assets/img/projects/stop-war-for-ever.vercel.app.webp",
+			"origem": "public/assets/img/projects/stop-war-for-ever.vercel.app.webp"
+		},
+		{
+			"titulo": "Studio Central — AI Content Factory",
+			"descricao": "Central Inteligência com 101 prompts para conteúdo técnico, documentação e engenharia. Categorias, filtros por tags e gerador em tempo real.",
+			"tags": ["autoconhecimento", "dev", "ia", "portfolio"],
+			"url": "https://iastudio.artesdosul.com/",
+			"thumbnail": "/assets/img/aistudio-512.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Sun Tzu",
+			"descricao": "A Arte da Guerra — versão interativa com filosofia e táticas clássicas.",
+			"tags": ["portfolio", "filosofia", "guerra", "táticas"],
+			"url": "https://suntzu.vercel.app",
+			"thumbnail": "/assets/img/projects/suntzu.vercel.app.webp",
+			"origem": "public/assets/img/projects/suntzu.vercel.app.webp"
+		},
+		{
+			"titulo": "Sun Tzu",
+			"descricao": "A Arte da Guerra — versão interativa com filosofia e táticas clássicas.",
+			"tags": ["portfolio", "filosofia", "guerra", "táticas"],
+			"url": "https://sabedoria-suntzu.vercel.app",
+			"thumbnail": "/assets/img/projects/sabedoria-suntzu.vercel.app.webp",
+			"origem": "public/assets/img/projects/sabedoria-suntzu.vercel.app.webp"
+		},
+		{
+			"titulo": "Supsocial",
+			"descricao": "FLORIPA SUP CLUB - Stand Up Paddle SURFCLUB tendo noção de sua responsabilidade com a sociedade promove ações de inclusão social. Utilizando o esporte como ferramenta sócio educativa. Temas como meio ambiente e conservação das praias são frequentes e aplicados na prática.",
+			"tags": ["Florianópolis", "SUP", "cultura", "ia", "inclusão", "portfolio", "surf"],
+			"url": "https://supsocial.vercel.app",
+			"thumbnail": "/assets/img/projetosupsocial.png",
+			"origem": "public/assets/img/projects/supsocial.vercel.app.webp"
+		},
+		{
+			"titulo": "SWOT",
+			"descricao": "Matriz SWOT interativa com cálculo de impacto, cruzamento de Forças vs Oportunidades e exportação executiva em PDF/PNG.",
+			"tags": ["SWOT", "estratégia", "filosofia", "ia", "portfolio"],
+			"url": "https://swot-chi.vercel.app",
+			"thumbnail": "/assets/img/intel-strategy-hero.webp",
+			"origem": "Artes do Sul",
+			"draft": true
+		},
+		{
+			"titulo": "TaxaD",
+			"descricao": "Calculadora e análise da carga tributária brasileira.",
+			"tags": ["portfolio", "impostos", "economia"],
+			"url": "https://taxad.vercel.app",
+			"thumbnail": "/assets/img/projects/taxad.vercel.app.webp",
+			"origem": "public/assets/img/projects/taxad.vercel.app.webp"
+		},
+		{
+			"titulo": "Terra Earth Gaia • Cura Frequencial 432Hz",
+			"descricao": "Ambiente sagrado de meditação com frequências Solfeggio em 432Hz, ressonância Schumann, sincronário Maya e cura frequencial.",
+			"tags": ["ia", "portfolio", "saude"],
+			"url": "https://gaia.artesdosul.com/",
+			"thumbnail": "/assets/img/gaia-hero.jpg",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "TimeFlow",
+			"descricao": "Rastreador de produtividade e estados de flow de alto rendimento com visualização cronológica e métricas de foco.",
+			"tags": ["Em breve", "portfolio", "produtividade", "tempo"],
+			"url": "https://timeflow-sable-gamma.vercel.app",
+			"thumbnail": "/assets/img/timeline-surf-santa-catarina-hero.png",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Timeline Surf Santa Catarina",
+			"descricao": "Timeline interativa da história do surf em Santa Catarina.",
+			"tags": ["portfolio", "surf", "Santa Catarina", "timeline", "história"],
+			"url": "https://timeline-surf-santa-catarina.vercel.app",
+			"thumbnail": "/assets/img/projects/timeline-surf-santa-catarina.vercel.app.webp",
+			"origem": "public/assets/img/projects/timeline-surf-santa-catarina.vercel.app.webp"
+		},
+		{
+			"titulo": "Tradições • Autossuficiência & Vida Rural",
+			"descricao": "Manual de resiliência e soberania doméstica: cisternas de captação de chuva, conservação de alimentos, desidratação e ferramentaria.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://tradicoes.artesdosul.com/",
+			"thumbnail": "/assets/img/tradicoes-sabedoria-ancestral-xarticle-hero.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Tributo a Charlie Kirk",
+			"descricao": "Homenagem ao ativista conservador — legado, citações e memorial.",
+			"tags": ["portfolio", "conservadorismo", "tributo", "memorial"],
+			"url": "https://tributo-a-charlie-kirk.vercel.app",
+			"thumbnail": "/assets/img/tributo-a-charlie-kirk.webp",
+			"origem": "public/assets/img/tributo-a-charlie-kirk.webp"
+		},
+		{
+			"titulo": "Vaza Toga",
+			"descricao": "A série de vazamentos conhecida como **Vaza Toga**, evidenciando as diferentes fases do escândalo que revela supostas articulações e abusos no sistema judicial brasileiro, seus impactos políticos e repercussões sociais.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://gemini.google.com/share/7c753729312b",
+			"thumbnail": "/assets/img/vaza-toga.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Via Sacra",
+			"descricao": "Meditação da Paixão de Cristo — as 14 estações do caminho sagrado.",
+			"tags": ["portfolio", "Via Sacra", "catolicismo", "meditação"],
+			"url": "https://viacrucis.vercel.app",
+			"thumbnail": "/assets/img/projects/viacrucis.vercel.app.webp",
+			"origem": "public/assets/img/projects/viacrucis.vercel.app.webp"
+		},
+		{
+			"titulo": "X2Doc Pro — O Alquimista da Informação Digital",
+			"descricao": "Transmute a velocidade efêmera das threads do X na autoridade duradoura de artigos profundos, documentações técnicas e playbooks com IA de última geração. 100% Client-Side.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://x2doc.artesdosul.com/",
+			"thumbnail": "/assets/img/x2doc.webp",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "AI Content Factory",
+			"descricao": "101 prompts + 5 templates HTML. Sistema para escritores técnicos e documentação. Pagamento PIX.",
+			"tags": ["portfolio", "conteúdo", "IA", "prompts", "PIX"],
+			"url": "https://iastudio.artesdosul.com/landing-page-pix/index.html",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "AI Scheduler",
+			"descricao": "Scheduler inteligente com IA para otimização de tarefas e reuniões.",
+			"tags": ["portfolio", "IA", "agenda", "Em breve"],
+			"url": "https://ai-scheduler-sandy.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "AI Scheduler • Agendador com IA",
+			"descricao": "Motor autônomo de agendamento de reuniões e sincronização de slots de disponibilidade usando inteligência artificial.",
+			"tags": ["ia", "portfolio"],
+			"url": "https://ai-scheduler.vercel.app",
+			"thumbnail": "",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Artes do Sul XYZ",
+			"descricao": "Site institucional e showcase da Artes do Sul Desenvolvimento Web.",
+			"tags": ["portfolio", "institucional", "branding"],
+			"url": "https://artesdosul-xyz.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Brasil Vencendo Muralhas",
+			"descricao": "Masterpiece Geopolítico & Logístico: A fatura da geografia, os 6 eixos de muralhas naturais, o relevo inclinado para dentro e o simulador interativo de frete.",
+			"tags": ["geopolitica", "ia", "portfolio"],
+			"url": "https://brasil.artesdosul.com/",
+			"thumbnail": "",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Content Genius",
+			"descricao": "Gerador de conteúdo com IA para redes sociais e marketing digital.",
+			"tags": ["portfolio", "conteúdo", "IA", "marketing"],
+			"url": "https://content-genius-ruddy.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Estudo da Mente",
+			"descricao": "Biblioteca de obras de Rand, Nietzsche, Jung, Lewis, Castañeda e outros pensadores.",
+			"tags": ["portfolio", "filosofia", "psicologia", "literatura"],
+			"url": "https://estudodamente.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Festa dos Três Arcanjos • Arte Sacra",
+			"descricao": "Devoção e arte sacra dos Santos Arcanjos Miguel, Gabriel e Rafael, iconografia histórica, hinos litúrgicos e preces de proteção.",
+			"tags": ["cultura", "dev", "ia", "portfolio"],
+			"url": "https://arcanjos.artesdosul.com/",
+			"thumbnail": "",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Fitness Tracker",
+			"descricao": "Rastreamento de treinos e evolução física com dashboards visuais.",
+			"tags": ["portfolio", "fitness", "treino"],
+			"url": "https://fitness-tracker-bice-omega.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Futuro Roubado",
+			"descricao": "Análise sobre o roubo do futuro das gerações pela corrupção sistêmica.",
+			"tags": ["portfolio", "corrupção", "Brasil"],
+			"url": "https://futuroroubado.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Gestão de Orçamentos",
+			"descricao": "Sistema completo para profissionais da construção civil. Orçamentos, clientes, PDF e aprovação digital.",
+			"tags": ["portfolio", "orçamento", "construção", "Laravel", "Brasil"],
+			"url": "https://orcamento.artesdosul.com",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Gorin no Sho",
+			"descricao": "O Livro dos Cinco Elementos de Miyamoto Musashi — estratégia e filosofia do guerreiro.",
+			"tags": ["portfolio", "Musashi", "estratégia", "Japão", "Dokodo"],
+			"url": "https://musashi.artesdosul.com",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Human 3.0 • Evolução Consciente",
+			"descricao": "Plataforma de otimização humana integral: biohacking cognitivo, gestão neuroquímica, clareza mental e evolução comportamental contínua.",
+			"tags": ["portfolio", "produtividade"],
+			"url": "https://human3.vercel.app",
+			"thumbnail": "",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "IdeaBrowser Analysis",
+			"descricao": "Análise de design e UX gerada com v0 para o IdeaBrowser.",
+			"tags": ["portfolio", "v0", "design", "análise"],
+			"url": "https://v0-ideabrowser-design-analysis.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Identity Flip",
+			"descricao": "Transformação de identidade pessoal e profissional com IA.",
+			"tags": ["portfolio", "identidade", "transformação", "Em breve"],
+			"url": "https://identity-flip.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Let Me Ask",
+			"descricao": "Conecta leitores e autores — perguntas em trechos de livros com respostas dos autores.",
+			"tags": ["portfolio", "livros", "Q&A", "Firebase", "colaborativo"],
+			"url": "https://letmeask-42c3c.web.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Me Agenda AI",
+			"descricao": "Agendamento inteligente com IA para profissionais e empresas brasileiras.",
+			"tags": ["portfolio", "agendamento", "IA", "Brasil"],
+			"url": "https://meagendaai.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "No Princípio o Verbo",
+			"descricao": "Reflexão teológica sobre o Evangelho de João e o Verbo encarnado.",
+			"tags": ["portfolio", "teologia", "João"],
+			"url": "https://noprincipiooverbo.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "Numerologia",
+			"descricao": "Calculadora e análise de numerologia personalizada com IA.",
+			"tags": ["portfolio", "numerologia", "IA"],
+			"url": "https://numerologia-blond.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "Olavo de Carvalho",
+			"descricao": "Acervo e pensamentos do filósofo Olavo de Carvalho.",
+			"tags": ["portfolio", "filosofia", "conservadorismo"],
+			"url": "https://olavodecarvalho-org.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Open Graph",
+			"descricao": "Gerador de imagens Open Graph para compartilhamento em redes sociais.",
+			"tags": ["portfolio", "OG", "meta tags", "SEO"],
+			"url": "https://open-graph-steel.vercel.app/",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Os Sete Pilares da Sabedoria",
+			"descricao": "Template de insights literários — T.E. Lawrence. Design editorial e conteúdo curado.",
+			"tags": ["portfolio", "literatura", "insights", "modelo", "design"],
+			"url": "https://modelos.artesdosul.com/insights/os-sete-pilares-da-sabedoria.html",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "PetMed Tracker",
+			"descricao": "Controle de saúde e medicamentos para pets com histórico veterinário.",
+			"tags": ["portfolio", "pets", "saúde animal", "Em breve"],
+			"url": "https://petmed-tracker.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Pontiac Firebird",
+			"descricao": "Landing page imersiva do Pontiac Firebird — muscle car americano clássico.",
+			"tags": ["portfolio", "muscle car", "Pontiac", "clássico"],
+			"url": "https://pontiac-firebird.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Portfolio Artes do Sul",
+			"descricao": "Portfólio da Artes do Sul — 25+ anos de desenvolvimento web.",
+			"tags": ["portfolio", "artesdosul", "web"],
+			"url": "https://portfolio-artesdosul.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Provérbios",
+			"descricao": "Livro de Provérbios — sabedoria de Salomão do Antigo Testamento.",
+			"tags": ["portfolio", "Bíblia", "Provérbios", "sabedoria"],
+			"url": "https://proverbios-kappa.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Saúde Livre",
+			"descricao": "Plataforma de saúde digital — telemedicina, agendamento e gestão para clínicas.",
+			"tags": ["portfolio", "saúde", "telemedicina", "Brasil", "LGPD"],
+			"url": "https://saudelivre.artesdosul.com",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "Skills MP Website",
+			"descricao": "Site de skills e marketplace gerado com v0.dev.",
+			"tags": ["portfolio", "v0", "marketplace"],
+			"url": "https://v0-skills-mp-website.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "Sun Tzu Cast",
+			"descricao": "A Arte da Guerra de Sun Tzu — tratado militar chinês em formato podcast/audiobook.",
+			"tags": ["portfolio", "Sun Tzu", "estratégia", "audiobook"],
+			"url": "https://suntzucast.netlify.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Sun Tzu Chi",
+			"descricao": "Estratégias de Sun Tzu aplicadas ao mundo dos negócios modernos.",
+			"tags": ["portfolio", "Sun Tzu", "estratégia"],
+			"url": "https://suntzu-chi.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "Timeline Biowar",
+			"descricao": "Documentação cronológica sobre guerra biológica e pandemias.",
+			"tags": ["portfolio", "bioguerra", "pandemia", "timeline"],
+			"url": "https://timeline-biowar.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Turismo: O Gigante Adormecido",
+			"descricao": "Masterpiece Macroeconômico & Territorial: O potencial de 8,5M km², o impacto da Reforma Tributária (LC 214/2025), gestão costeira e náutica em um PWA interativo.",
+			"tags": ["ia", "portfolio", "produtividade", "pwa"],
+			"url": "https://turismo.artesdosul.com/",
+			"thumbnail": "",
+			"origem": "Artes do Sul"
+		},
+		{
+			"titulo": "Visão Ezequiel",
+			"descricao": "O chamado e a primeira visão de Ezequiel — profeta no exílio na Babilônia.",
+			"tags": ["portfolio", "teologia", "Ezequiel", "Bíblia"],
+			"url": "https://visao-ezequiel.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		},
+		{
+			"titulo": "Vital Flow",
+			"descricao": "Gestão clínica inteligente com IA e integração WhatsApp.",
+			"tags": ["portfolio", "saúde", "clínica", "IA", "Em breve"],
+			"url": "https://vital-flow-zeta.vercel.app",
+			"thumbnail": "",
+			"origem": "",
+			"draft": true
+		},
+		{
+			"titulo": "X2Doc",
+			"descricao": "Converte threads do X/Twitter em documentos e artigos formatados.",
+			"tags": ["portfolio", "Twitter", "automação", "docs"],
+			"url": "https://x2doc.vercel.app",
+			"thumbnail": "",
+			"origem": ""
+		}
+	]
 }

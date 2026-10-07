@@ -1,42 +1,52 @@
 ---
-import ListCategories from '@/components/ListCategories'
-import ListPosts from '@/components/ListPosts'
-import PortfolioList from '@/components/PortfolioList'
-import TitlePage from '@/components/TitlePage'
-import BaseLayout from '@/layouts/BaseLayout'
+// src/pages/index.astro — Masterpiece Portfolio Artes do Sul
+import HeroMasterpiece from '@/components/HeroMasterpiece.astro'
+import PortfolioList from '@/components/PortfolioList.astro'
+import InteractiveSimulator from '@/components/InteractiveSimulator.astro'
+import ListCategories from '@/components/ListCategories.astro'
+import ListPosts from '@/components/ListPosts.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
 import { getPosts } from '@/utils'
-import { siteConfig } from '@/site-config'
 
-const MAX_POSTS = 5 // max number of posts to show on the home page
+const MAX_POSTS = 5
 const posts = await getPosts(MAX_POSTS)
 ---
 
 <BaseLayout title='Início'>
-	<TitlePage title={siteConfig.title} />
-	<ListCategories />
+	<!-- 1. Masterpiece Hero Section (Cinematic Visual, Overlays, Badges) -->
+	<HeroMasterpiece />
 
+	<!-- 2. Acervo de Projetos em Produção (Growth Tracker, Search & Filters) -->
 	<PortfolioList />
 
-	<div>
-		<h2 class='text-lg font-medium tracking-wide text-end'>Últimos posts</h2>
+	<!-- 3. Simulador Interativo & Motor de Briefing Executivo -->
+	<InteractiveSimulator />
+
+	<!-- 4. Diário de Bordo & Artigos Técnicos -->
+	<section id='diario' class='pt-8 space-y-6'>
+		<div
+			class='flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b pb-4 border-[var(--as-border-paper)] dark:border-[var(--border)]'
+		>
+			<div class='as-section-label'>
+				<span class='as-kicker'>// DIÁRIO DE DESENVOLVIMENTO</span>
+				<h2>Artigos & Estudos Técnicos</h2>
+				<p
+					class='text-xs sm:text-sm text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] max-w-xl'
+				>
+					Reflexões, investigações, notas de arquitetura e ensaios sobre engenharia, filosofia e
+					sociedade.
+				</p>
+			</div>
+
+			<a href='/posts/1' class='as-link font-mono text-xs hover:text-[var(--accent-orange)]'>
+				Ver todos os artigos →
+			</a>
+		</div>
+
+		<!-- Category Filter Tabs for Posts -->
+		<ListCategories />
+
+		<!-- Posts Grid -->
 		<ListPosts FirstBig={true} posts={posts} />
-	</div>
+	</section>
 </BaseLayout>
-
-<script>
-	import { animate } from 'motion'
-	const showAnimations = localStorage.getItem('animations') === 'true'
-
-	if (showAnimations) {
-		animate(
-			'.title',
-			{ y: [80, 0], opacity: [0, 1] },
-			{
-				duration: 2.5,
-				opacity: { duration: 3 },
-
-				offset: [0, 0.55, 0.75]
-			}
-		)
-	}
-</script>

@@ -1,14 +1,15 @@
 ---
-title: "Influência Estrangeira no Brasil — Análise Multifacetada"
-description: "Análise interativa dos impactos e desafios do financiamento estrangeiro à sociedade civil no Brasil, com visualização de dados sobre políticas públicas, ativismo, e legislação."
+draft: true
+title: 'Influência Estrangeira no Brasil — Análise Multifacetada'
+description: 'Análise interativa dos impactos e desafios do financiamento estrangeiro à sociedade civil no Brasil, com visualização de dados sobre políticas públicas, ativismo, e legislação.'
 date: 2025-11-11T11:11:11.111Z
 image:
   path: /assets/img/influencia-estrangeira.webp
 categories: showcase
 category: showcase
-tags: [ia, apps, projeto, estudo] 
+tags: [ia, apps, projeto, estudo]
 links:
-  - title: "Influência Estrangeira no Brasil — Análise Multifacetada"
+  - title: 'Influência Estrangeira no Brasil — Análise Multifacetada'
     url: https://gemini.google.com/share/da8535f2df88
 ---
 
@@ -23,6 +24,3 @@ links:
 - Finaliza com recomendações do relatório: aprimorar controles existentes (ex: COAF), incentivar financiamento híbrido/crowdfunding para autonomia das organizações, e promover debate construtivo que diferencie cooperação técnica de ativismo financiado.
 
 Esse conteúdo serve como exemplo de análise interativa baseada em dados, voltada para visualização de políticas públicas, financiamento internacional e impacto legislativo.
-
-
-

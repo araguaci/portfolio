@@ -7,10 +7,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				white: '#f8f9fa'
+				white: '#f8f9fa',
+				'cyber-orange': '#ff6b35',
+				'electric-cyan': '#00d9ff',
+				'cyber-green': '#10b981'
 			},
 			fontFamily: {
-				body: ['Manrope', ...defaultTheme.fontFamily.sans]
+				body: ['Manrope', ...defaultTheme.fontFamily.sans],
+				display: ['"Bricolage Grotesque"', 'Manrope', ...defaultTheme.fontFamily.sans],
+				mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono]
 			},
 			gridTemplateColumns: {
 				list: 'repeat(auto-fill, minmax(400px, max-content))'

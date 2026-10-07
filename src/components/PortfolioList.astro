@@ -1,82 +1,220 @@
 ---
-import { getProjetos, getPortfolioCategories } from '@/utils'
+// PortfolioList.astro — Acervo Masterpiece com Search & Filter em tempo real e Growth Tracker
+import { getProjetos, getPortfolioCategories, sluglify } from '@/utils'
 import PortfolioCard from '@/components/PortfolioCard'
-import { sluglify } from '@/utils'
+import GrowthTracker from '@/components/GrowthTracker'
 
 const projetos = await getProjetos()
 const categorias = getPortfolioCategories(projetos)
+
+// Contagem de projetos por categoria
+const categoryCounts: Record<string, number> = {
+	all: projetos.length
+}
+categorias.forEach((cat) => {
+	const catSlug = sluglify(cat.toLowerCase())
+	categoryCounts[catSlug] = projetos.filter((p) =>
+		p.tags.some((t) => sluglify(t.toLowerCase()) === catSlug)
+	).length
+})
 ---
 
-<section class='space-y-8'>
-	<h2 class='text-lg font-medium tracking-wide text-end text-stone-700 dark:text-stone-300'>
-		Projetos Online
-	</h2>
+<section id='acervo' class='space-y-6 pt-4'>
+	<!-- Section Header -->
+	<div
+		class='flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b pb-4 border-[var(--as-border-paper)] dark:border-[var(--border)]'
+	>
+		<div class='as-section-label'>
+			<span class='as-kicker'>// ACERVO EM PRODUÇÃO</span>
+			<h2>Projetos & Sistemas Online</h2>
+			<p
+				class='text-xs sm:text-sm text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] max-w-xl'
+			>
+				Curadoria completa de aplicações web, portais institucionais, e-commerces e plataformas de
+				dados em produção real.
+			</p>
+		</div>
 
-	<!-- Filtro de categorias -->
-	<div class='flex flex-wrap gap-2 border-b border-stone-200 pb-4 dark:border-stone-700'>
+		<!-- Live Counter Badge -->
+		<div class='flex items-center gap-2 font-mono text-xs text-[var(--as-text-dim)]'>
+			<span>Total de Aplicações:</span>
+			<span
+				class='px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-white font-bold text-sm'
+			>
+				{projetos.length}
+			</span>
+		</div>
+	</div>
+
+	<!-- Growth Tracker Integration -->
+	<GrowthTracker totalProjects={projetos.length} />
+
+	<!-- Real-time Search and Category Filters Bar -->
+	<div
+		class='flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 p-3 rounded-2xl border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-black/5 dark:bg-white/[0.02]'
+	>
+		<!-- Real-time Instant Search Input -->
+		<div class='relative flex-1'>
+			<span class='absolute left-3.5 top-1/2 -translate-y-1/2 text-sm text-[var(--as-text-dim)]'>
+				🔍
+			</span>
+			<input
+				id='portfolio-search-input'
+				type='text'
+				placeholder='Buscar por nome, tecnologia (Astro, Next.js, API...) ou objetivo...'
+				class='w-full pl-10 pr-4 py-2 text-xs sm:text-sm rounded-xl border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-white/70 dark:bg-black/40 text-[var(--as-text-ink)] dark:text-white placeholder-[var(--as-text-dim)] focus:outline-none focus:border-[var(--accent-orange)] transition-colors'
+			/>
+		</div>
+
+		<!-- Results Count Label -->
+		<div
+			class='flex items-center justify-between md:justify-end gap-3 px-2 text-xs font-mono text-[var(--as-text-dim)] shrink-0'
+		>
+			<span id='portfolio-result-count'>Mostrando {projetos.length} projetos</span>
+			<button
+				id='clear-search-btn'
+				type='button'
+				class='hidden text-[var(--accent-orange)] hover:underline'
+			>
+				Limpar busca
+			</button>
+		</div>
+	</div>
+
+	<!-- Category Pills Filter Bar -->
+	<div class='flex flex-wrap items-center gap-2 pb-2'>
 		<button
 			type='button'
 			data-portfolio-filter='all'
-			class='portfolio-filter active rounded-md border border-stone-400 bg-stone-200 px-3 py-1.5 text-sm font-medium text-stone-900 transition-colors dark:border-stone-500 dark:bg-stone-700 dark:text-white'
+			class='portfolio-filter is-active flex items-center gap-1.5'
 		>
-			Todos
+			<span>Todos</span>
+			<span class='text-[11px] opacity-75 font-mono'>({projetos.length})</span>
 		</button>
-		{categorias.map((cat) => (
-			<button
-				type='button'
-				data-portfolio-filter={sluglify(cat)}
-				class='portfolio-filter rounded-md border border-stone-200 px-3 py-1.5 text-sm font-medium text-stone-600 transition-colors hover:border-stone-300 hover:bg-stone-50 hover:text-stone-800 dark:border-stone-700 dark:text-stone-400 dark:hover:border-stone-600 dark:hover:bg-stone-800 dark:hover:text-stone-200'
-			>
-				{cat}
-			</button>
-		))}
+		{
+			categorias.map((cat) => {
+				const catSlug = sluglify(cat.toLowerCase())
+				const count = categoryCounts[catSlug] || 0
+				return (
+					<button
+						type='button'
+						data-portfolio-filter={catSlug}
+						class='portfolio-filter flex items-center gap-1.5'
+					>
+						<span>{cat}</span>
+						<span class='text-[11px] opacity-75 font-mono'>({count})</span>
+					</button>
+				)
+			})
+		}
 	</div>
 
-	<!-- Grid de cards -->
-	<div class='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-		{projetos.map((projeto) => (
-			<div
-				class='portfolio-card'
-				data-tags={projeto.tags.map((t) => sluglify(t.toLowerCase())).join(' ')}
-			>
-				<PortfolioCard projeto={projeto} />
-			</div>
-		))}
+	<!-- Projects Grid -->
+	<div id='portfolio-grid' class='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+		{
+			projetos.map((projeto) => {
+				const projectId = sluglify(projeto.titulo.toLowerCase())
+				const tagsSlug = projeto.tags.map((t) => sluglify(t.toLowerCase())).join(' ')
+				const searchable =
+					`${projeto.titulo} ${projeto.descricao} ${projeto.tags.join(' ')}`.toLowerCase()
+
+				return (
+					<div
+						class='portfolio-card'
+						data-project-id={projectId}
+						data-tags={tagsSlug}
+						data-search={searchable}
+					>
+						<PortfolioCard projeto={projeto} />
+					</div>
+				)
+			})
+		}
+	</div>
+
+	<!-- Empty State if no project matches search -->
+	<div
+		id='portfolio-empty-state'
+		class='hidden py-16 text-center rounded-2xl border border-dashed border-[var(--as-border-paper)] dark:border-[var(--border)] p-8'
+	>
+		<p class='text-2xl mb-2'>🔍</p>
+		<h4 class='font-display text-base font-semibold text-[var(--as-text-ink)] dark:text-white'>
+			Nenhum projeto encontrado
+		</h4>
+		<p class='text-xs text-[var(--as-text-dim)] mt-1 max-w-sm mx-auto'>
+			Tente outros termos de pesquisa ou limpe os filtros para ver todo o acervo.
+		</p>
 	</div>
 </section>
 
 <script>
-	const activeClasses = [
-		'border-stone-400',
-		'bg-stone-200',
-		'text-stone-900',
-		'dark:border-stone-500',
-		'dark:bg-stone-700',
-		'dark:text-white'
-	]
-	const inactiveClasses = [
-		'border-stone-200',
-		'text-stone-600',
-		'dark:border-stone-700',
-		'dark:text-stone-400'
-	]
+	const initPortfolioFilterAndSearch = () => {
+		const searchInput = document.getElementById('portfolio-search-input') as HTMLInputElement | null
+		const resultCountLabel = document.getElementById('portfolio-result-count')
+		const clearSearchBtn = document.getElementById('clear-search-btn')
+		const filterButtons = document.querySelectorAll('.portfolio-filter')
+		const cards = document.querySelectorAll('.portfolio-card')
+		const emptyState = document.getElementById('portfolio-empty-state')
 
-	document.querySelectorAll('.portfolio-filter').forEach((btn) => {
-		btn.addEventListener('click', () => {
-			const filter = btn.getAttribute('data-portfolio-filter')
+		let activeFilter = 'all'
+		let currentQuery = ''
 
-			document.querySelectorAll('.portfolio-filter').forEach((b) => {
-				b.classList.remove(...activeClasses)
-				b.classList.add(...inactiveClasses)
-			})
-			btn.classList.remove(...inactiveClasses)
-			btn.classList.add(...activeClasses)
+		const updateVisibility = () => {
+			let visibleCount = 0
 
-			document.querySelectorAll('.portfolio-card').forEach((card) => {
+			cards.forEach((card) => {
 				const tags = card.getAttribute('data-tags')?.split(' ') ?? []
-				const show = filter === 'all' || tags.includes(filter ?? '')
-				;(card as HTMLElement).style.display = show ? '' : 'none'
+				const searchContent = card.getAttribute('data-search') ?? ''
+
+				const matchesFilter = activeFilter === 'all' || tags.includes(activeFilter)
+				const matchesQuery = !currentQuery || searchContent.includes(currentQuery)
+
+				const isVisible = matchesFilter && matchesQuery
+				;(card as HTMLElement).style.display = isVisible ? '' : 'none'
+
+				if (isVisible) visibleCount++
+			})
+
+			// Update Result Count Label
+			if (resultCountLabel) {
+				resultCountLabel.textContent = `Mostrando ${visibleCount} de ${cards.length} projetos`
+			}
+
+			// Show/hide empty state
+			if (emptyState) {
+				emptyState.classList.toggle('hidden', visibleCount > 0)
+			}
+
+			// Show/hide clear button
+			if (clearSearchBtn) {
+				clearSearchBtn.classList.toggle('hidden', !currentQuery)
+			}
+		}
+
+		// Category Buttons Event
+		filterButtons.forEach((btn) => {
+			btn.addEventListener('click', () => {
+				filterButtons.forEach((item) => item.classList.remove('is-active'))
+				btn.classList.add('is-active')
+				activeFilter = btn.getAttribute('data-portfolio-filter') || 'all'
+				updateVisibility()
 			})
 		})
-	})
+
+		// Search Input Event
+		searchInput?.addEventListener('input', (e) => {
+			currentQuery = (e.target as HTMLInputElement).value.trim().toLowerCase()
+			updateVisibility()
+		})
+
+		// Clear Search Button
+		clearSearchBtn?.addEventListener('click', () => {
+			if (searchInput) searchInput.value = ''
+			currentQuery = ''
+			updateVisibility()
+		})
+	}
+
+	initPortfolioFilterAndSearch()
+	document.addEventListener('astro:after-swap', initPortfolioFilterAndSearch)
 </script>

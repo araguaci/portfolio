@@ -4,6 +4,8 @@ export interface Projeto {
 	tags: string[]
 	url: string
 	thumbnail?: string
+	origem?: string
+	draft?: boolean
 }
 
 export interface ProjetosData {
@@ -16,14 +18,22 @@ export interface ProjetosData {
  * Carrega os projetos do JSON
  */
 export async function getProjetos(): Promise<Projeto[]> {
-	const { readFileSync } = await import('fs')
+	const { existsSync, readFileSync } = await import('fs')
 	const { join } = await import('path')
 
-	// process.cwd() = raiz do projeto durante build
 	const filePath = join(process.cwd(), 'public', 'projetos-online.json')
 	const raw = readFileSync(filePath, 'utf-8')
 	const data: ProjetosData = JSON.parse(raw)
 	return data.projetos
+		.filter((projeto) => !projeto.draft)
+		.map((projeto) => {
+			const thumbnail = projeto.thumbnail?.replace(/^\//, '') ?? ''
+			const file = thumbnail ? join(process.cwd(), 'public', thumbnail) : ''
+			return {
+				...projeto,
+				thumbnail: file && existsSync(file) ? `/${thumbnail}` : ''
+			}
+		})
 }
 
 /**

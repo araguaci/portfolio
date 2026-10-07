@@ -1,12 +1,13 @@
 ---
-title: "In Principio Verbum"
-description: "Este espaço é destinado a publicação de pensamentos e reflexões."
+draft: true
+title: 'In Principio Verbum'
+description: 'Este espaço é destinado a publicação de pensamentos e reflexões.'
 date: 2024-02-24T01:15:46.234Z
 image:
   path: /assets/img/inprincipioverbum.github.io.webp
 categories: showcase
 category: showcase
-tags: [blog, estudo, website] 
+tags: [blog, estudo, website]
 links:
   - title: In Principio Verbum
     url: https://inprincipioverbum.github.io/
@@ -37,4 +38,3 @@ O site também reflete sobre a crescente alienação e desconexão entre os indi
 "In Principio Verbum" se posiciona como um local de busca pela verdade, um convite à reflexão constante diante de um mundo cada vez mais complexo. Encoraja o visitante a questionar o medo, a dúvida e a descrença — forças que, segundo o site, limitam o acesso ao verdadeiro potencial humano.
 
 Este projeto é ideal para leitores e pesquisadores interessados em filosofia, psicologia, sociologia e espiritualidade, que buscam compreender as dinâmicas sutis que influenciam a vida pessoal e coletiva.
-

@@ -1,0 +1,645 @@
+---
+// InteractiveSimulator.astro — Motor de Briefing & Simulador com Gating Dinâmico Artes do Sul
+---
+
+<section id='simulador' class='pt-8 pb-4 space-y-6'>
+	<!-- Section Header -->
+	<div
+		class='flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b pb-4 border-[var(--as-border-paper)] dark:border-[var(--border)]'
+	>
+		<div class='as-section-label'>
+			<span class='as-kicker'>// SIMULADOR INTERATIVO</span>
+			<h2>Planeje seu Projeto Digital</h2>
+			<p
+				class='text-xs sm:text-sm text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] max-w-xl'
+			>
+				Selecione a rota ideal e os módulos necessários. Nosso motor estima prazo, arquitetura e
+				gera um briefing executivo pronto para envio em 1 clique.
+			</p>
+		</div>
+
+		<span
+			class='font-mono text-xs px-2.5 py-1 rounded-full border border-[var(--accent-cyan)]/30 bg-[var(--accent-cyan)]/10 text-[var(--accent-cyan)]'
+		>
+			⚡ GATING ENGINE ATIVO
+		</span>
+	</div>
+
+	<!-- Simulator Body Grid -->
+	<div class='grid grid-cols-1 lg:grid-cols-12 gap-8 items-start'>
+		<!-- Left: Controls & Module Selection (7 cols) -->
+		<div class='lg:col-span-7 space-y-6'>
+			<!-- 1. Tier / Rota Selector -->
+			<div class='space-y-3'>
+				<label class='block font-mono text-xs text-[var(--as-text-dim)] uppercase tracking-wider'>
+					1. Escolha a Rota Principal do Projeto:
+				</label>
+				<div class='grid grid-cols-1 sm:grid-cols-3 gap-3'>
+					<button
+						type='button'
+						class='tier-selector-btn is-active p-3.5 rounded-xl border text-left transition-all relative overflow-hidden'
+						data-tier='essencial'
+					>
+						<div class='flex items-center justify-between mb-1'>
+							<span class='font-display font-bold text-sm text-[var(--as-text-ink)] dark:text-white'
+								>Essencial</span
+							>
+							<span class='text-xs'>🚀</span>
+						</div>
+						<p
+							class='text-[11px] text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] leading-tight'
+						>
+							Landing pages de alta conversão, portfólios e páginas rápidas.
+						</p>
+					</button>
+
+					<button
+						type='button'
+						class='tier-selector-btn p-3.5 rounded-xl border text-left transition-all relative overflow-hidden'
+						data-tier='profissional'
+					>
+						<div class='flex items-center justify-between mb-1'>
+							<span class='font-display font-bold text-sm text-[var(--as-text-ink)] dark:text-white'
+								>Profissional</span
+							>
+							<span class='text-xs'>💎</span>
+						</div>
+						<p
+							class='text-[11px] text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] leading-tight'
+						>
+							E-commerce, portais dinâmicos, blog com CMS e integrações.
+						</p>
+					</button>
+
+					<button
+						type='button'
+						class='tier-selector-btn p-3.5 rounded-xl border text-left transition-all relative overflow-hidden'
+						data-tier='sobmedida'
+					>
+						<div class='flex items-center justify-between mb-1'>
+							<span class='font-display font-bold text-sm text-[var(--as-text-ink)] dark:text-white'
+								>Sob Medida</span
+							>
+							<span class='text-xs'>👑</span>
+						</div>
+						<p
+							class='text-[11px] text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] leading-tight'
+						>
+							Sistemas corporativos, arquiteturas cloud, IA e dashboards.
+						</p>
+					</button>
+				</div>
+			</div>
+
+			<!-- 2. Interactive Modules Selection with Dynamic Gating -->
+			<div class='space-y-4'>
+				<label class='block font-mono text-xs text-[var(--as-text-dim)] uppercase tracking-wider'>
+					2. Selecione os Módulos e Tecnologias:
+				</label>
+
+				<!-- Categoria A: Design & Experiência (Essencial) -->
+				<div
+					class='space-y-2 p-4 rounded-xl border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-black/[0.02] dark:bg-white/[0.02]'
+				>
+					<span
+						class='font-mono text-[11px] text-[var(--accent-orange)] font-semibold uppercase tracking-wide block'
+					>
+						Frontend & Interface (Qualquer Rota)
+					</span>
+					<div class='flex flex-wrap gap-2 pt-1'>
+						<button
+							type='button'
+							class='sim-chip is-selected'
+							data-tier-gate='essencial'
+							data-module='UI Cyber-Growth (Linear/Stripe)'
+						>
+							<span>✓ UI Cyber-Growth (Linear/Stripe)</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip is-selected'
+							data-tier-gate='essencial'
+							data-module='PWA Offline First (A2HS)'
+						>
+							<span>✓ PWA Offline First (A2HS)</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='essencial'
+							data-module='Micro-animações & Motion Fluido'
+						>
+							<span>+ Micro-animações Fluidas</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='essencial'
+							data-module='Copywriting Persuasivo Direto'
+						>
+							<span>+ Copywriting Persuasivo</span>
+						</button>
+					</div>
+				</div>
+
+				<!-- Categoria B: Engenharia & Performance (Essencial / Pro) -->
+				<div
+					class='space-y-2 p-4 rounded-xl border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-black/[0.02] dark:bg-white/[0.02]'
+				>
+					<span
+						class='font-mono text-[11px] text-[var(--accent-cyan)] font-semibold uppercase tracking-wide block'
+					>
+						Performance & Conteúdo Jamstack
+					</span>
+					<div class='flex flex-wrap gap-2 pt-1'>
+						<button
+							type='button'
+							class='sim-chip is-selected'
+							data-tier-gate='essencial'
+							data-module='Score 98+ Lighthouse / Core Web Vitals'
+						>
+							<span>✓ Score 98+ Lighthouse</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='essencial'
+							data-module='SEO Estruturado & Metatags Sociais'
+						>
+							<span>+ SEO Estruturado</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='profissional'
+							data-module='Blog & CMS Headless Integrado'
+						>
+							<span>+ Blog & CMS Headless</span>
+							<span class='gate-badge'>🔒 Pro</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='profissional'
+							data-module='Busca Local Ultra-Rápida (Pagefind)'
+						>
+							<span>+ Busca Instantânea</span>
+							<span class='gate-badge'>🔒 Pro</span>
+						</button>
+					</div>
+				</div>
+
+				<!-- Categoria C: Escala, E-commerce & IA (Pro / Sob Medida) -->
+				<div
+					class='space-y-2 p-4 rounded-xl border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-black/[0.02] dark:bg-white/[0.02]'
+				>
+					<span
+						class='font-mono text-[11px] text-emerald-400 font-semibold uppercase tracking-wide block'
+					>
+						Negócios, Pagamentos & Inteligência
+					</span>
+					<div class='flex flex-wrap gap-2 pt-1'>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='profissional'
+							data-module='E-Commerce & Pagamento Pix/Cartão'
+						>
+							<span>+ E-Commerce & Checkout Pix</span>
+							<span class='gate-badge'>🔒 Pro</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='sobmedida'
+							data-module='Automações com IA & Bots'
+						>
+							<span>+ Automações & Agentes IA</span>
+							<span class='gate-badge'>🔒 Sob Medida</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='sobmedida'
+							data-module='Painel Administrativo Custom'
+						>
+							<span>+ Dashboard Administrativo</span>
+							<span class='gate-badge'>🔒 Sob Medida</span>
+						</button>
+						<button
+							type='button'
+							class='sim-chip'
+							data-tier-gate='sobmedida'
+							data-module='Infraestrutura Multi-Região Cloudflare'
+						>
+							<span>+ Infra Cloud Multi-Região</span>
+							<span class='gate-badge'>🔒 Sob Medida</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right: Executive Briefing Panel (5 cols) -->
+		<div class='lg:col-span-5'>
+			<div
+				class='p-6 rounded-2xl border border-[var(--as-border-paper)] dark:border-[var(--border)] bg-[var(--as-bg-paper-card)] dark:bg-[var(--bg-card)] backdrop-blur-xl shadow-xl space-y-6 sticky top-24'
+			>
+				<!-- Panel Header -->
+				<div
+					class='flex items-center justify-between border-b pb-3 border-[var(--as-border-paper)] dark:border-[var(--border)]'
+				>
+					<div>
+						<h3 class='font-display font-bold text-base text-[var(--as-text-ink)] dark:text-white'>
+							Briefing Executivo
+						</h3>
+						<span
+							id='briefing-tier-badge'
+							class='font-mono text-xs text-[var(--accent-orange)] font-semibold'
+						>
+							ROTA: ESSENCIAL
+						</span>
+					</div>
+					<span class='text-xs font-mono text-[var(--as-text-dim)]'>TEMPO REAL</span>
+				</div>
+
+				<!-- Meta-grid Estimativas em Tempo Real (Skill item 5) -->
+				<div class='grid grid-cols-2 gap-3 text-xs'>
+					<div class='p-3 rounded-xl border border-white/5 bg-black/5 dark:bg-white/[0.03]'>
+						<span class='text-[10px] font-mono text-[var(--as-text-dim)] uppercase block'
+							>Prazo Estimado</span
+						>
+						<strong
+							id='briefing-deadline'
+							class='font-display text-sm text-[var(--as-text-ink)] dark:text-white'
+						>
+							5 a 10 dias úteis
+						</strong>
+					</div>
+
+					<div class='p-3 rounded-xl border border-white/5 bg-black/5 dark:bg-white/[0.03]'>
+						<span class='text-[10px] font-mono text-[var(--as-text-dim)] uppercase block'
+							>Infraestrutura</span
+						>
+						<strong id='briefing-infra' class='font-display text-sm text-[var(--accent-cyan)]'>
+							Cloudflare / Vercel
+						</strong>
+					</div>
+
+					<div class='p-3 rounded-xl border border-white/5 bg-black/5 dark:bg-white/[0.03]'>
+						<span class='text-[10px] font-mono text-[var(--as-text-dim)] uppercase block'
+							>Modelo Pagamento</span
+						>
+						<strong class='font-display text-sm text-emerald-400'> 20% Início / 80% Entrega</strong>
+					</div>
+
+					<div class='p-3 rounded-xl border border-white/5 bg-black/5 dark:bg-white/[0.03]'>
+						<span class='text-[10px] font-mono text-[var(--as-text-dim)] uppercase block'
+							>SLA & Suporte</span
+						>
+						<strong class='font-display text-sm text-[var(--as-text-ink)] dark:text-white'>
+							Prioritário WhatsApp
+						</strong>
+					</div>
+				</div>
+
+				<!-- Selected Modules List with Quick Remove ✕ -->
+				<div class='space-y-2'>
+					<div
+						class='flex items-center justify-between text-xs font-mono text-[var(--as-text-dim)]'
+					>
+						<span>Módulos Selecionados (<span id='selected-modules-count'>3</span>)</span>
+						<button
+							id='clear-all-modules-btn'
+							type='button'
+							class='hover:text-[var(--accent-orange)] text-[11px]'
+						>
+							Limpar todos
+						</button>
+					</div>
+
+					<div
+						id='selected-modules-container'
+						class='flex flex-wrap gap-1.5 min-h-[48px] p-2.5 rounded-xl border border-dashed border-[var(--as-border-paper)] dark:border-[var(--border)]'
+					>
+						<!-- Dynamically populated tags with ✕ -->
+					</div>
+				</div>
+
+				<!-- Action Buttons: Copy Briefing & WhatsApp Trigger -->
+				<div class='space-y-2 pt-2'>
+					<button
+						id='copy-briefing-btn'
+						type='button'
+						class='w-full py-2.5 px-4 rounded-xl text-xs font-semibold border border-white/20 bg-white/5 hover:bg-white/10 text-[var(--as-text-ink)] dark:text-white transition-all flex items-center justify-center gap-2 active:scale-95'
+					>
+						<span id='copy-briefing-icon'>📋</span>
+						<span id='copy-briefing-text'>Copiar Briefing Estruturado</span>
+					</button>
+
+					<button
+						id='send-whatsapp-briefing-btn'
+						type='button'
+						class='w-full py-3 px-4 rounded-xl text-xs font-bold bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-black shadow-lg shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 active:scale-95'
+					>
+						<span>💬</span>
+						<span>Disparar Briefing no WhatsApp</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	const initInteractiveSimulator = () => {
+		const tierButtons = document.querySelectorAll('.tier-selector-btn')
+		const simChips = document.querySelectorAll('.sim-chip')
+		const selectedContainer = document.getElementById('selected-modules-container')
+		const countBadge = document.getElementById('selected-modules-count')
+		const tierBadge = document.getElementById('briefing-tier-badge')
+		const deadlineLabel = document.getElementById('briefing-deadline')
+		const infraLabel = document.getElementById('briefing-infra')
+		const copyBtn = document.getElementById('copy-briefing-btn')
+		const copyText = document.getElementById('copy-briefing-text')
+		const copyIcon = document.getElementById('copy-briefing-icon')
+		const whatsappBtn = document.getElementById('send-whatsapp-briefing-btn')
+		const clearBtn = document.getElementById('clear-all-modules-btn')
+
+		let currentTier = 'essencial'
+
+		const tierHierarchy: Record<string, number> = {
+			essencial: 1,
+			profissional: 2,
+			sobmedida: 3
+		}
+
+		const tierConfig: Record<string, { title: string; deadline: string; infra: string }> = {
+			essencial: {
+				title: 'ROTA: ESSENCIAL',
+				deadline: '5 a 10 dias úteis',
+				infra: 'Cloudflare / Vercel Edge'
+			},
+			profissional: {
+				title: 'ROTA: PROFISSIONAL',
+				deadline: '12 a 20 dias úteis',
+				infra: 'Vercel / Jamstack / Edge CDN'
+			},
+			sobmedida: {
+				title: 'ROTA: SOB MEDIDA',
+				deadline: '20 a 40 dias úteis',
+				infra: 'Cloudflare Workers + IA + APIs'
+			}
+		}
+
+		const getSelectedModules = (): string[] => {
+			const selected: string[] = []
+			simChips.forEach((chip) => {
+				if (chip.classList.contains('is-selected')) {
+					const mod = chip.getAttribute('data-module')
+					if (mod) selected.push(mod)
+				}
+			})
+			return selected
+		}
+
+		const syncTierUI = () => {
+			// Update Tier Buttons
+			tierButtons.forEach((btn) => {
+				const tier = btn.getAttribute('data-tier')
+				const isActive = tier === currentTier
+				btn.classList.toggle('is-active', isActive)
+				if (isActive) {
+					btn.style.borderColor = 'var(--accent-orange)'
+					btn.style.backgroundColor = 'rgba(255, 107, 53, 0.08)'
+				} else {
+					btn.style.borderColor = ''
+					btn.style.backgroundColor = ''
+				}
+			})
+
+			// Update Dynamic Gating on Chips
+			const currentLevel = tierHierarchy[currentTier]
+			simChips.forEach((chip) => {
+				const gate = chip.getAttribute('data-tier-gate') || 'essencial'
+				const requiredLevel = tierHierarchy[gate] || 1
+				const isGated = requiredLevel > currentLevel
+
+				chip.classList.toggle('is-gated', isGated)
+				const badge = chip.querySelector('.gate-badge')
+				if (badge) {
+					;(badge as HTMLElement).style.display = isGated ? 'inline-flex' : 'none'
+				}
+			})
+
+			// Update Executive Panel Meta
+			const config = tierConfig[currentTier]
+			if (tierBadge) tierBadge.textContent = config.title
+			if (deadlineLabel) deadlineLabel.textContent = config.deadline
+			if (infraLabel) infraLabel.textContent = config.infra
+
+			renderSelectedTags()
+		}
+
+		const renderSelectedTags = () => {
+			const selected = getSelectedModules()
+			if (countBadge) countBadge.textContent = `${selected.length}`
+
+			if (!selectedContainer) return
+			selectedContainer.innerHTML = ''
+
+			if (selected.length === 0) {
+				selectedContainer.innerHTML = `
+					<span class="text-xs font-mono text-[var(--as-text-dim)] w-full text-center py-2">
+						Nenhum módulo selecionado no momento.
+					</span>
+				`
+				return
+			}
+
+			selected.forEach((mod) => {
+				const tag = document.createElement('span')
+				tag.className =
+					'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium bg-[var(--accent-orange)]/10 text-[var(--accent-orange)] border border-[var(--accent-orange)]/25'
+				tag.innerHTML = `
+					<span>${mod}</span>
+					<button type="button" class="remove-tag-btn hover:text-white font-bold ml-1" data-module="${mod}">✕</button>
+				`
+				selectedContainer.appendChild(tag)
+			})
+
+			// Bind remove tag buttons
+			selectedContainer.querySelectorAll('.remove-tag-btn').forEach((rmBtn) => {
+				rmBtn.addEventListener('click', (e) => {
+					e.stopPropagation()
+					const modToRemove = rmBtn.getAttribute('data-module')
+					simChips.forEach((chip) => {
+						if (chip.getAttribute('data-module') === modToRemove) {
+							chip.classList.remove('is-selected')
+							const label = chip.querySelector('span:first-child')
+							if (label) label.textContent = label.textContent?.replace('✓', '+') || ''
+						}
+					})
+					renderSelectedTags()
+				})
+			})
+		}
+
+		// Tier Buttons Click
+		tierButtons.forEach((btn) => {
+			btn.addEventListener('click', () => {
+				const tier = btn.getAttribute('data-tier')
+				if (tier) {
+					currentTier = tier
+					syncTierUI()
+				}
+			})
+		})
+
+		// Sim Chips Click (with 1-Click Upgrade Gating)
+		simChips.forEach((chip) => {
+			chip.addEventListener('click', () => {
+				const gate = chip.getAttribute('data-tier-gate') || 'essencial'
+				const requiredLevel = tierHierarchy[gate] || 1
+				const currentLevel = tierHierarchy[currentTier]
+
+				// 1-Click Upgrade if clicked on gated chip
+				if (requiredLevel > currentLevel) {
+					currentTier = gate
+					syncTierUI()
+				}
+
+				// Toggle selection
+				const isSelected = chip.classList.toggle('is-selected')
+				const label = chip.querySelector('span:first-child')
+				if (label && label.textContent) {
+					if (isSelected) {
+						label.textContent = label.textContent.replace('+', '✓')
+					} else {
+						label.textContent = label.textContent.replace('✓', '+')
+					}
+				}
+
+				renderSelectedTags()
+			})
+		})
+
+		// Clear all
+		clearBtn?.addEventListener('click', () => {
+			simChips.forEach((chip) => {
+				chip.classList.remove('is-selected')
+				const label = chip.querySelector('span:first-child')
+				if (label && label.textContent) {
+					label.textContent = label.textContent.replace('✓', '+')
+				}
+			})
+			renderSelectedTags()
+		})
+
+		// Build Structured Briefing Text
+		const generateBriefingText = (): string => {
+			const selected = getSelectedModules()
+			const config = tierConfig[currentTier]
+
+			return (
+				`*BRIEFING EXECUTIVO — ARTES DO SUL*\n\n` +
+				`• *Rota de Projeto:* ${config.title}\n` +
+				`• *Prazo Estimado:* ${config.deadline}\n` +
+				`• *Infraestrutura:* ${config.infra}\n` +
+				`• *Modelo de Pagamento:* 20% no início / 80% na entrega homologada\n\n` +
+				`*Módulos e Tecnologias Selecionadas:*\n` +
+				(selected.length > 0
+					? selected.map((m) => ` - ${m}`).join('\n')
+					: ' - Nenhum módulo específico pré-selecionado') +
+				`\n\n_Gerado pelo Simulador Artes do Sul (artesdosul.github.io)_`
+			)
+		}
+
+		// Copy Briefing Button (Skill item 5)
+		copyBtn?.addEventListener('click', async () => {
+			const text = generateBriefingText()
+			try {
+				await navigator.clipboard.writeText(text)
+				if (copyText) copyText.textContent = '✓ Briefing Copiado!'
+				if (copyIcon) copyIcon.textContent = '✅'
+				setTimeout(() => {
+					if (copyText) copyText.textContent = 'Copiar Briefing Estruturado'
+					if (copyIcon) copyIcon.textContent = '📋'
+				}, 2200)
+			} catch (err) {
+				console.error('Falha ao copiar briefing:', err)
+			}
+		})
+
+		// WhatsApp Button (Skill item 5)
+		whatsappBtn?.addEventListener('click', () => {
+			const text = generateBriefingText()
+			const encoded = encodeURIComponent(text)
+			const url = `https://wa.me/5547999818818?text=${encoded}`
+			window.open(url, '_blank')
+		})
+
+		syncTierUI()
+	}
+
+	initInteractiveSimulator()
+	document.addEventListener('astro:after-swap', initInteractiveSimulator)
+</script>
+
+<style>
+	.tier-selector-btn {
+		border-color: var(--as-border-paper);
+		background-color: transparent;
+	}
+
+	:global(html.dark) .tier-selector-btn {
+		border-color: var(--border);
+	}
+
+	.sim-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		padding: 6px 12px;
+		border-radius: 10px;
+		font-size: 12px;
+		font-weight: 500;
+		border: 1px solid var(--as-border-paper);
+		background: transparent;
+		color: var(--as-text-ink);
+		transition: all 180ms ease;
+		cursor: pointer;
+	}
+
+	:global(html.dark) .sim-chip {
+		border-color: var(--border);
+		color: var(--as-text-muted);
+	}
+
+	.sim-chip:hover {
+		border-color: var(--accent-orange);
+		color: var(--accent-orange);
+		transform: translateY(-1px);
+	}
+
+	.sim-chip.is-selected {
+		border-color: var(--accent-orange);
+		background: rgba(255, 107, 53, 0.12);
+		color: var(--accent-orange);
+		font-weight: 600;
+	}
+
+	.sim-chip.is-gated {
+		opacity: 0.65;
+		border-style: dashed;
+	}
+
+	.gate-badge {
+		font-size: 10px;
+		font-family: 'JetBrains Mono', monospace;
+		padding: 1px 5px;
+		border-radius: 4px;
+		background: rgba(255, 255, 255, 0.1);
+		color: var(--as-text-dim);
+	}
+</style>

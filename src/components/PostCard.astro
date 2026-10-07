@@ -11,32 +11,34 @@ const {
 } = Astro.props
 ---
 
-<article class='grid grid-rows-[300px_auto] md:grid-rows-[300px_220px] min-h-full group'>
+<article class='as-post grid grid-rows-[300px_auto] md:grid-rows-[300px_220px] min-h-full group'>
 	<a class='relative overflow-hidden' href={`/post/${slug}/`}>
-		{heroImage ? (
-			typeof heroImage === 'string' ? (
-				<img
-					src={heroImage}
-					width={600}
-					height={200}
-					class='h-full min-w-full object-cover hover:scale-[101%] transition-all duration-200 rounded-[2px]'
-					alt={`img of ${title}`}
-				/>
+		{
+			heroImage ? (
+				typeof heroImage === 'string' ? (
+					<img
+						src={heroImage}
+						width={600}
+						height={200}
+						class='h-full min-w-full object-cover hover:scale-[1.02] transition-transform duration-300 rounded-lg'
+						alt={`img of ${title}`}
+					/>
+				) : (
+					<Image
+						src={heroImage}
+						width={600}
+						height={200}
+						format='webp'
+						class='h-full min-w-full object-cover hover:scale-[1.02] transition-transform duration-300 rounded-lg'
+						alt={`img of ${title}`}
+					/>
+				)
 			) : (
-				<Image
-					src={heroImage}
-					width={600}
-					height={200}
-					format='webp'
-					class='h-full min-w-full object-cover hover:scale-[101%] transition-all duration-200 rounded-[2px]'
-					alt={`img of ${title}`}
-				/>
+				<div class='h-full min-w-full flex items-center justify-center rounded-lg bg-black/5 dark:bg-white/5'>
+					<span class='text-sm text-[var(--as-text-dim)]'>Sem imagem</span>
+				</div>
 			)
-		) : (
-			<div class='h-full min-w-full bg-stone-200 dark:bg-stone-700 flex items-center justify-center rounded-[2px]'>
-				<span class='text-stone-500 text-sm'>Sem imagem</span>
-			</div>
-		)}
+		}
 
 		<div class='z-30 absolute bottom-0 w-full h-20'>
 			<div class='-z-10 absolute bottom-0 glass w-full min-h-full'></div>
@@ -54,13 +56,13 @@ const {
 	<div class='flex justify-between flex-col gap-4 md:gap-0 py-6 pl-1'>
 		<div class='flex flex-col gap-3'>
 			<div class='flex flex-col gap-2'>
-				<a class='text-2xl font-semibold -tracking-wider' href={`/post/${slug}/`}>
+				<a class='font-display text-2xl font-semibold' href={`/post/${slug}/`}>
 					{title}
 				</a>
 			</div>
 
 			<p
-				class='overflow-hidden line-clamp-3 text-gray-700 dark:text-white mb-5 font-[400] md:pr-[15%]'
+				class='overflow-hidden line-clamp-3 mb-5 font-[400] md:pr-[15%] text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)]'
 			>
 				{description}
 			</p>
@@ -69,10 +71,10 @@ const {
 		<footer class='flex justify-between items-center'>
 			<a
 				href={`/post/${slug}/`}
-				class='flex justify-center items-center dark:text-white rounded-full hover:translate-x-1 transition-transform duration-150 ease-in-out font-semibold gap-1 group'
-				aria-label={`go to ${title}`}
+				class='as-link flex justify-center items-center rounded-full hover:translate-x-1 transition-transform duration-150 ease-in-out gap-1 group'
+				aria-label={`Ler ${title}`}
 			>
-				Read Post <span
+				Ler post <span
 					class='mt-[1px] group-hover:rotate-45 transition-transform duration-250 ease-in-out'
 					><ArrowUp width='18' height='18' /></span
 				>

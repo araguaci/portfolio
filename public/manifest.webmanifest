@@ -1,0 +1,21 @@
+{
+  "name": "Artes do Sul — Portfolio & Engenharia Digital",
+  "short_name": "Artes do Sul",
+  "description": "Soluções para internet com arte, precisão técnica e 25 anos de experiência. Bombinhas, SC.",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#050505",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "categories": ["portfolio", "technology", "development", "business"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

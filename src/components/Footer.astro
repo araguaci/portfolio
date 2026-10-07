@@ -4,7 +4,49 @@ import { siteConfig } from '@/site-config'
 const today = new Date()
 ---
 
-<footer class='flex justify-center items-center w-full px-16 h-28 border-t-2'>
-	&copy; {today.getFullYear()}
-	{siteConfig.author}. Todos os direitos reservados.
+<footer
+	class='as-footer mt-16 w-full border-t border-[var(--as-border-paper)] dark:border-[var(--border)]'
+>
+	<div
+		class='max-w-6xl mx-auto px-4 sm:px-6 w-full flex flex-col items-center justify-between gap-6 md:flex-row'
+	>
+		<!-- Brand & Authority Statement -->
+		<div class='flex flex-col items-center md:items-start gap-1.5'>
+			<div class='flex items-center gap-2 font-display font-semibold tracking-tight text-base'>
+				<span class='as-mark'></span>
+				<span>{siteConfig.author}</span>
+				<span class='font-mono text-xs text-[var(--accent-orange)] font-normal'
+					>// 1999–{today.getFullYear()}</span
+				>
+			</div>
+			<p
+				class='text-xs text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)] max-w-sm text-center md:text-left'
+			>
+				Arquitetura digital, engenharia web de alta performance e sistemas sob medida. Bombinhas ·
+				Santa Catarina.
+			</p>
+		</div>
+
+		<!-- Mandatory Branded Signature from artesdosul skill -->
+		<div class='flex flex-col items-center md:items-end gap-1.5 font-mono text-xs'>
+			<p class='text-[var(--as-text-ink-muted)] dark:text-[var(--as-text-muted)]'>
+				Uma criação{' '}
+				<a
+					class='as-signature font-bold hover:underline'
+					href='https://artesdosul.com/'
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					@artesdosul ↗
+				</a>
+			</p>
+			<div class='flex items-center gap-2 text-[11px] text-[var(--as-text-dim)]'>
+				<span>PWA Offline-First</span>
+				<span>•</span>
+				<span>Jamstack</span>
+				<span>•</span>
+				<span>Astro & Vite</span>
+			</div>
+		</div>
+	</div>
 </footer>
