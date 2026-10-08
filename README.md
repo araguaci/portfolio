@@ -31,6 +31,7 @@ Portal e acervo oficial da Artes do Sul — Soluções para Internet. Vitrine de
 
 - [🎯 Visão Geral](#-visão-geral)
 - [📘 Roteiro Técnico Passo a Passo](ROTEIRO_DESENVOLVIMENTO.md)
+- [📋 Como Cadastrar Projetos](CADASTRO_PROJETOS.md)
 - [✨ Principais Funcionalidades](#-principais-funcionalidades)
 - [🏗️ Arquitetura & Stack](#️-arquitetura--stack)
 - [📊 Métricas & Performance](#-métricas--performance)
@@ -204,8 +205,8 @@ portfolio-astro/
 
 ## 📐 Configuração & Customização
 
+- **Cadastrando Projetos no Acervo:** Consulte o guia operacional em [CADASTRO_PROJETOS.md](CADASTRO_PROJETOS.md) para cadastrar novas aplicações em `public/projetos-online.json`.
 - **Metadados do Site:** Configure título, descrição e autor em `src/data/site.config.ts`.
-- **Projetos Online:** Adicione ou edite projetos no arquivo `public/projetos-online.json`.
 - **Artigos do Blog:** Crie novos arquivos `.md` ou `.mdx` em `src/content/blog/`.
 - **Links Sociais:** Altere as redes em `src/data/links.ts`.
 

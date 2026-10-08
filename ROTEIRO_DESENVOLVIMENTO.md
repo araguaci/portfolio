@@ -254,6 +254,17 @@ export function getPortfolioCategories(projetos: Projeto[]): string[] {
 }
 ```
 
+### 5.1 Procedimento Operacional: Como Cadastrar Novos Projetos
+
+Para incluir ou atualizar uma aplicação no acervo:
+
+1. Abra `public/projetos-online.json` (ou `projetos.json`).
+2. Insira o objeto no topo da lista com `titulo`, `descricao`, `tags`, `url` (iniciando com `https://`), `thumbnail` (ex.: `/assets/img/projects/nome.webp`) e `draft: false`.
+3. Salve a imagem em `public/assets/img/projects/` na proporção 16:9 (`800x450px`, `.webp`).
+4. O sistema recalcula automaticamente a meta do **Growth Tracker**, cria os botões de **Filtro de Categoria** e indexa a **Busca em Tempo Real**.
+
+> 📖 Para diretrizes completas de formato, compressão e flags, consulte [CADASTRO_PROJETOS.md](CADASTRO_PROJETOS.md).
+
 ---
 
 ## 6. Implementação dos Componentes Mestres
