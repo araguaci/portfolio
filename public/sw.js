@@ -1,6 +1,8 @@
-const CACHE_NAME = 'artesdosul-v1'
+// Service Worker Artes do Sul — Produção Vercel & PWA
+const CACHE_NAME = 'artesdosul-v2'
 const PRECACHE_URLS = ['/', '/favicon.svg', '/manifest.webmanifest']
 
+// Instalação: Cache dos arquivos essenciais
 self.addEventListener('install', (event) => {
 	event.waitUntil(
 		caches
@@ -10,6 +12,7 @@ self.addEventListener('install', (event) => {
 	)
 })
 
+// Ativação: Limpeza de caches antigos
 self.addEventListener('activate', (event) => {
 	event.waitUntil(
 		caches
@@ -17,7 +20,9 @@ self.addEventListener('activate', (event) => {
 			.then((keys) =>
 				Promise.all(
 					keys.map((key) => {
-						if (key !== CACHE_NAME) return caches.delete(key)
+						if (key !== CACHE_NAME) {
+							return caches.delete(key)
+						}
 					})
 				)
 			)
@@ -25,26 +30,68 @@ self.addEventListener('activate', (event) => {
 	)
 })
 
+// Interceptação de requisições
 self.addEventListener('fetch', (event) => {
+	// Apenas requisições GET
 	if (event.request.method !== 'GET') return
+
 	const url = new URL(event.request.url)
 
-	// Stale-while-revalidate for local assets and HTML
-	if (url.origin === self.location.origin) {
+	// Apenas requisições HTTP/HTTPS da mesma origem
+	if (!url.protocol.startsWith('http') || url.origin !== self.location.origin) {
+		return
+	}
+
+	// 1. Navegação (HTML da página): Network-First com fallback para cache
+	if (event.request.mode === 'navigate') {
 		event.respondWith(
-			caches.match(event.request).then((cachedResponse) => {
-				const fetchPromise = fetch(event.request)
+			fetch(event.request)
+				.then((response) => {
+					if (response && response.status === 200) {
+						const clone = response.clone()
+						caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone))
+					}
+					return response
+				})
+				.catch(async () => {
+					const cached = await caches.match(event.request)
+					if (cached) return cached
+					const fallback = await caches.match('/')
+					return fallback || new Response('Offline', { status: 503, statusText: 'Offline' })
+				})
+		)
+		return
+	}
+
+	// 2. Assets estáticos (Scripts, Fontes, CSS, Imagens): Cache-First com atualização em background
+	event.respondWith(
+		caches.match(event.request).then((cachedResponse) => {
+			if (cachedResponse) {
+				// Atualiza em background sem travar a resposta
+				fetch(event.request)
 					.then((networkResponse) => {
 						if (networkResponse && networkResponse.status === 200) {
 							const clone = networkResponse.clone()
 							caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone))
 						}
-						return networkResponse
 					})
-					.catch(() => cachedResponse)
+					.catch(() => {})
+				return cachedResponse
+			}
 
-				return cachedResponse || fetchPromise
-			})
-		)
-	}
+			// Se não estiver no cache, busca na rede e guarda no cache se for bem-sucedido
+			return fetch(event.request)
+				.then((networkResponse) => {
+					if (networkResponse && networkResponse.status === 200) {
+						const clone = networkResponse.clone()
+						caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone))
+					}
+					return networkResponse
+				})
+				.catch(() => {
+					// NUNCA retorne undefined para o respondWith!
+					return new Response('', { status: 408, statusText: 'Network request failed' })
+				})
+		})
+	)
 })
